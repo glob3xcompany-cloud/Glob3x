@@ -12,6 +12,7 @@ export function ProjectCard({
   project,
   copy,
   statusLabel,
+  typeLabel,
   forSaleLabel,
   roleLabel,
   locale,
@@ -22,6 +23,7 @@ export function ProjectCard({
   project: Project;
   copy: ProjectCopy;
   statusLabel: string;
+  typeLabel: string;
   forSaleLabel: string;
   roleLabel: string;
   locale: Locale;
@@ -51,9 +53,10 @@ export function ProjectCard({
           <p className={`eyebrow ${dark ? "text-gold" : "text-blue"}`}>{copy.kicker}</p>
           <h3 className={`font-display mt-2 leading-tight ${size === "lg" ? "text-3xl md:text-4xl" : "text-2xl md:text-[1.75rem]"}`}>{copy.name}</h3>
           <p className={`mt-2 text-sm leading-relaxed md:text-[0.9375rem] ${dark ? "text-paper/65" : "text-muted"}`}>{copy.tagline}</p>
-          <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-[0.6875rem] font-semibold tracking-[0.18em] uppercase ${dark ? "text-paper" : "text-ink"}`}>
+          <span className={`mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 pt-5 text-[0.6875rem] font-semibold tracking-[0.18em] uppercase ${dark ? "text-paper" : "text-ink"}`}>
             <span className="h-px w-8 bg-current transition-[width] duration-500 ease-out-expo group-hover:w-12" />
-            {roleLabel}
+            {typeLabel}
+            <span className={`font-normal ${dark ? "text-paper/50" : "text-muted"}`}>· {roleLabel}</span>
           </span>
         </div>
       </Link>

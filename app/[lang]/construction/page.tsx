@@ -41,7 +41,7 @@ export default async function ConstructionPage() {
     <>
       <PageHero eyebrow={t.hero.eyebrow} title={t.hero.title} intro={t.hero.intro} image="/media/group/site-cranes-dusk.webp" position="object-[50%_60%]" />
 
-      <Stats items={t.facts} />
+      <Stats items={t.facts} locale={locale} />
 
       {/* Services */}
       <section className="bg-paper py-24 md:py-32">
@@ -88,7 +88,7 @@ export default async function ConstructionPage() {
 
           <div className="mt-24 grid gap-10 lg:grid-cols-12 lg:items-center">
             <Reveal className="order-2 lg:order-1 lg:col-span-5">
-              <p className="eyebrow text-blue">Skopje</p>
+              <p className="eyebrow text-blue">2019</p>
               <h3 className="font-display mt-3 text-display-md leading-tight font-light">{t.references.skopje.title}</h3>
               <p className="mt-5 text-base leading-relaxed text-muted">{t.references.skopje.body}</p>
               <ArrowLink href={projectHref(locale, "skopje-east-gate")} className="mt-8">

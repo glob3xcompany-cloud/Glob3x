@@ -1,11 +1,8 @@
 import type { Status } from "@/lib/projects";
 
 const TONES: Record<Status, string> = {
-  selling: "bg-gold text-ink",
+  ongoing: "bg-blue text-paper",
   completed: "bg-paper text-ink",
-  "in-development": "bg-blue text-paper",
-  "coming-soon": "bg-ink/80 text-paper backdrop-blur",
-  concept: "bg-paper/20 text-paper backdrop-blur border border-paper/40",
 };
 
 export function StatusBadge({ status, label, className = "" }: { status: Status; label: string; className?: string }) {

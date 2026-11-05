@@ -1,30 +1,30 @@
+import { parseLocaleInteger } from "@/lib/format";
 import { CountUp } from "./motion/count-up";
 import { Reveal } from "./motion/reveal";
 
 export type Stat = { value: string; label: string };
 
 /**
- * Splits "83,576 m²" into a number to animate and a trailing unit. Values that are not numeric
- * (e.g. "55 + 36") are rendered as-is.
+ * Splits "83.576 m²" / "820+" into an integer to animate and a trailing unit, using the locale's own digit
+ * grouping. Years, decimals ("191,89 m") and composite values ("55 + 36") are rendered verbatim.
  */
-function parse(value: string): { n: number; prefix: string; suffix: string } | null {
-  const match = value.match(/^([^\d]*)([\d,.]+)(.*)$/);
+function parse(locale: string, value: string): { n: number; prefix: string; suffix: string } | null {
+  const match = value.match(/^([^\d]*)([\d.,\u00a0\u202f ]*\d)(.*)$/);
   if (!match) return null;
-  const n = Number(match[2].replace(/,/g, ""));
-  if (!Number.isFinite(n) || /[.]/.test(match[2])) return null;
-  // Years ("2008") read wrong with a thousands separator; show them verbatim.
+  const n = parseLocaleInteger(locale, match[2]);
+  if (n === null) return null;
   if (/^\d{4}$/.test(match[2]) && n >= 1900 && n <= 2100) return null;
   return { n, prefix: match[1], suffix: match[3] };
 }
 
-export function Stats({ items, tone = "light", columns = 4 }: { items: Stat[]; tone?: "light" | "dark"; columns?: 3 | 4 }) {
+export function Stats({ items, locale, tone = "light", columns = 4 }: { items: Stat[]; locale: string; tone?: "light" | "dark"; columns?: 3 | 4 }) {
   const dark = tone === "dark";
   const cols = columns === 3 ? "md:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4";
   return (
     <section className={`${dark ? "border-line-dark bg-navy text-paper" : "border-line bg-paper"} border-y`}>
       <dl className={`container-x grid ${cols}`}>
         {items.map((f, i) => {
-          const parsed = parse(f.value);
+          const parsed = parse(locale, f.value);
           return (
             <Reveal
               key={f.label}
@@ -38,7 +38,7 @@ export function Stats({ items, tone = "light", columns = 4 }: { items: Stat[]; t
                   {parsed ? (
                     <>
                       {parsed.prefix}
-                      <CountUp value={parsed.n} delay={i * 100} />
+                      <CountUp value={parsed.n} locale={locale} delay={i * 100} />
                       {parsed.suffix.startsWith("+") ? "+" : ""}
                     </>
                   ) : (

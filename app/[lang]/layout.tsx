@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { isLocale, locales } from "@/lib/i18n";
+import { isCoreLocale, isLocale, isRtl, locales, ogLocale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { getDictionary } from "./dictionaries";
 import "../globals.css";
@@ -37,9 +37,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description: dict.site.description,
     openGraph: {
       type: "website",
-      locale: locale === "sq" ? "sq_AL" : "en_GB",
+      locale: ogLocale(locale),
       siteName: dict.site.name,
-      images: [{ url: "/media/group/skyline-dusk.webp", width: 2400, height: 1813 }],
+      images: [{ url: "/media/projects/reeds-towers/hero-poster.jpg", width: 1600, height: 792 }],
     },
   };
 }
@@ -48,12 +48,18 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   const locale = await lang();
   if (!isLocale(locale)) notFound();
   const dict = await getDictionary(locale);
+  const machine = !isCoreLocale(locale);
 
   return (
-    <html lang={locale} data-scroll-behavior="smooth" className={`${display.variable} ${sans.variable} h-full`}>
+    <html lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"} data-scroll-behavior="smooth" className={`${display.variable} ${sans.variable} h-full`}>
       <body className="flex min-h-full flex-col">
         <SiteHeader nav={dict.nav} locale={locale} />
         <main className="flex-1">{children}</main>
+        {machine ? (
+          <p className="border-t border-line bg-paper-2 px-5 py-3 text-center text-[0.75rem] text-muted" role="note">
+            {dict.nav.machineTranslated}
+          </p>
+        ) : null}
         <SiteFooter dict={dict.footer} nav={dict.nav} names={dict.projects.items} locale={locale} />
       </body>
     </html>

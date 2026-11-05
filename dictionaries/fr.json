@@ -1,0 +1,653 @@
+{
+  "site": {
+    "name": "Glob3x Group",
+    "title": "Glob3x Group — Promoteur et entreprise générale, Tirana",
+    "description": "Glob3x Group développe et construit à Tirana depuis 2008 : tours, résidences, hôtellerie et grands programmes de construction, des chantiers olympiques de Sotchi 2014 aux Reeds Towers de 191,89 m."
+  },
+  "nav": {
+    "home": "Accueil",
+    "group": "Glob3x Group",
+    "projects": "Projets",
+    "towers": "Tours",
+    "construction": "Construction",
+    "contact": "Contact",
+    "cta": "Contact",
+    "menu": "Menu",
+    "close": "Fermer",
+    "language": "Langue",
+    "machineTranslated": "Cette page a été traduite automatiquement. Pour les questions contractuelles, les versions anglaise et albanaise font foi."
+  },
+  "common": {
+    "status": { "ongoing": "En cours", "completed": "Livré" },
+    "sector": {
+      "towers": "Tours et programmes mixtes",
+      "residences": "Immeubles résidentiels",
+      "hospitality": "Hôtellerie et littoral",
+      "construction": "Programmes de construction internationaux"
+    },
+    "type": {
+      "mixed-use": "Programme mixte",
+      "residential": "Immeuble résidentiel",
+      "villas": "Villas",
+      "hotel": "Hôtel",
+      "retail": "Centre commercial",
+      "olympic": "Programme olympique"
+    },
+    "role": {
+      "developer": "Promoteur",
+      "developer-contractor": "Promoteur et entreprise générale",
+      "contractor": "Travaux de construction"
+    },
+    "country": { "AL": "Albanie", "MK": "Macédoine du Nord", "RU": "Russie" },
+    "fact": {
+      "height": "Hauteur",
+      "floors": "Niveaux hors sol",
+      "underground": "Niveaux en sous-sol",
+      "gfa": "Surface de plancher brute",
+      "site": "Surface du terrain",
+      "footprint": "Emprise au sol",
+      "units": "Appartements",
+      "villas": "Villas",
+      "commercial": "Surface commerciale",
+      "parking": "Places de stationnement",
+      "programme": "Programme",
+      "year": "Année",
+      "workers": "Ouvriers mobilisés",
+      "professionals": "Professionnels sur le chantier",
+      "sites": "Types de chantiers livrés",
+      "permit": "Permis de construire",
+      "unitSizes": "Surfaces des lots",
+      "floorPlate": "Plateau courant",
+      "area": "Surface construite"
+    },
+    "programme": {
+      "residential": "Logements",
+      "hotel": "Hôtel",
+      "offices": "Bureaux",
+      "retail": "Commerces",
+      "restaurant": "Restaurant",
+      "services": "Services",
+      "gardens": "Jardins suspendus",
+      "rooms": "Chambres",
+      "suites": "Suites",
+      "pool": "Piscine",
+      "spa": "Spa",
+      "parking": "Stationnement"
+    },
+    "place": {
+      "skanderbeg": "Place Skanderbeg",
+      "airport": "Aéroport international de Tirana",
+      "durres": "Durrës et la côte adriatique",
+      "dajti": "Téléphérique du mont Dajti",
+      "centre": "Centre-ville",
+      "boulevard": "Nouveau Boulevard"
+    },
+    "distances": "Distances",
+    "viewProject": "Voir le projet",
+    "allProjects": "Tous les projets",
+    "forSale": "Lots à vendre",
+    "gallery": "Galerie",
+    "plans": "Plans et dessins",
+    "facts": "Données techniques",
+    "roleLabel": "Notre rôle",
+    "statusLabel": "Statut",
+    "typeLabel": "Typologie",
+    "countryLabel": "Pays",
+    "nextProject": "Projet suivant",
+    "externalSite": "Visiter le site de Reeds Towers",
+    "enquire": "Se renseigner sur ce projet",
+    "whatsapp": "WhatsApp",
+    "call": "Appeler",
+    "readMore": "Lire la suite",
+    "openImage": "Ouvrir l'image",
+    "closeImage": "Fermer",
+    "watchFilm": "Voir le film",
+    "projectsCount": "projets",
+    "countriesCount": "pays"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Tirana · promoteur et entreprise générale depuis 2008",
+      "title": "Nous concevons, construisons et livrons les bâtiments qui définissent Tirana.",
+      "body": "Glob3x Group maîtrise toute la chaîne d'un bâtiment : foncier, coordination de la conception, permis, structure, enveloppe, équipements techniques et livraison. Onze projets dans trois pays, des chantiers olympiques de Sotchi 2014 à Reeds Towers, un repère urbain de 191,89 m entièrement autorisé sur la Rruga e Kavajës.",
+      "primary": "Découvrir les projets",
+      "secondary": "Les tours"
+    },
+    "facts": [
+      { "value": "2008", "label": "Fondation à Tirana" },
+      { "value": "191,89 m", "label": "Reeds Towers, le projet le plus haut autorisé pour la société" },
+      { "value": "820+", "label": "Ouvriers mobilisés sur les chantiers olympiques de Sotchi 2014" },
+      { "value": "3", "label": "Pays : Albanie, Macédoine du Nord, Russie" }
+    ],
+    "pillars": {
+      "eyebrow": "Glob3x Group",
+      "title": "Une société. Cinq piliers. Chaque étape d'un bâtiment.",
+      "body": "Glob3x Group développe, construit, équipe et exploite. La maîtrise de toute la chaîne est ce qui permet à la société de garantir la qualité, les délais et le prix sur chaque projet qu'elle signe.",
+      "items": [
+        { "key": "construction", "title": "Glob3x Construction", "body": "Entreprise générale depuis 2008 : structures en béton armé, immeubles résidentiels et mixtes de plusieurs niveaux, grands programmes livrés à Sotchi et à Skopje.", "href": "construction" },
+        { "key": "realestate", "title": "Glob3x Real Estate", "body": "Développement et vente directe de résidences dans les corridors de croissance de Tirana : rues Ramazan Bogdani, Besa, Jordan Misja et Ali Demi.", "href": "projects#residences" },
+        { "key": "towers", "title": "Tours", "body": "Programmes mixtes de grande hauteur : Reeds Towers (191,89 m), Glow Tower (95,50 m) et Urban Millefeuille (95 m), trois projets verticaux pour la capitale.", "href": "towers" },
+        { "key": "hospitality", "title": "Hôtellerie et littoral", "body": "Un hôtel de luxe à Pezë, au sud-ouest de Tirana, et trois villas en bord de mer à Drymades, sur la côte ionienne.", "href": "projects#hospitality" },
+        { "key": "skela", "title": "Skela Flex", "body": "Location d'échafaudages et d'équipements de sécurité de chantier avec supervision technique, pour les chantiers de la société et pour des entreprises tierces.", "href": "construction#skela-flex" }
+      ]
+    },
+    "flagship": {
+      "eyebrow": "Projet phare · Reeds Towers",
+      "title": "191,89 mètres. Deux tours. Une adresse sur la Rruga e Kavajës.",
+      "body": "Autorisé par le Conseil national du territoire (décision n° 28 du 18 avril 2025) : 55 et 36 niveaux hors sol sur cinq niveaux de sous-sol, avec logements, hôtel, bureaux, commerces et un restaurant panoramique aux niveaux 48 à 54. Développé et construit par Glob3x Group.",
+      "link": "Découvrir Reeds Towers",
+      "facts": [
+        { "value": "55 + 36", "label": "niveaux hors sol" },
+        { "value": "83 576 m²", "label": "surface de plancher brute" },
+        { "value": "2025", "label": "permis de construire accordé" }
+      ]
+    },
+    "towers": {
+      "eyebrow": "Tours",
+      "title": "Trois projets verticaux pour la capitale.",
+      "body": "Reeds Towers, Glow Tower et Urban Millefeuille : plus de 179 000 m² de surface mixte en conception et en développement le long des axes principaux de Tirana.",
+      "link": "Comparer les tours"
+    },
+    "ongoing": {
+      "eyebrow": "Projets en cours",
+      "title": "En chantier et en conception.",
+      "body": "Résidences en construction et en vente, un hôtel de luxe à Pezë, des villas sur la côte ionienne et trois tours en développement."
+    },
+    "completed": {
+      "eyebrow": "Projets livrés",
+      "title": "Livrés et habités.",
+      "body": "Trois immeubles résidentiels à Tirana, achevés et livrés, ainsi que les programmes internationaux qui ont établi la capacité de construction de la société."
+    },
+    "coast": {
+      "eyebrow": "Drymades · côte ionienne",
+      "title": "Trois villas au-dessus de la mer Ionienne.",
+      "body": "Pierre, bois et verre sur deux à trois niveaux, avec un sous-sol commun. Le plan de masse et les plans de chaque villa sont publiés sur la page du projet.",
+      "link": "Voir les villas"
+    },
+    "process": {
+      "eyebrow": "Méthode",
+      "title": "Du terrain à la livraison, un seul responsable.",
+      "body": "Chaque projet de Glob3x Group suit la même séquence d'ingénierie. La même société répond de chaque étape.",
+      "steps": [
+        { "title": "Foncier et faisabilité", "body": "Acquisition du terrain, étude géotechnique, analyse urbanistique et évaluation financière." },
+        { "title": "Coordination de la conception", "body": "Architecture, structure, fluides et paysage coordonnés dans un modèle unique, avec l'équipe de conception retenue pour chaque projet." },
+        { "title": "Permis", "body": "Permis de construire obtenus avant le lancement de la commercialisation. Le statut juridique de chaque opération est publié." },
+        { "title": "Structure", "body": "Ossatures, dalles et noyaux en béton armé exécutés par les équipes de la société, avec ses propres échafaudages et équipements." },
+        { "title": "Enveloppe et équipements", "body": "Façades ventilées, vitrages structurels, isolation thermique et acoustique, installations mécaniques et électriques." },
+        { "title": "Livraison et vente", "body": "Vente directe par les agents de la société, livraison documentée et service après-vente." }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Histoire",
+      "title": "Dix-huit ans de construction.",
+      "items": [
+        { "year": "2008", "title": "Fondation à Tirana", "body": "Glob3x Group commence à construire des immeubles résidentiels de plusieurs niveaux dans la capitale, à la fois comme promoteur et entreprise générale." },
+        { "year": "2014", "title": "Jeux olympiques d'hiver de Sotchi", "body": "Plus de 820 ouvriers albanais livrent des chantiers du programme de construction olympique à Sotchi, Adler et Krasnaïa Poliana." },
+        { "year": "2019", "title": "Skopje East Gate", "body": "Plus de 500 professionnels achèvent la phase confiée à la société d'un centre commercial de 44 000 m² en Macédoine du Nord." },
+        { "year": "2025 →", "title": "Reeds Towers", "body": "Le permis de construire des Reeds Towers de 191,89 m est accordé. Glob3x Group entre dans la catégorie des promoteurs de repères urbains." }
+      ],
+      "link": "L'histoire complète"
+    },
+    "cta": {
+      "title": "Parlons de votre prochaine adresse, ou de votre prochain chantier.",
+      "body": "Acquéreurs, investisseurs, propriétaires fonciers et entreprises : une conversation suffit pour savoir si Glob3x Group est le bon partenaire.",
+      "button": "Nous contacter",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Bonjour, je souhaiterais plus d'informations sur Glob3x Group."
+    }
+  },
+  "group": {
+    "meta": {
+      "title": "Glob3x Group — La société",
+      "description": "Histoire, sociétés et méthode de Glob3x Group : promoteur et entreprise générale à Tirana depuis 2008, avec une expérience de réalisation internationale en Russie et en Macédoine du Nord."
+    },
+    "hero": {
+      "eyebrow": "Glob3x Group",
+      "title": "Une société, cinq piliers, un seul standard.",
+      "intro": "Glob3x Group est une famille de sociétés qui développent, construisent, équipent et exploitent des bâtiments. Chaque projet de ce site indique précisément le rôle joué par la société."
+    },
+    "manifesto": {
+      "eyebrow": "Qui nous sommes",
+      "title": "Constructeurs avant tout.",
+      "body": [
+        "Glob3x Group est née sur le chantier, pas dans un bureau de vente. Fondée en 2008, la société a commencé par construire des immeubles résidentiels de plusieurs niveaux à Tirana, à la fois comme promoteur et entreprise générale. Ce double rôle la définit encore : la société vend ce qu'elle construit et construit ce qu'elle vend.",
+        "En 2014, Glob3x Construction a emmené plus de 820 ouvriers albanais en Russie pour le programme de construction des Jeux olympiques d'hiver de Sotchi : la gare de Sotchi, le village touristique de Krasnaïa Poliana et les bâtiments annexes du stade d'Adler. En 2019, plus de 500 professionnels ont achevé la phase confiée à la société de Skopje East Gate, un centre commercial de 44 000 m² en Macédoine du Nord.",
+        "Aujourd'hui, Glob3x Group compte trois immeubles résidentiels livrés à Tirana, Lorden Residence en construction et en vente, un hôtel de luxe à Pezë et trois villas à Drymades en développement, et trois tours en conception, menées par Reeds Towers, l'un des projets les plus hauts jamais autorisés en Albanie."
+      ]
+    },
+    "companies": {
+      "eyebrow": "Sociétés",
+      "title": "Les cinq piliers",
+      "items": [
+        { "title": "Glob3x Construction", "kicker": "Entreprise générale · depuis 2008", "body": "Structures en béton armé et immeubles résidentiels et mixtes de plusieurs niveaux à Tirana ; grands programmes à Sotchi (2014) et Skopje (2019).", "href": "construction" },
+        { "title": "Glob3x Real Estate", "kicker": "Développement et vente directe", "body": "Art Residence, New Corner Residence, Avi Residence Boulevard et Lorden Residence : des logements dans les corridors de croissance de Tirana, vendus directement par les agents de la société.", "href": "projects#residences" },
+        { "title": "Tours", "kicker": "Programmes mixtes de grande hauteur", "body": "Reeds Towers, Glow Tower et Urban Millefeuille : 191,89 m, 95,50 m et 95 m de logements, hôtels, bureaux et commerces le long des axes principaux de la capitale.", "href": "towers" },
+        { "title": "Hôtellerie et littoral", "kicker": "Hôtel et villas", "body": "Un hôtel de luxe avec piscine en cour, restaurant et spa à Pezë, et trois villas en bord de mer à Drymades, sur la côte ionienne.", "href": "projects#hospitality" },
+        { "title": "Skela Flex", "kicker": "Échafaudages et équipements de chantier", "body": "Location d'échafaudages, filets de sécurité et équipements de chantier avec supervision technique, depuis la base de la société rue Besa.", "href": "construction#skela-flex" }
+      ]
+    },
+    "values": {
+      "eyebrow": "Comment nous travaillons",
+      "title": "Quatre engagements d'ingénierie",
+      "items": [
+        { "title": "Les permis avant les promesses", "body": "Le statut juridique de chaque opération est publié. Reeds Towers bénéficie de l'autorisation complète du Conseil national du territoire : décision n° 28 du 18 avril 2025." },
+        { "title": "Un seul responsable", "body": "Promoteur, constructeur et vendeur sont la même société sur la plupart des projets. Délais et qualité sont contrôlés directement sur le chantier, sans intermédiaires." },
+        { "title": "Mesuré, pas décrit", "body": "Chaque page de projet indique les niveaux, les sous-sols, la surface de plancher brute et le programme. Les chiffres proviennent des documents de conception, pas du marketing." },
+        { "title": "Capacité de réalisation internationale", "body": "Des centaines d'équipes mobilisées au-delà des frontières, sur des délais fixés par le calendrier olympique. La même organisation de chantier conduit aujourd'hui les tours de la société à Tirana." }
+      ]
+    },
+    "geography": {
+      "eyebrow": "Où nous construisons",
+      "title": "Trois pays, une méthode.",
+      "items": [
+        { "country": "AL", "title": "Albanie", "body": "Tirana : quatre immeubles résidentiels, trois tours en développement et un hôtel de luxe à Pezë. Drymades : trois villas sur la côte ionienne." },
+        { "country": "MK", "title": "Macédoine du Nord", "body": "Skopje East Gate, 2019 : la phase confiée à la société d'un centre commercial de 44 000 m², livrée avec plus de 500 professionnels." },
+        { "country": "RU", "title": "Russie", "body": "Jeux olympiques d'hiver de Sotchi 2014 : gare, village touristique de Krasnaïa Poliana et bâtiments annexes du stade d'Adler, avec plus de 820 ouvriers albanais." }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Histoire",
+      "title": "De Tirana à Sotchi et retour.",
+      "items": [
+        { "year": "2008", "title": "Fondation à Tirana", "body": "Glob3x Group commence à construire des immeubles résidentiels de plusieurs niveaux dans la capitale, comme promoteur et entreprise générale." },
+        { "year": "2014", "title": "Jeux olympiques d'hiver de Sotchi", "body": "Glob3x Construction participe au programme de construction olympique avec plus de 820 ouvriers albanais : la gare de Sotchi, le village touristique de Krasnaïa Poliana et les bâtiments annexes du stade d'Adler." },
+        { "year": "2019", "title": "Skopje East Gate", "body": "Un centre commercial de 44 000 m² en Macédoine du Nord : plus de 500 professionnels mènent à terme la phase confiée à la société." },
+        { "year": "2015 – 2024", "title": "Portefeuille de Tirana", "body": "Art Residence (2 844,77 m²), New Corner Residence (5 908 m²) et Avi Residence Boulevard (7 220,40 m²) sont livrés ; Lorden Residence (11 064,54 m²) entre en chantier." },
+        { "year": "2025 →", "title": "Tours et littoral", "body": "Le permis des Reeds Towers de 191,89 m est accordé. Glow Tower et Urban Millefeuille avancent en conception ; l'hôtel de Pezë et les villas de Drymades entrent en développement." }
+      ]
+    },
+    "cta": {
+      "title": "Vous souhaitez travailler avec Glob3x Group ?",
+      "body": "Propriétaires fonciers, investisseurs, fournisseurs et futurs collègues : écrivez-nous et la bonne personne vous répondra.",
+      "button": "Nous contacter",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Bonjour, je souhaiterais entrer en contact avec Glob3x Group."
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projets — Glob3x Group",
+      "description": "Tous les projets de Glob3x Group : Reeds Towers, Glow Tower, Urban Millefeuille, les résidences Lorden, New Corner, Avi et Art, l'hôtel de Pezë, les villas de Drymades, Skopje East Gate et Sotchi 2014."
+    },
+    "hero": {
+      "eyebrow": "Projets",
+      "title": "Tout ce que nous avons construit, construisons et construirons.",
+      "intro": "Onze projets dans trois pays, classés par typologie et par statut, chacun avec sa page, ses données techniques et le rôle exact de Glob3x Group."
+    },
+    "filters": { "all": "Tous", "ongoing": "En cours", "completed": "Livrés" },
+    "sections": {
+      "towers": { "title": "Tours et programmes mixtes", "body": "Projets de grande hauteur en conception et en développement : Reeds Towers sur la Rruga e Kavajës, Glow Tower et Urban Millefeuille près du Nouveau Boulevard." },
+      "residences": { "title": "Immeubles résidentiels", "body": "Des logements développés et construits par Glob3x Group dans les corridors de croissance de Tirana. Les lots signalés à la vente sont disponibles directement auprès des agents de la société." },
+      "hospitality": { "title": "Hôtellerie et littoral", "body": "Un hôtel de luxe à Pezë et trois villas à Drymades, sur la côte ionienne." },
+      "construction": { "title": "Programmes de construction internationaux", "body": "Les programmes qui ont établi la capacité de construction de la société à l'étranger, réalisés par Glob3x Construction." }
+    },
+    "agents": {
+      "eyebrow": "Ventes",
+      "title": "Parlez à nos agents",
+      "body": "L'équipe commerciale travaille directement pour le promoteur. Pas d'intermédiaires, pas de frais d'agence."
+    },
+    "items": {
+      "reeds-towers": {
+        "name": "Reeds Towers",
+        "kicker": "Rruga e Kavajës · Tirana",
+        "tagline": "Là où la vision touche le ciel.",
+        "intro": "Deux tours de 55 et 36 niveaux hors sol s'élevant à 191,89 m au-dessus de la Rruga e Kavajës, sur cinq niveaux de sous-sol de plus de 2 500 m² chacun. Autorisé par le Conseil national du territoire, décision n° 28 du 18 avril 2025.",
+        "body": [
+          "Reeds Towers réunit, sur 83 576 m² de surface de plancher brute, un pôle d'affaires d'environ 996 m² par niveau au rez-de-chaussée et aux deux premiers étages, des niveaux hôteliers 3 à 5 d'environ 1 000 m² chacun, des logements du niveau 6 au niveau 47 et un restaurant panoramique aux niveaux 48 à 54 avec une vue à 360° sur Tirana, le mont Dajti et l'Adriatique.",
+          "Les tours sont composées d'éléments cylindriques verticaux habillés de terrazzo blanc et de vitrages structurels. Les logements vont des appartements 1+1 d'environ 57 m² aux appartements 2+1 d'environ 101 m², chacun avec un segment de façade vitrée courbe et une loggia.",
+          "Glob3x Group développe et construit le projet. Reeds Towers dispose de sa propre équipe commerciale et d'un site dédié avec la brochure complète, les plans, les prix et le film."
+        ]
+      },
+      "glow-tower": {
+        "name": "Glow Tower",
+        "kicker": "Rue Zenel Bastari · Nouveau Boulevard · Tirana",
+        "tagline": "Une tour mixte de 95,50 m sur le Nouveau Boulevard.",
+        "intro": "Une tour de 25 niveaux avec six niveaux de sous-sol et 28 963 m² de surface de plancher brute rue Zenel Bastari, dans le secteur du Nouveau Boulevard : fonctions résidentielles, hôtelières, commerciales et de services superposées dans un seul volume élancé.",
+        "body": [
+          "Glow Tower s'élève à 95,50 m au-dessus du Nouveau Boulevard, l'axe qui devient le nouveau quartier d'affaires de Tirana. Vingt-cinq niveaux hors sol combinent logements, surfaces commerciales et de services, avec six niveaux de sous-sol pour le stationnement et les installations techniques.",
+          "L'hôtel occupe les niveaux supérieurs : des chambres aux niveaux 22 et 23 et, aux niveaux 24 et 25, un espace à double hauteur avec piscine, salles d'halothérapie et de massage, ouvert sur la ville et les montagnes."
+        ]
+      },
+      "urban-millefeuille": {
+        "name": "Urban Millefeuille",
+        "kicker": "Rue Siri Kodra · Tirana",
+        "tagline": "Des structures verticales élancées avec des jardins suspendus.",
+        "intro": "Un programme mixte de 67 082,70 m² de surface de plancher brute sur un terrain de 10 542 m² rue Siri Kodra : des structures verticales élancées jusqu'à 95 m, superposées comme un millefeuille, avec des jardins suspendus sur plusieurs niveaux.",
+        "body": [
+          "Urban Millefeuille fragmente la masse d'un grand îlot urbain en structures verticales élancées. Entre elles, des jardins suspendus sur plusieurs niveaux apportent végétation, lumière et espace extérieur à chaque strate du bâtiment, de la rue au toit.",
+          "Le terrain se trouve à 3 minutes du Nouveau Boulevard, à 6 minutes du centre-ville et à 20 minutes de l'aéroport international de Tirana. Logements, bureaux et commerces partagent le rez-de-chaussée avec des passages publics à travers l'îlot."
+        ]
+      },
+      "lorden-residence": {
+        "name": "Lorden Residence",
+        "kicker": "Rue Ramazan Bogdani · Tirana",
+        "tagline": "Quatre-vingts logements autour d'un parc intérieur, à 1,6 km de la place Skanderbeg.",
+        "intro": "Un immeuble résidentiel de sept niveaux avec deux niveaux de sous-sol et 11 064,54 m² de surface de plancher brute rue Ramazan Bogdani, développé et construit par Glob3x Group. Appartements en vente directement auprès du promoteur.",
+        "body": [
+          "Lorden Residence comprend 80 appartements, environ 1 300 m² de surfaces commerciales et 100 places de stationnement sur deux niveaux de sous-sol. L'immeuble se trouve à 300 m du Nouveau Boulevard et à 1,6 km de la place Skanderbeg, avec des liaisons directes vers le centre de Tirana.",
+          "Entourée de rues sur tous ses côtés et organisée autour d'un parc intérieur, la résidence associe isolation thermique et acoustique, installations techniques modernes et espaces de détente pour les résidents. Les plans types sont publiés ci-dessous ; l'équipe commerciale envoie la grille tarifaire complète sur demande."
+        ]
+      },
+      "new-corner-residence": {
+        "name": "New Corner Residence",
+        "kicker": "Rue Besa · Tirana",
+        "tagline": "Une résidence livrée dans la zone du plan directeur du Nouveau Boulevard.",
+        "intro": "Un immeuble résidentiel et commercial livré de 6 et 7 niveaux avec deux niveaux de parking souterrain et 5 908 m² de surface de plancher brute rue Besa, dans la zone de développement voisine du Nouveau Boulevard. Un local commercial de 77,5 m² au rez-de-chaussée est à vendre.",
+        "body": [
+          "New Corner Residence a été construite dans l'une des zones de développement les plus importantes de Tirana, le quartier planifié voisin du Nouveau Boulevard. Six et sept niveaux résidentiels avec des services au rez-de-chaussée définissent un habitat moderne au cœur de la ville.",
+          "Deux niveaux de parking souterrain, un espace de détente intégré et des parties communes finies complètent l'immeuble. Disponible dès maintenant : un local commercial de 77,5 m² au rez-de-chaussée, orienté est-ouest."
+        ]
+      },
+      "avi-residence-boulevard": {
+        "name": "Avi Residence Boulevard",
+        "kicker": "Rue Jordan Misja · Tirana",
+        "tagline": "Façade ventilée, adresse privilégiée, livré.",
+        "intro": "Un immeuble résidentiel et commercial livré de 8 et 9 niveaux avec un niveau de sous-sol et 7 220,40 m² de surface de plancher brute rue Jordan Misja, à côté du Nouveau Boulevard.",
+        "body": [
+          "Avi Residence Boulevard associe une façade ventilée à une isolation thermique et acoustique, des surfaces commerciales au niveau de la rue et des espaces de détente pour les résidents. L'adresse, à côté du Nouveau Boulevard, le place dans l'un des secteurs les mieux desservis de la capitale.",
+          "Les plans des appartements 6, 37, 41 et 43 sont présentés ci-dessous ; les agents commerciaux envoient les disponibilités et la grille tarifaire complète sur demande."
+        ]
+      },
+      "art-residence": {
+        "name": "Art Residence",
+        "kicker": "Rue Ali Demi · Tirana",
+        "tagline": "Livré rue Ali Demi : 2 844,77 m² de logements et de services.",
+        "intro": "Un immeuble résidentiel et de services livré de 4, 6 et 7 niveaux avec deux niveaux de sous-sol et 2 844,77 m² de surface de plancher brute rue Ali Demi, développé et construit par Glob3x Group.",
+        "body": [
+          "Art Residence s'étage de quatre à sept niveaux le long de la rue Ali Demi, l'un des quartiers résidentiels établis de Tirana, avec deux niveaux de sous-sol et des services au rez-de-chaussée.",
+          "L'immeuble est achevé et livré. Son hall et ses parties communes finis fixent le standard que la société applique aujourd'hui à Lorden Residence."
+        ]
+      },
+      "luxury-villas-drymades": {
+        "name": "Luxury Villas Drymades",
+        "kicker": "Drymades · côte ionienne · Albanie",
+        "tagline": "Trois villas au-dessus de la mer Ionienne.",
+        "intro": "Trois villas en bord de mer sur deux à trois niveaux avec un sous-sol commun à Drymades, sur la Riviera albanaise. Pierre, bois et verre, chaque pièce principale étant orientée vers la mer Ionienne.",
+        "body": [
+          "Les villas occupent un terrain entre la plage et les monts Cérauniens, à quelques pas de la mer. Chaque villa compte deux à trois niveaux hors sol ; un sous-sol commun accueille le stationnement et les locaux techniques, comme le montrent les dessins ci-dessous.",
+          "Le plan de masse et les plans de chaque villa sont publiés : rez-de-chaussée, premier et deuxième étages, avec le niveau de stationnement. Le projet est en développement ; les images de drone ci-dessus montrent le terrain et son littoral."
+        ]
+      },
+      "luxury-hotel-peze": {
+        "name": "Luxury Hotel Pezë",
+        "kicker": "Pezë · à 12 km au sud-ouest de Tirana",
+        "tagline": "Un hôtel de luxe dans le paysage de Pezë.",
+        "intro": "Un hôtel bas de deux niveaux avec un sous-sol à Pezë, à environ 12 km au sud-ouest de Tirana : chambres et suites autour d'une piscine en cour, avec restaurant et spa, développé et construit par Glob3x Group.",
+        "body": [
+          "L'hôtel s'organise en un volume courbe autour d'une cour paysagère avec piscine, ouverte sur les collines de Pezë. Chambres et suites donnent sur le jardin ; le restaurant et le spa occupent le rez-de-chaussée avec un accès direct aux terrasses.",
+          "L'expérience acquise sur ce projet alimente directement les niveaux hôteliers et le restaurant panoramique de Reeds Towers."
+        ]
+      },
+      "skopje-east-gate": {
+        "name": "Skopje East Gate",
+        "kicker": "Skopje · Macédoine du Nord · 2019",
+        "tagline": "Un centre commercial de 44 000 m², livré avec plus de 500 professionnels.",
+        "intro": "En 2019, Glob3x Construction a exécuté sa phase d'East Gate à Skopje, un centre commercial de 44 000 m² et l'une des plus grandes opérations à dominante commerciale de Macédoine du Nord, en mobilisant plus de 500 professionnels.",
+        "body": [
+          "Sur le chantier d'East Gate, les équipes de Glob3x ont travaillé sur la structure en béton armé du complexe aux côtés de grues à tour et de flottes de pompes à béton, en appliquant l'organisation de chantier éprouvée pour la première fois sur le programme de Sotchi.",
+          "La société a mené sa phase du projet à terme, confirmant sa capacité à mobiliser de grandes équipes au-delà des frontières et à travailler au sein des programmes des grands promoteurs régionaux."
+        ]
+      },
+      "sochi-2014": {
+        "name": "Sotchi 2014",
+        "kicker": "Sotchi · Russie · 2014",
+        "tagline": "820 ouvriers, six types de chantiers, une échéance olympique.",
+        "intro": "En 2014, Glob3x Construction a participé au programme de construction des Jeux olympiques d'hiver de Sotchi avec plus de 820 ouvriers venus d'Albanie.",
+        "body": [
+          "Le programme olympique a été la première grande mobilisation internationale de la société. Les équipes albanaises ont travaillé sur la gare de Sotchi, le village touristique de Krasnaïa Poliana, les bâtiments annexes du stade d'Adler, des complexes touristiques et des bâtiments sociaux et culturels.",
+          "Livrer selon le calendrier olympique, avec sa date d'ouverture fixe, a façonné la manière dont Glob3x Group planifie et conduit chaque chantier depuis."
+        ]
+      }
+    }
+  },
+  "towers": {
+    "meta": {
+      "title": "Tours — Reeds Towers, Glow Tower, Urban Millefeuille",
+      "description": "Les trois projets de grande hauteur de Glob3x Group à Tirana comparés : hauteurs, niveaux, surfaces de plancher brutes et programmes de Reeds Towers, Glow Tower et Urban Millefeuille."
+    },
+    "hero": {
+      "eyebrow": "Tours",
+      "title": "Trois tours. Une skyline.",
+      "intro": "Reeds Towers, Glow Tower et Urban Millefeuille : trois programmes mixtes en conception et en développement le long des axes principaux de Tirana, plus de 179 000 m² de surface de plancher brute au total."
+    },
+    "compare": {
+      "eyebrow": "Comparaison",
+      "title": "Dessinées à la même échelle.",
+      "body": "Hauteurs au-dessus du sol fini, d'après les documents de conception. Survolez une tour pour afficher ses données.",
+      "reference": "Immeuble type de 10 niveaux, Tirana"
+    },
+    "list": {
+      "eyebrow": "Les projets",
+      "title": "Chaque tour en détail"
+    },
+    "cta": {
+      "title": "Investir dans la croissance verticale de Tirana ?",
+      "body": "Logements, plateaux de bureaux et surfaces commerciales dans trois tours. Notre équipe présente les disponibilités, les plans et les conditions de paiement.",
+      "button": "Nous contacter",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Bonjour, je souhaiterais des informations sur les tours de Glob3x Group."
+    }
+  },
+  "reeds": {
+    "hero": {
+      "eyebrow": "Rruga e Kavajës · Tirana · Albanie",
+      "title": "Deux tours. Une ville verticale.",
+      "subtitle": "191,89 m · 55 + 36 niveaux hors sol · 83 576 m²"
+    },
+    "stats": [
+      { "value": "191,89 m", "label": "Hauteur maximale au-dessus du sol fini" },
+      { "value": "55 + 36", "label": "Niveaux hors sol · Tour A + Tour B" },
+      { "value": "83 576 m²", "label": "Surface de plancher brute" },
+      { "value": "5", "label": "Niveaux de parking souterrain" }
+    ],
+    "concept": {
+      "eyebrow": "Architecture · Éclore depuis le sol",
+      "title": "Du sol à la couronne.",
+      "paragraphs": [
+        "Le socle. Les tours occupent une emprise au sol de 1 786,45 m², soit 35,37 % du terrain de 5 050,7 m². Les 64,63 % restants sont consacrés à une place publique, des voies et des plantations, avec commerces et cafés au niveau ±0,00 ouverts sur la Rruga e Kavajës.",
+        "Le fût. Chaque tour est un faisceau de cylindres verticaux habillés de terrazzo blanc et de verre. La division du volume transforme une hauteur de 191,89 m en une silhouette élancée et donne à chaque logement un segment de façade courbe avec loggia. Les niveaux techniques 15 et 34 rythment le fût de la tour A.",
+        "La couronne. Au sommet, le plateau se réduit sur sept niveaux en gradins de 630 m² à 41 m², jusqu'au niveau +188,10 m. Chaque niveau possède sa propre terrasse plantée, orientée vers le mont Dajti, la ville ou l'Adriatique."
+      ]
+    },
+    "facade": {
+      "eyebrow": "Façade",
+      "title": "Façade à double peau : terrazzo et vitrage structurel.",
+      "body": "Deux couches : un habillage en terrazzo céramique blanc et un vitrage structurel toute hauteur. De hautes ouvertures verticales font pénétrer la lumière du jour au cœur du plan, tandis que la géométrie cylindrique ombrage le verre au fil de la journée."
+    },
+    "landscape": {
+      "eyebrow": "Paysage",
+      "title": "Une végétation continue, de la place à la couronne.",
+      "body": "Un système de plantations continu court de la place publique aux terrasses de la couronne : espèces méditerranéennes indigènes, zones ombragées, pièces d'eau et pergolas en métal blanc."
+    },
+    "section": {
+      "eyebrow": "Coupe schématique",
+      "title": "Le programme, niveau par niveau.",
+      "body": "Les deux tours sont dessinées à la même échelle. La largeur de chaque niveau est proportionnelle à sa surface.",
+      "hint": "Survolez ou touchez un niveau ou une fonction.",
+      "floor": "Niveau",
+      "level": "Cote",
+      "towers": [
+        {
+          "id": "A",
+          "name": "Tour A",
+          "meta": "55 niveaux hors sol · 5 en sous-sol · 191,89 m",
+          "entities": [
+            { "key": "restaurant", "name": "Restaurant panoramique et lounge", "floors": "Niveaux 48 – 54", "area": "7 niveaux en gradins · 630 → 41 m²" },
+            { "key": "residential", "name": "Logements", "floors": "Niveaux 6 – 47", "area": "40 niveaux · 996 → 630 m² par niveau" },
+            { "key": "technical", "name": "Niveaux techniques", "floors": "Niveaux 15 et 34", "area": "Équipements et installations techniques" },
+            { "key": "hotel", "name": "Hôtel", "floors": "Niveaux 3 – 5", "area": "996 m² par niveau" },
+            { "key": "office", "name": "Bureaux et services", "floors": "Niveaux 1 – 2", "area": "996 m² par niveau" },
+            { "key": "ground", "name": "Hall d'entrée, lobby de l'hôtel et commerces", "floors": "Niveau 0", "area": "996 m²" },
+            { "key": "parking", "name": "Stationnement et services", "floors": "Niveaux −5 à −1", "area": "2 515 m² par niveau" }
+          ]
+        },
+        {
+          "id": "B",
+          "name": "Tour B",
+          "meta": "36 niveaux hors sol · 5 en sous-sol",
+          "entities": [
+            { "key": "restaurant", "name": "Restaurant panoramique", "floors": "Niveaux 30 – 35", "area": "6 niveaux en gradins · 537 → 82 m²" },
+            { "key": "residential", "name": "Logements", "floors": "Niveaux 4 – 29", "area": "25 niveaux · 790 → 571 m² par niveau" },
+            { "key": "technical", "name": "Niveau technique", "floors": "Niveau 15", "area": "Équipements et installations techniques" },
+            { "key": "office", "name": "Bureaux et services", "floors": "Niveaux 1 – 3", "area": "790 m² par niveau" },
+            { "key": "ground", "name": "Hall d'entrée et services", "floors": "Niveau 0", "area": "790 m²" },
+            { "key": "parking", "name": "Stationnement", "floors": "Niveaux −5 à −1", "area": "1 476 m² par niveau" }
+          ]
+        }
+      ]
+    },
+    "features": [
+      { "title": "Hôtel", "body": "Niveaux 3 – 5 de la tour A, avec chambres doubles et suites. Un lobby dédié de 120 m² au niveau 0 et des ascenseurs réservés à l'hôtel." },
+      { "title": "Restaurant panoramique", "body": "Une couronne de sept niveaux sur la tour A et de six niveaux sur la tour B. Chaque niveau dispose d'une terrasse extérieure avec une orientation différente sur la ville." },
+      { "title": "Bien-être", "body": "Piscine à débordement, spa et espaces lounge, conçus dans le cadre du programme de services aux résidents." },
+      { "title": "Bureaux et commerces", "body": "Tour A : 2 niveaux de bureaux de 996 m² chacun. Tour B : 3 niveaux de bureaux de 790 m². Commerces et cafés au niveau 0 avec accès direct depuis la place." }
+    ],
+    "residences": {
+      "eyebrow": "Logements",
+      "title": "Des logements aux façades courbes et aux vues panoramiques.",
+      "body": "Le plan, construit sur des éléments cylindriques, donne à chaque lot un segment de façade vitrée courbe et une loggia. Le niveau courant de la tour A accueille 10 lots autour d'un noyau central de circulation verticale.",
+      "from": "1+1 à partir de 57 m² · 2+1 jusqu'à 101 m²",
+      "plansTitle": "Plans des niveaux courants · Tour A",
+      "plans": [
+        { "name": "Niveaux 6 – 8", "detail": "10 lots · 1+1 66 m² · 2+1 76 – 101 m²" },
+        { "name": "Niveaux 16 – 21", "detail": "10 lots · 1+1 60 – 66 m² · 2+1 78 – 101 m²" },
+        { "name": "Niveaux 40 – 41", "detail": "1+1 57 m² · 2+1 74 – 101 m²" }
+      ],
+      "amenitiesTitle": "Services hôteliers pour les résidents",
+      "amenities": ["Piscine à débordement avec vue sur la ville", "Spa et bien-être", "Restaurant panoramique et lounge dans la couronne", "Conciergerie et services hôteliers", "Place publique paysagère avec cafés", "Cinq niveaux de parking souterrain"],
+      "pricing": {
+        "eyebrow": "Prix et plan de paiement",
+        "title": "À partir de 3 800 €/m². 30 % à la réservation, 70 % en dix versements semestriels.",
+        "body": "Les prix s'appliquent aux logements des deux tours et sont calculés sur la surface du lot : 3 800 €/m² jusqu'au niveau 12, 4 200 €/m² aux niveaux 13 – 30, sur demande au-delà du niveau 30. Le site dédié présente la grille tarifaire complète et un simulateur de paiement.",
+        "link": "Prix et simulateur sur le site de Reeds Towers"
+      },
+      "disclaimer": "Plans issus des dessins d'exécution. La liste définitive des lots, les prix et les finitions sont confirmés par le bureau de vente."
+    },
+    "location": {
+      "eyebrow": "Situation",
+      "title": "Rruga e Kavajës, Tirana.",
+      "body": "Le terrain de 5 050,7 m² se trouve sur la Rruga e Kavajës, l'axe ouest de la capitale, à distance de marche de la place Skanderbeg, du Grand Parc et du quartier d'affaires.",
+      "address": "Rruga e Kavajës, Tirana 1001, Albanie",
+      "open": "Ouvrir dans Google Maps",
+      "why": [
+        { "title": "Situation stratégique", "body": "À 20 minutes de l'aéroport international de Tirana, à 40 minutes de la côte adriatique à Durrës, sur l'axe principal entre le centre et le nouveau périphérique." },
+        { "title": "Une économie en croissance", "body": "L'Albanie est candidate à l'UE, avec une croissance régulière du PIB et des années record pour le tourisme. Le marché résidentiel de Tirana se négocie encore en dessous des capitales méditerranéennes." },
+        { "title": "Climat méditerranéen", "body": "Plus de 2 500 heures de soleil par an, des hivers doux et le mont Dajti à 15 minutes." }
+      ]
+    },
+    "captions": {
+      "living": "Logement · espace de vie",
+      "pool": "Piscine à débordement",
+      "atrium": "Atrium de l'hôtel",
+      "restaurant": "Restaurant panoramique",
+      "spa": "Spa et bien-être",
+      "rooftop": "Reeds Rooftop",
+      "plaza": "La place publique sur la Rruga e Kavajës",
+      "facade": "La façade cylindrique habillée de terrazzo",
+      "terrace": "Terrasse plantée aux niveaux résidentiels"
+    },
+    "film": "Voir le film",
+    "microsite": "Brochure complète, plans et prix sur le site de Reeds Towers"
+  },
+  "construction": {
+    "meta": {
+      "title": "Construction — Glob3x Construction et Skela Flex",
+      "description": "Glob3x Construction : entreprise générale depuis 2008 avec l'expérience du programme olympique de Sotchi et d'un centre commercial de 44 000 m² à Skopje. Skela Flex : location d'échafaudages à Tirana."
+    },
+    "hero": {
+      "eyebrow": "Glob3x Construction",
+      "title": "Les équipes derrière la skyline.",
+      "intro": "Entreprise générale depuis 2008. Immeubles de plusieurs niveaux à Tirana, chantiers du programme olympique à Sotchi, un centre commercial de 44 000 m² à Skopje. Et Skela Flex, l'activité d'échafaudages de la société."
+    },
+    "facts": [
+      { "value": "2008", "label": "Premiers immeubles de plusieurs niveaux à Tirana" },
+      { "value": "820+", "label": "Ouvriers mobilisés pour Sotchi 2014" },
+      { "value": "500+", "label": "Professionnels sur le chantier de Skopje East Gate" },
+      { "value": "3", "label": "Pays" }
+    ],
+    "services": {
+      "eyebrow": "Ce que nous faisons",
+      "title": "Du terrassement à la livraison",
+      "items": [
+        { "title": "Entreprise générale", "body": "Immeubles résidentiels et mixtes de plusieurs niveaux à Tirana, réalisés comme promoteur-constructeur ou pour des maîtres d'ouvrage tiers." },
+        { "title": "Structures en béton armé", "body": "Fondations, ossatures, noyaux et dalles à grande échelle, avec l'organisation de chantier éprouvée sur les programmes de Sotchi et de Skopje." },
+        { "title": "Grands programmes à l'étranger", "body": "Mobilisation de centaines d'ouvriers et d'encadrants pour des programmes à échéance fixe, du calendrier olympique aux centres commerciaux régionaux." },
+        { "title": "Échafaudages et équipements de chantier", "body": "Via Skela Flex : location d'échafaudages, filets de sécurité et supervision technique pour les chantiers de la société et d'autres entreprises." }
+      ]
+    },
+    "references": {
+      "eyebrow": "Références",
+      "title": "Où nous avons construit",
+      "sochi": {
+        "title": "Jeux olympiques d'hiver de Sotchi 2014",
+        "body": "En 2014, Glob3x Construction a participé au programme de construction des Jeux olympiques d'hiver de Sotchi avec plus de 820 ouvriers albanais.",
+        "items": ["Gare de Sotchi", "Village touristique de Krasnaïa Poliana", "Bâtiments annexes du stade d'Adler", "Complexes touristiques, Sotchi", "Bâtiments sociaux et culturels, Sotchi", "Travaux du stade olympique, Sotchi"]
+      },
+      "skopje": {
+        "title": "Skopje East Gate · 2019",
+        "body": "Un centre commercial de 44 000 m² en Macédoine du Nord. Plus de 500 professionnels ont exécuté la structure en béton armé et mené à terme la phase confiée à la société."
+      },
+      "tirana": {
+        "title": "Opérations à Tirana",
+        "body": "Art Residence (Ali Demi), New Corner Residence (Besa), Lorden Residence (Ramazan Bogdani) et l'hôtel de luxe de Pezë, tous construits par Glob3x Construction pour Glob3x Real Estate."
+      }
+    },
+    "skela": {
+      "eyebrow": "Skela Flex",
+      "title": "Votre partenaire pour construire en sécurité.",
+      "body": "Skela Flex loue des échafaudages et des équipements de sécurité de chantier et accompagne chaque intervention d'une supervision technique, d'une simple façade à l'enveloppe complète d'une tour. Basée rue Besa à Tirana, elle dessert des chantiers dans tout le pays.",
+      "items": ["Échafaudages de façade et tours d'étaiement", "Filets de sécurité et protections de rive", "Livraison, montage et démontage", "Inspection et conseil sur site"],
+      "contact": "Contacts Skela Flex",
+      "instagram": "Skela Flex sur Instagram"
+    },
+    "cta": {
+      "title": "Un chantier, une structure ou un appel d'offres ?",
+      "body": "Envoyez-nous les plans et le calendrier. Nous reviendrons avec un planning réaliste et un prix que nous pouvons tenir.",
+      "button": "Demander une offre",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Bonjour, je souhaiterais discuter d'un projet de construction avec Glob3x Construction."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Glob3x Group",
+      "description": "Contacter Glob3x Group : agents commerciaux, siège à la EGT Tower à Tirana, WhatsApp et e-mail."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Parlons-en.",
+      "intro": "Dites-nous ce que vous recherchez : un logement, un investissement, un partenaire de construction ou des échafaudages pour votre chantier. La bonne personne vous répondra sous un jour ouvré."
+    },
+    "office": "Siège",
+    "hours": "Lundi – vendredi, 9h00 – 18h00",
+    "directions": "Ouvrir dans Google Maps",
+    "agentsTitle": "Agents commerciaux",
+    "agentsBody": "Des lignes directes vers les personnes qui vendent nos résidences.",
+    "skelaTitle": "Skela Flex",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone (avec indicatif du pays)",
+    "country": "Pays",
+    "interest": "Je suis intéressé par",
+    "interestOptions": ["L'achat d'un appartement", "Une surface commerciale", "Reeds Towers", "Les tours et l'investissement", "Les villas et l'hôtellerie", "Des services de construction", "La location d'échafaudages (Skela Flex)", "Autre"],
+    "message": "Message (facultatif)",
+    "consent": "J'accepte que Glob3x Group me contacte au sujet de ma demande. Mes données ne seront pas partagées avec des tiers.",
+    "submit": "Envoyer la demande",
+    "sending": "Envoi en cours…",
+    "whatsapp": "Écrire sur WhatsApp",
+    "whatsappText": "Bonjour, je souhaiterais plus d'informations sur les projets de Glob3x Group.",
+    "success": "Merci. Votre demande a bien été reçue et un membre de notre équipe vous contactera prochainement.",
+    "error": "Une erreur s'est produite. Veuillez réessayer ou nous écrire sur WhatsApp.",
+    "invalid": "Veuillez vérifier les champs signalés."
+  },
+  "footer": {
+    "tagline": "Promoteur et entreprise générale · Tirana, depuis 2008",
+    "navigation": "Navigation",
+    "projects": "Projets",
+    "contact": "Contact",
+    "language": "Langue",
+    "legal": "Mentions légales",
+    "disclaimer": "Les images de synthèse sont des vues d'artiste. Les surfaces, le nombre de niveaux et les spécifications peuvent évoluer au cours des études et de l'instruction des permis. Rien sur ce site ne constitue une offre contractuelle.",
+    "rights": "Tous droits réservés."
+  }
+}

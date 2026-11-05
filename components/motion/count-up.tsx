@@ -1,18 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { formatNumber } from "@/lib/format";
 import { prefersReducedMotion, useInView } from "./use-in-view";
 
 const easeOutExpo = (t: number) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t));
 
-/** Animates from 0 to `value` once visible. Formats with thousands separators. */
+/** Animates from 0 to `value` once visible. Formats with the locale's thousands separators. */
 export function CountUp({
   value,
+  locale = "en",
   duration = 1800,
   delay = 0,
   className = "",
 }: {
   value: number;
+  locale?: string;
   duration?: number;
   delay?: number;
   className?: string;
@@ -42,7 +45,7 @@ export function CountUp({
 
   return (
     <span ref={ref} className={`tabular-nums ${className}`}>
-      {current.toLocaleString("en-US")}
+      {formatNumber(locale, current, 0)}
     </span>
   );
 }

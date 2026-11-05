@@ -11,7 +11,7 @@ import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
-import { site, telHref, whatsappUrl } from "@/lib/site";
+import { site, siteAddress, telHref, whatsappUrl } from "@/lib/site";
 import { getDictionary } from "../dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -45,7 +45,7 @@ export default async function ContactPage() {
                 <a href={`mailto:${site.email}`} className="hover:text-paper">{site.email}</a>
                 <a href={telHref(site.phoneDisplay)} className="hover:text-paper">{site.phoneDisplay}</a>
                 <a href={telHref(site.officePhone)} className="hover:text-paper">{site.officePhone}</a>
-                <span>{site.address[locale]}</span>
+                <span>{siteAddress(locale)}</span>
                 <span className="text-paper/50">{t.hours}</span>
                 <a href={site.mapsUrl} target="_blank" rel="noreferrer" className="mt-2 text-[0.6875rem] font-semibold tracking-[0.18em] text-gold uppercase">
                   {t.directions} →

@@ -10,7 +10,7 @@ export function BrandLogo({ size = "md", className = "" }: { size?: "sm" | "md" 
       <Image src="/brand/glob3x-mark.png" alt="" width={px} height={h} priority className="h-auto shrink-0" />
       <span className="flex flex-col leading-none">
         <span className={`font-display font-semibold tracking-[0.2em] uppercase ${size === "lg" ? "text-2xl" : size === "sm" ? "text-base" : "text-lg md:text-xl"}`}>
-          Glob 3X
+          Glob3x
         </span>
         <span className={`mt-1 text-[0.5rem] font-semibold tracking-[0.42em] uppercase opacity-70 ${size === "sm" ? "hidden" : ""}`}>Group</span>
       </span>

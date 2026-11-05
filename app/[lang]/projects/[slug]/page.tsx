@@ -4,19 +4,23 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowLink } from "@/components/arrow-link";
+import { DistanceList, FactList } from "@/components/fact-list";
+import { FilmDialog } from "@/components/film-dialog";
 import { Gallery } from "@/components/gallery";
 import { HeroVideo } from "@/components/hero-video";
 import { Reveal } from "@/components/motion/reveal";
 import { StatusBadge } from "@/components/status-badge";
 import { isLocale } from "@/lib/i18n";
+import { projectMotion } from "@/lib/motion";
 import { pageMeta } from "@/lib/page-meta";
 import { PROJECTS, getProject } from "@/lib/projects";
-import { href, projectHref } from "@/lib/routes";
-import { site, whatsappUrl } from "@/lib/site";
+import { REEDS_SLUG, href, interestIndex, projectHref } from "@/lib/routes";
+import { whatsappUrl } from "@/lib/site";
 import { getDictionary, projectCopy } from "../../dictionaries";
 
+/** Reeds Towers has its own, richer page at projects/reeds-towers/page.tsx. */
 export async function generateStaticParams() {
-  return PROJECTS.map((p) => ({ slug: p.slug }));
+  return PROJECTS.filter((p) => p.slug !== REEDS_SLUG).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/projects/[slug]">): Promise<Metadata> {
@@ -26,15 +30,6 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/projects/[
   const dict = await getDictionary(locale);
   const copy = projectCopy(dict, slug);
   return pageMeta(locale, `projects/${slug}`, { title: `${copy.name} — ${copy.kicker}`, description: copy.intro }, project.hero.src);
-}
-
-/** Index into contact.interestOptions, so the preselection follows the locale. */
-function interestIndex(slug: string, sector: string): number {
-  if (slug === "reeds-towers") return 2;
-  if (slug === "new-corner-residence") return 1;
-  if (sector === "residences") return 0;
-  if (sector === "construction") return 4;
-  return 3;
 }
 
 /**
@@ -52,7 +47,7 @@ export default function ProjectPage({ params }: PageProps<"/[lang]/projects/[slu
 async function ProjectContent({ params }: Pick<PageProps<"/[lang]/projects/[slug]">, "params">) {
   const { lang: locale, slug } = await params;
   const project = getProject(slug);
-  if (!isLocale(locale) || !project) notFound();
+  if (!isLocale(locale) || !project || slug === REEDS_SLUG) notFound();
   const dict = await getDictionary(locale);
   const copy = projectCopy(dict, slug);
   const c = dict.common;
@@ -60,16 +55,16 @@ async function ProjectContent({ params }: Pick<PageProps<"/[lang]/projects/[slug
   const index = PROJECTS.findIndex((p) => p.slug === slug);
   const next = PROJECTS[(index + 1) % PROJECTS.length];
   const nextCopy = projectCopy(dict, next.slug);
-  const interest = dict.contact.interestOptions[interestIndex(slug, project.sector)];
+  const interest = dict.contact.interestOptions[interestIndex(project)];
   const contactHref = `${href(locale, "contact")}?interest=${encodeURIComponent(interest)}`;
-  const externalUrl = project.externalUrl === "reeds" ? `${site.reedsSite}/${locale}` : project.externalUrl;
+  const motion = projectMotion(project);
 
   return (
     <>
       {/* Hero */}
       <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden bg-ink text-paper">
-        {project.video ? (
-          <HeroVideo src={project.video.src} poster={project.video.poster} />
+        {motion ? (
+          <HeroVideo src={motion.src} poster={motion.poster} />
         ) : (
           <div className="animate-kenburns absolute inset-0 -z-20">
             <Image src={project.hero.src} alt="" fill priority sizes="100vw" className={`object-cover ${project.hero.position ?? "object-center"}`} />
@@ -79,12 +74,16 @@ async function ProjectContent({ params }: Pick<PageProps<"/[lang]/projects/[slug
         <div className="container-x relative pt-40 pb-14 md:pb-20">
           <div className="animate-rise flex flex-wrap items-center gap-3">
             <StatusBadge status={project.status} label={c.status[project.status]} />
+            <span className="rounded-full border border-paper/40 px-3 py-1 text-[0.625rem] font-semibold tracking-[0.2em] uppercase">{c.type[project.type]}</span>
             <span className="rounded-full border border-paper/40 px-3 py-1 text-[0.625rem] font-semibold tracking-[0.2em] uppercase">{c.role[project.role]}</span>
             {project.forSale ? <span className="rounded-full bg-paper/90 px-3 py-1 text-[0.625rem] font-semibold tracking-[0.2em] text-ink uppercase">{c.forSale}</span> : null}
           </div>
           <p className="eyebrow animate-rise mt-6 text-gold [animation-delay:80ms]">{copy.kicker}</p>
           <h1 className="font-display animate-rise mt-4 max-w-4xl text-display-xl leading-[0.98] font-light tracking-[-0.01em] text-balance [animation-delay:160ms]">{copy.name}</h1>
-          <p className="font-display animate-rise mt-6 max-w-2xl text-2xl leading-snug text-paper/85 italic md:text-3xl [animation-delay:240ms]">{copy.tagline}</p>
+          <div className="animate-rise mt-6 flex flex-col gap-6 md:flex-row md:items-end md:justify-between [animation-delay:240ms]">
+            <p className="font-display max-w-2xl text-2xl leading-snug text-paper/85 italic md:text-3xl">{copy.tagline}</p>
+            {project.video ? <FilmDialog src={project.video.film ?? project.video.src} poster={project.video.poster} label={c.watchFilm} closeLabel={c.closeImage} /> : null}
+          </div>
         </div>
       </section>
 
@@ -104,11 +103,6 @@ async function ProjectContent({ params }: Pick<PageProps<"/[lang]/projects/[slug
             </div>
             <Reveal delay={240} className="mt-10 flex flex-wrap gap-x-8 gap-y-4">
               <ArrowLink href={contactHref}>{c.enquire}</ArrowLink>
-              {externalUrl ? (
-                <ArrowLink href={externalUrl} external>
-                  {c.externalSite}
-                </ArrowLink>
-              ) : null}
             </Reveal>
           </div>
           <aside className="lg:col-span-4 lg:col-start-9">
@@ -119,39 +113,10 @@ async function ProjectContent({ params }: Pick<PageProps<"/[lang]/projects/[slug
                 </div>
               ) : null}
               <p className="eyebrow text-blue">{c.facts}</p>
-              <dl className="mt-4 divide-y divide-line border-y border-line">
-                {copy.facts.map((f) => (
-                  <div key={f.label} className="grid grid-cols-5 gap-4 py-3.5 text-sm">
-                    <dt className="col-span-2 text-muted">{f.label}</dt>
-                    <dd className="col-span-3 font-medium text-ink">{f.value}</dd>
-                  </div>
-                ))}
-                <div className="grid grid-cols-5 gap-4 py-3.5 text-sm">
-                  <dt className="col-span-2 text-muted">{c.roleLabel}</dt>
-                  <dd className="col-span-3 font-medium text-ink">{c.role[project.role]}</dd>
-                </div>
-              </dl>
-              {project.partners?.length ? (
-                <>
-                  <p className="eyebrow mt-10 text-blue">{c.partners}</p>
-                  <ul className="mt-4 divide-y divide-line border-y border-line">
-                    {project.partners.map((p) => (
-                      <li key={p.name} className="grid grid-cols-5 gap-4 py-3.5 text-sm">
-                        <span className="col-span-2 text-muted">{c.partnerRole[p.role]}</span>
-                        <span className="col-span-3 font-medium">
-                          {p.url ? (
-                            <a href={p.url} target="_blank" rel="noreferrer" className="hover:text-blue">
-                              {p.name}
-                            </a>
-                          ) : (
-                            p.name
-                          )}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              ) : null}
+              <div className="mt-4">
+                <FactList project={project} locale={locale} common={c} />
+              </div>
+              <DistanceList project={project} common={c} />
             </Reveal>
           </aside>
         </div>

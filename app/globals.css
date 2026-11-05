@@ -1,7 +1,7 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @theme {
-  /* Glob 3X Group palette: warm paper, near-black ink, the logo's royal blue, gold reserved for primary actions. */
+  /* Glob3x Group palette: warm paper, near-black ink, the logo's royal blue, gold reserved for primary actions. */
   --color-paper: #f6f4ef;
   --color-paper-2: #ebe7de;
   --color-ink: #0e1117;

@@ -1,9 +1,9 @@
 import { cacheLife } from "next/cache";
 import Link from "next/link";
-import type { Locale } from "@/lib/i18n";
+import { type Locale, localeName, locales } from "@/lib/i18n";
 import { PROJECTS } from "@/lib/projects";
 import { NAV, href, projectHref } from "@/lib/routes";
-import { site, telHref } from "@/lib/site";
+import { site, siteAddress, telHref } from "@/lib/site";
 import { BrandLogo } from "./brand-logo";
 
 type FooterDict = {
@@ -15,7 +15,7 @@ type FooterDict = {
   disclaimer: string;
   rights: string;
 };
-type NavDict = Record<(typeof NAV)[number]["key"], string> & { home: string; contact: string };
+type NavDict = Record<(typeof NAV)[number]["key"], string> & { contact: string };
 type ProjectNames = Record<string, { name: string }>;
 
 async function getYear() {
@@ -45,11 +45,8 @@ export async function SiteFooter({ dict, nav, names, locale }: { dict: FooterDic
           <div className="md:col-span-2">
             <p className="eyebrow text-paper/50">{dict.navigation}</p>
             <ul className="mt-4 grid gap-2.5 text-sm">
-              <li>
-                <Link href={href(locale)} className="hover:text-gold">{nav.home}</Link>
-              </li>
               {NAV.map((item) => (
-                <li key={item.slug}>
+                <li key={item.key}>
                   <Link href={href(locale, item.slug)} className="hover:text-gold">{nav[item.key]}</Link>
                 </li>
               ))}
@@ -79,13 +76,18 @@ export async function SiteFooter({ dict, nav, names, locale }: { dict: FooterDic
               <li>
                 <a href={telHref(site.phoneDisplay)} className="hover:text-gold">{site.phoneDisplay}</a>
               </li>
-              <li className="text-paper/70">{site.address[locale]}</li>
+              <li className="text-paper/70">{siteAddress(locale)}</li>
             </ul>
             <p className="eyebrow mt-8 text-paper/50">{dict.language}</p>
-            <div className="mt-3 flex gap-4 text-sm">
-              <Link href="/en" hrefLang="en" className={locale === "en" ? "text-gold" : "hover:text-gold"}>English</Link>
-              <Link href="/sq" hrefLang="sq" className={locale === "sq" ? "text-gold" : "hover:text-gold"}>Shqip</Link>
-            </div>
+            <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              {locales.map((l) => (
+                <li key={l}>
+                  <Link href={href(l)} hrefLang={l} lang={l} className={l === locale ? "text-gold" : "hover:text-gold"}>
+                    {localeName(l)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <p className="mt-14 max-w-3xl text-[0.75rem] leading-relaxed text-paper/45">{dict.disclaimer}</p>
