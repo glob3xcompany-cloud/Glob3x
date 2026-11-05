@@ -1,0 +1,22 @@
+# systemd unit for the glob3x.al Next.js app. Installed to /etc/systemd/system/glob3x.service
+[Unit]
+Description=Glob3x Group website (Next.js)
+After=network.target
+
+[Service]
+Type=simple
+User=glob3x
+WorkingDirectory=/var/www/glob3x/app
+Environment=NODE_ENV=production
+Environment=PORT=3001
+Environment=HOSTNAME=127.0.0.1
+EnvironmentFile=-/var/www/glob3x/app/.env.production
+ExecStart=/usr/bin/node node_modules/next/dist/bin/next start -p 3001 -H 127.0.0.1
+Restart=on-failure
+RestartSec=5
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
