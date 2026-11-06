@@ -1,0 +1,417 @@
+{
+  "site": {
+    "name": "Reeds Towers",
+    "title": "Reeds Towers · Tirana — 191.89 m mixed-use complex | Glob3x Group",
+    "description": "Two towers of 55 and 36 floors above ground on Kavaja Street, Tirana: residences, hotel, offices, retail and a sky restaurant. 83,576 m² gross floor area. Developed and built by Glob3x Group."
+  },
+  "nav": {
+    "home": "Home",
+    "architecture": "Architecture",
+    "towers": "The towers",
+    "residences": "Residences",
+    "units": "Units",
+    "company": "Company",
+    "location": "Location",
+    "contact": "Contact",
+    "cta": "Book a call",
+    "menu": "Menu",
+    "close": "Close",
+    "discover": "Discover"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kavaja Street · Tirana · Albania",
+      "title": "Two towers. One vertical city.",
+      "subtitle": "191.89 m · 55 + 36 floors above ground",
+      "watch": "Watch the film",
+      "scroll": "Scroll"
+    },
+    "floorsUnit": "floors",
+    "stats": [
+      { "label": "Maximum height above finished ground level" },
+      { "label": "Floors above ground · Tower A + Tower B" },
+      { "label": "Gross floor area" }
+    ],
+    "architecture": {
+      "eyebrow": "Architecture",
+      "title": "Blooming from the ground.",
+      "body": "Blooming from the ground: two towers composed of vertical cylindrical elements rise from a landscaped public plaza and finish in crowns of stepped terraces.",
+      "link": "Discover the architecture"
+    },
+    "towers": {
+      "eyebrow": "The towers",
+      "title": "One mixed-use programme in two towers.",
+      "body": "Tower A: retail, offices, hotel, 40 residential floors and a seven-level restaurant. Tower B: offices, 25 residential floors and a six-level restaurant. Both above five basement parking levels.",
+      "link": "See the tower sections"
+    },
+    "residences": {
+      "eyebrow": "Residences",
+      "title": "Residential units with curved façades and panoramic views.",
+      "body": "474 one- and two-bedroom units, 5 to 10 per floor, arranged around a central vertical-circulation core. Every unit has a curved glazed façade segment and a loggia.",
+      "from": "From €3,800 / m² · 30% on reservation",
+      "link": "Prices & residences"
+    },
+    "company": {
+      "eyebrow": "Company",
+      "title": "Glob3x Group. Contractor, developer and builder.",
+      "body": "Since 2008 Glob3x Group has taken on, developed and executed every one of its projects itself: high-rise buildings in Tirana and international sites, including the Sochi 2014 Olympic programme.",
+      "link": "About the company",
+      "facts": [
+        { "value": "2008", "label": "Founded in Tirana" },
+        { "value": "820+", "label": "Workers on the Sochi sites, 2014" },
+        { "value": "191 m", "label": "The company's tallest project" }
+      ]
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "Kavaja Street, Tirana",
+      "body": "On the western axis of the capital: 10 minutes from Skanderbeg Square and 20 minutes from Tirana International Airport.",
+      "link": "View the location"
+    },
+    "cta": {
+      "title": "Speak with the sales office.",
+      "body": "Unit availability, floor-by-floor plans and a private presentation of the project, in English, Italian, German or Albanian.",
+      "button": "Contact us",
+      "whatsapp": "Chat on WhatsApp"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Architecture — Reeds Towers",
+      "description": "Blooming from the ground: the architectural concept of Reeds Towers — a landscaped plaza, two towers of vertical cylindrical elements and crowns of stepped terraces."
+    },
+    "hero": {
+      "eyebrow": "Architecture",
+      "title": "Blooming from the ground.",
+      "intro": "Reeds Towers is conceived as a system that grows from its site. The base is a landscaped public plaza across the 5,050.7 m² plot; from it rise two towers composed of vertical cylindrical elements, which step back at the top into planted terraces."
+    },
+    "concept": {
+      "eyebrow": "The concept · Blooming from the ground",
+      "title": "From the ground to the crown.",
+      "paragraphs": [
+        "The base. The towers occupy a building footprint of 1,786.45 m², or 35.37% of the plot. The remaining 64.63% is given to the public plaza, streets and planting, with retail and cafés at level ±0.00 opening onto Kavaja Street.",
+        "The shaft. Each tower is a cluster of vertical cylinders clad in white terrazzo and glass. Dividing the volume turns a height of 191.89 m into a slender silhouette and gives every residential unit a curved façade segment with a loggia. Technical floors 15 and 34 punctuate the shaft of Tower A.",
+        "The crown. At the top, the floor plate reduces over seven stepped levels from 630 m² to 41 m², up to level +188.10 m. Each level has its own planted terrace, oriented towards Dajti mountain, the city or the Adriatic."
+      ]
+    },
+    "facade": {
+      "eyebrow": "Façade",
+      "title": "Double-skin façade: terrazzo and structural glazing.",
+      "body": "The façade has two layers: white ceramic terrazzo cladding and floor-to-ceiling structural glazing. Tall vertical openings bring daylight deep into the plan, while the cylindrical geometry shades the glass through the day."
+    },
+    "landscape": {
+      "eyebrow": "Landscape",
+      "title": "Continuous planting, from the plaza to the crown.",
+      "body": "A continuous planting system runs from the public plaza to the crown terraces: native Mediterranean species, shaded areas, water features and white metal pergolas."
+    },
+    "captions": {
+      "plaza": "The public plaza on Kavaja Street",
+      "facade": "The cylindrical façade with terrazzo cladding",
+      "terrace": "Planted terrace on the residential floors",
+      "crown": "The stepped crown of Tower A",
+      "mountains": "The towers against Dajti mountain"
+    }
+  },
+  "towers": {
+    "meta": {
+      "title": "The towers — Sections and programme of Reeds Towers",
+      "description": "Schematic sections of Tower A (55 floors) and Tower B (36 floors): parking, retail, offices, hotel, residences and sky restaurant, with floor areas."
+    },
+    "hero": {
+      "eyebrow": "The towers",
+      "title": "Two towers, one mixed-use programme.",
+      "intro": "Reeds Towers consists of Tower A with 55 floors above ground and Tower B with 36, both above five basement parking levels. Gross floor area is 83,576.33 m², of which 63,619.33 m² above ground."
+    },
+    "section": {
+      "eyebrow": "Schematic section",
+      "title": "The programme, floor by floor.",
+      "body": "Both towers are drawn at the same scale. The width of each floor is proportional to its area.",
+      "hint": "Hover or tap a floor or a function.",
+      "floor": "Floor",
+      "level": "Level",
+      "towers": [
+        {
+          "id": "A",
+          "name": "Tower A",
+          "meta": "55 floors above ground · 5 below · 191.89 m",
+          "entities": [
+            { "key": "restaurant", "name": "Sky restaurant & lounge", "floors": "Floors 48 – 54", "area": "7 stepped levels · 630 → 41 m²" },
+            { "key": "residential", "name": "Residential", "floors": "Floors 6 – 47", "area": "40 floors · 996 → 630 m² / floor" },
+            { "key": "technical", "name": "Technical floors", "floors": "Floors 15 and 34", "area": "Building services and plant" },
+            { "key": "hotel", "name": "Hotel", "floors": "Floors 3 – 5", "area": "996 m² / floor" },
+            { "key": "office", "name": "Offices & services", "floors": "Floors 1 – 2", "area": "996 m² / floor" },
+            { "key": "ground", "name": "Entrance hall, hotel lobby & retail", "floors": "Floor 0", "area": "996 m²" },
+            { "key": "parking", "name": "Parking & services", "floors": "Levels −5 to −1", "area": "2,515 m² / level" }
+          ]
+        },
+        {
+          "id": "B",
+          "name": "Tower B",
+          "meta": "36 floors above ground · 5 below",
+          "entities": [
+            { "key": "restaurant", "name": "Sky restaurant", "floors": "Floors 30 – 35", "area": "6 stepped levels · 537 → 82 m²" },
+            { "key": "residential", "name": "Residential", "floors": "Floors 4 – 29", "area": "25 floors · 790 → 571 m² / floor" },
+            { "key": "technical", "name": "Technical floor", "floors": "Floor 15", "area": "Building services and plant" },
+            { "key": "office", "name": "Offices & services", "floors": "Floors 1 – 3", "area": "790 m² / floor" },
+            { "key": "ground", "name": "Entrance hall & services", "floors": "Floor 0", "area": "790 m²" },
+            { "key": "parking", "name": "Parking", "floors": "Levels −5 to −1", "area": "1,476 m² / level" }
+          ]
+        }
+      ]
+    },
+    "features": [
+      { "title": "Hotel", "body": "Floors 3 – 5 of Tower A, with double rooms and suites. A dedicated 120 m² lobby on floor 0 and separate hotel lifts." },
+      { "title": "Sky restaurant", "body": "A seven-level crown on Tower A and a six-level crown on Tower B. Every level has an outdoor terrace with a different orientation over the city." },
+      { "title": "Wellness", "body": "Infinity pool, spa and lounge areas, designed as part of the residents' services programme." },
+      { "title": "Offices & retail", "body": "Tower A: 2 office floors of 996 m² each. Tower B: 3 office floors of 790 m². Retail and cafés on floor 0 with direct access from the plaza." }
+    ],
+    "gallery": [
+      { "alt": "Living area with curved ceiling and panoramic glazing", "caption": "Residential unit · living area" },
+      { "alt": "Infinity pool overlooking Tirana", "caption": "Infinity pool" },
+      { "alt": "Hotel atrium in gold tones", "caption": "Hotel atrium" },
+      { "alt": "Sky restaurant in the tower crown", "caption": "Sky restaurant" },
+      { "alt": "Spa and wellness area", "caption": "Spa & wellness" },
+      { "alt": "Reeds Rooftop sign in dark wood", "caption": "Reeds Rooftop" }
+    ]
+  },
+  "residences": {
+    "meta": {
+      "title": "Residences — Prices and units at Reeds Towers",
+      "description": "One- and two-bedroom units from 57 to 101 m² at Reeds Towers, Tirana. From €3,800/m², 30% down payment on reservation and 70% in 10 six-monthly instalments."
+    },
+    "hero": {
+      "eyebrow": "Residences",
+      "title": "Residential units with curved façades and panoramic views.",
+      "intro": "The plan, built on cylindrical elements, gives every unit a curved glazed façade segment and a loggia. The number of units changes with the floor: from 10 on the lower floors of Tower A to 5 on the upper floors of Tower B."
+    },
+    "from": "1+1 from 57 m² · 2+1 up to 101 m²",
+    "plansTitle": "Typical floor plans · Tower A",
+    "plans": [
+      { "name": "Floors 6 – 8", "detail": "10 units · 1+1 66 m² · 2+1 76 – 101 m²", "alt": "Typical floor plan, floors 6 to 8" },
+      { "name": "Floors 16 – 21", "detail": "8 units · 1+1 60.4 – 66 m² · 2+1 78 – 101 m²", "alt": "Typical floor plan, floors 16 to 21" },
+      { "name": "Floors 40 – 41", "detail": "1+1 57 m² · 2+1 74 – 101 m²", "alt": "Typical floor plan, floors 40 to 41" }
+    ],
+    "interiors": {
+      "eyebrow": "Interiors",
+      "title": "Curved spaces, daylight, open views.",
+      "body": "The living area follows the curve of the façade, with a rounded ceiling and up to 270° of glazing. Bedrooms and bathrooms sit in the inner segments; every unit has an outdoor loggia."
+    },
+    "pricing": {
+      "eyebrow": "Prices",
+      "title": "Price per m², by floor.",
+      "body": "Prices apply to residential units in both towers and are calculated on the unit area.",
+      "perM2": "/ m²",
+      "bands": [
+        { "floors": "Up to floor 12", "price": "€3,800", "note": "Tower A: floors 6 – 12 · Tower B: floors 4 – 12" },
+        { "floors": "Floors 13 – 30", "price": "€4,200", "note": "Tower A: floors 13 – 30 · Tower B: floors 13 – 29" },
+        { "floors": "Above floor 30", "price": "On request", "note": "Tower A: floors 31 – 47" }
+      ],
+      "plan": {
+        "eyebrow": "Payment plan",
+        "title": "30% on reservation, 70% in instalments over 5 years.",
+        "steps": [
+          { "value": "30%", "title": "Down payment", "body": "Paid on signing the reservation contract." },
+          { "value": "70%", "title": "Instalments", "body": "Split into 10 equal instalments of 7%, one every 6 months." },
+          { "value": "5 years", "title": "Term", "body": "The tenth instalment falls due in month 60 after signing." }
+        ]
+      },
+      "calculator": {
+        "title": "Payment calculator",
+        "band": "Floor band",
+        "bands": ["Up to floor 12 · €3,800 / m²", "Floors 13 – 30 · €4,200 / m²"],
+        "area": "Unit area",
+        "presets": "Typology",
+        "total": "Total price",
+        "down": "Down payment 30%",
+        "installment": "Six-monthly instalment",
+        "schedule": "Payment schedule",
+        "signing": "Signing",
+        "month": "Month",
+        "installmentN": "Instalment"
+      },
+      "disclaimer": "Figures are indicative. The final price, unit area and payment schedule are set out in the reservation contract."
+    },
+    "amenities": {
+      "eyebrow": "Services",
+      "title": "Hotel services for residents.",
+      "items": ["Infinity pool with city views", "Spa & wellness", "Sky restaurant and lounge in the crown", "Hotel concierge and services", "Landscaped public plaza with cafés", "Five basement parking levels"]
+    },
+    "gallery": [
+      { "alt": "Living area with curved ceiling", "caption": "Living area" },
+      { "alt": "Bathroom with freestanding bath and city view", "caption": "Bathroom" },
+      { "alt": "Loggia with view over Tirana", "caption": "Loggia" },
+      { "alt": "Planted terrace", "caption": "Terrace" }
+    ],
+    "disclaimer": "Plans from the construction design drawings. The final unit list and finishes are confirmed by the sales office.",
+    "cta": "Request availability"
+  },
+  "units": {
+    "meta": {
+      "title": "Units — Choose your floor and unit at Reeds Towers",
+      "description": "Choose the tower, floor and exact unit on the construction-design floor plan. Area, price and payment plan for every residential unit at Reeds Towers."
+    },
+    "hero": {
+      "eyebrow": "Units",
+      "title": "Choose the floor. Choose the unit.",
+      "intro": "Every floor has its own plan and its own unit areas. Choose the tower and floor, then the unit directly on the construction-design floor plan."
+    },
+    "tower": "Tower",
+    "unitsLabel": "units",
+    "chooseFloor": "Choose a floor",
+    "floor": "Floor",
+    "plate": "Floor plate",
+    "onFloor": "units on this floor",
+    "prompt": "Select a unit on the plan or in the list.",
+    "table": { "nr": "No.", "type": "Typology", "area": "Area", "price": "Price" },
+    "detail": {
+      "code": "Unit",
+      "type": "Typology",
+      "area": "Area",
+      "pricePerM2": "Price per m²",
+      "total": "Total price",
+      "down": "30% down payment on reservation",
+      "installment": "10 six-monthly instalments",
+      "reserve": "Reserve this unit",
+      "requestPrice": "Request the price of this unit",
+      "onRequest": "On request"
+    },
+    "legend": { "low": "€3,800 / m² · up to floor 12", "mid": "€4,200 / m² · floors 13 – 30", "request": "On request · above floor 30" },
+    "typologies": { "1+1": "1+1 · one bedroom", "2+1": "2+1 · two bedrooms" },
+    "note": "Areas and plans are from the construction design. Availability of each unit and the final price are confirmed by the sales office in the reservation contract.",
+    "cta": "Choose your unit"
+  },
+  "company": {
+    "meta": {
+      "title": "Company — Glob3x Group",
+      "description": "Glob3x Group takes on, develops and builds every one of its projects. High-rise construction in Tirana since 2008 and international sites, including Sochi 2014."
+    },
+    "hero": {
+      "eyebrow": "Company",
+      "title": "Glob3x Group. Contractor, developer and builder.",
+      "intro": "Glob3x Group is a construction and development company based in Tirana. Since 2008 it has taken on, developed and executed its own projects, from design coordination to construction and handover, in Albania and abroad."
+    },
+    "model": {
+      "eyebrow": "Our model",
+      "statement": "We take on and develop every one of our projects, and we build them with our own construction teams.",
+      "steps": [
+        { "n": "01", "title": "Taking on the project", "body": "Technical and financial appraisal, selection of the design team and coordination of the building-permit process." },
+        { "n": "02", "title": "Development", "body": "Phasing, project management, financing and sales of the units." },
+        { "n": "03", "title": "Execution", "body": "Construction with our own teams, technical supervision, on-site quality control and handover of the building." }
+      ]
+    },
+    "facts": [
+      { "value": "2008", "label": "Founded in Tirana" },
+      { "value": "820+", "label": "Albanian workers on the Sochi sites, 2014" },
+      { "value": "6", "label": "Olympic-programme sites executed" },
+      { "value": "191 m", "label": "Reeds Towers, the company's tallest project" }
+    ],
+    "timeline": {
+      "eyebrow": "History",
+      "title": "From Tirana to international sites.",
+      "items": [
+        { "year": "2008", "title": "Founded", "body": "Glob3x starts operating in Tirana as developer and building contractor of multi-storey residential and mixed-use buildings." },
+        { "year": "2014", "title": "Sochi 2014", "body": "Glob3x Construction executes works within the construction programme of the Sochi 2014 Winter Olympics with more than 820 Albanian workers: the Olympic stadium, Sochi railway station, tourist complexes, social and cultural buildings, the auxiliary buildings of the Adler stadium and resorts in Krasnaya Polyana." },
+        { "year": "2015 – 2024", "title": "Tirana portfolio", "body": "Residential and mixed-use buildings on Ali Demi, Besa, Jordan Misja and Ramazan Bogdani streets, a hotel in Varosh, and participation in the Skopje East Gate construction programme in North Macedonia." },
+        { "year": "2025 →", "title": "Reeds Towers", "body": "A mixed-use complex of two towers, 55 and 36 floors above ground and 83,576 m² gross floor area, developed and built by Glob3x Group." }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Portfolio",
+      "title": "Selected projects.",
+      "items": [
+        { "name": "Reeds Towers", "detail": "Kavaja Street · 55 + 36 floors · mixed-use" },
+        { "name": "Glow Tower", "detail": "Tirana · residential tower" },
+        { "name": "Avi Residence Boulevard", "detail": "Jordan Misja Street · 8 and 9 floors · residential & services" },
+        { "name": "Art Residence", "detail": "Ali Demi Street · 4, 6 and 7 floors · residential & services" },
+        { "name": "New Corner Residence", "detail": "Besa Street · 6 and 7 floors · residential & services" },
+        { "name": "Lorden Residence", "detail": "Ramazan Bogdani Street · 6 and 7 floors · residential & services" }
+      ]
+    },
+    "values": {
+      "eyebrow": "How we work",
+      "items": [
+        { "title": "One company, one responsibility", "body": "Design, construction and handover are coordinated by the same company; schedule and quality are controlled directly on site." },
+        { "title": "High-rise engineering", "body": "Reeds Towers runs to 191.89 m above ground over five basement levels, with technical floors at levels 15 and 34 and a stepped crown that reduces the floor plate from 630 m² to 41 m²." },
+        { "title": "Technical transparency", "body": "A complete construction design, published floor plans, a clear price per m² and the same payment plan for every buyer." }
+      ]
+    },
+    "cta": "Contact the company"
+  },
+  "location": {
+    "meta": {
+      "title": "Location — Kavaja Street, Tirana",
+      "description": "Reeds Towers on Rruga e Kavajës, Tirana: distances to the airport, the city centre and the coast, and why to invest in Albania's capital."
+    },
+    "hero": {
+      "eyebrow": "Location",
+      "title": "Kavaja Street, Tirana.",
+      "intro": "The 5,050.7 m² plot sits on Rruga e Kavajës, the western axis of the capital, within walking distance of Skanderbeg Square, the Grand Park and the business district."
+    },
+    "address": "Rruga e Kavajës, Tirana 1001, Albania",
+    "open": "Open in Google Maps",
+    "distances": {
+      "eyebrow": "Distances",
+      "items": [
+        { "label": "Skanderbeg Square", "value": "10 min" },
+        { "label": "Tirana International Airport", "value": "20 min" },
+        { "label": "Durrës and the Adriatic coast", "value": "40 min" },
+        { "label": "Dajti mountain cable car", "value": "25 min" }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why Tirana",
+      "title": "Europe's fastest-changing capital.",
+      "items": [
+        { "title": "Strategic location", "body": "20 minutes from Tirana International Airport, 40 minutes from the Adriatic coast at Durrës, on the main axis between the centre and the new ring road." },
+        { "title": "A growing economy", "body": "Albania is an EU candidate with steady GDP growth and record tourism years. Tirana's residential market still trades below Mediterranean capitals." },
+        { "title": "Mediterranean climate", "body": "Over 2,500 hours of sun a year, mild winters and Dajti mountain 15 minutes away." }
+      ]
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Reeds Towers sales office",
+      "description": "Request availability, floor plans or a private presentation of Reeds Towers in Tirana."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Speak with the sales office.",
+      "intro": "Tell us what you are looking for. We reply within one working day, in English, Italian, German or Albanian."
+    },
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone (with country code)",
+    "country": "Country of residence",
+    "budget": "Budget",
+    "budgetOptions": ["€150,000 – €250,000", "€250,000 – €350,000", "€350,000 – €500,000", "Over €500,000", "Investor / multiple units"],
+    "interest": "I am interested in",
+    "interestOptions": ["1+1 unit", "2+1 unit", "Upper floors (31 – 47)", "Office space", "Multiple units / investment"],
+    "message": "Message",
+    "consent": "I agree that Glob3x Group may contact me about Reeds Towers.",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "whatsapp": "Chat on WhatsApp",
+    "whatsappText": "Hello, I am interested in Reeds Towers in Tirana. Could you send me more information?",
+    "success": "Thank you. Your request has been received and the sales office will contact you shortly.",
+    "error": "Something went wrong. Please try again or write to us on WhatsApp.",
+    "invalid": "Please check the highlighted fields.",
+    "office": "Sales office",
+    "selectedUnit": "Selected unit",
+    "unitMessage": "I would like to reserve unit {code}: {type}, {area} m², Tower {tower}, floor {floor}.",
+    "pricing": {
+      "eyebrow": "Prices",
+      "title": "From €3,800 / m²",
+      "body": "30% down payment on signing the reservation contract, 70% in 10 six-monthly instalments over 5 years.",
+      "link": "Prices & payment calculator"
+    }
+  },
+  "footer": {
+    "developer": "Developer & builder",
+    "group": "Group website",
+    "contactLabel": "Contact",
+    "navigation": "Navigation",
+    "disclaimer": "Reeds Towers is developed and built by Glob3x Group sh.p.k. Renderings are artistic impressions; details may change during construction.",
+    "rights": "All rights reserved.",
+    "language": "Language"
+  }
+}

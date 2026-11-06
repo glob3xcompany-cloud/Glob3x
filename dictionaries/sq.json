@@ -1,0 +1,417 @@
+{
+  "site": {
+    "name": "Reeds Towers",
+    "title": "Reeds Towers · Tiranë — kompleks mixed-use 191.89 m | Glob3x Group",
+    "description": "Dy kulla me 55 dhe 36 kate mbi tokë në Rrugën e Kavajës, Tiranë: banim, hotel, zyra, retail dhe restorant panoramik. 83,576 m² sipërfaqe ndërtimi. Zhvillim dhe zbatim Glob3x Group."
+  },
+  "nav": {
+    "home": "Kreu",
+    "architecture": "Arkitektura",
+    "towers": "Kullat",
+    "residences": "Rezidencat",
+    "units": "Njësitë",
+    "company": "Kompania",
+    "location": "Vendndodhja",
+    "contact": "Kontakt",
+    "cta": "Rezervo një takim",
+    "menu": "Menu",
+    "close": "Mbyll",
+    "discover": "Zbulo"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Rruga e Kavajës · Tiranë · Shqipëri",
+      "title": "Dy kulla. Një qytet vertikal.",
+      "subtitle": "191.89 m · 55 + 36 kate mbi tokë",
+      "watch": "Shiko filmin",
+      "scroll": "Zbrit"
+    },
+    "floorsUnit": "kate",
+    "stats": [
+      { "label": "Lartësia maksimale nga kuota e sistemimit" },
+      { "label": "Kate mbi tokë · Kulla A + Kulla B" },
+      { "label": "Sipërfaqe totale ndërtimi" }
+    ],
+    "architecture": {
+      "eyebrow": "Arkitektura",
+      "title": "Çel nga toka.",
+      "body": "Koncepti “Blooming from the ground”: dy kulla të përbëra nga elementë cilindrikë vertikalë ngrihen nga një shesh publik i peizazhuar dhe përfundojnë në kurora me tarraca të shkallëzuara.",
+      "link": "Zbulo arkitekturën"
+    },
+    "towers": {
+      "eyebrow": "Kullat",
+      "title": "Një program mixed-use në dy kulla.",
+      "body": "Kulla A: retail, zyra, hotel, 40 kate banimi dhe restorant në 7 nivele. Kulla B: zyra, 25 kate banimi dhe restorant në 6 nivele. Të dyja mbi 5 nivele parkimi nëntokësor.",
+      "link": "Shiko prerjet e kullave"
+    },
+    "residences": {
+      "eyebrow": "Rezidencat",
+      "title": "Njësi banimi me fasadë të lakuar dhe pamje panoramike.",
+      "body": "474 njësi banimi 1+1 dhe 2+1, nga 5 deri 10 për kat, rreth një bërthame qendrore qarkullimi vertikal. Çdo njësi ka segment fasade xhami të lakuar dhe lozhë.",
+      "from": "Nga €3,800 / m² · 30% në rezervim",
+      "link": "Çmimet & rezidencat"
+    },
+    "company": {
+      "eyebrow": "Kompania",
+      "title": "Glob3x Group. Marrës, zhvillues dhe zbatues.",
+      "body": "Që nga viti 2008, Glob3x Group i merr përsipër, i zhvillon dhe i zbaton vetë të gjitha projektet e saj: ndërtime shumëkatëshe në Tiranë dhe kantiere ndërkombëtare, përfshirë programin olimpik Soçi 2014.",
+      "link": "Rreth kompanisë",
+      "facts": [
+        { "value": "2008", "label": "Themeluar në Tiranë" },
+        { "value": "820+", "label": "Punëtorë në kantieret e Soçit, 2014" },
+        { "value": "191 m", "label": "Projekti më i lartë i kompanisë" }
+      ]
+    },
+    "location": {
+      "eyebrow": "Vendndodhja",
+      "title": "Rruga e Kavajës, Tiranë",
+      "body": "Në aksin perëndimor të kryeqytetit: 10 minuta nga Sheshi Skënderbej dhe 20 minuta nga Aeroporti Ndërkombëtar i Tiranës.",
+      "link": "Shiko vendndodhjen"
+    },
+    "cta": {
+      "title": "Fol me zyrën e shitjeve.",
+      "body": "Disponueshmëria e njësive, planimetritë sipas katit dhe prezantim privat i projektit, në shqip, anglisht, italisht ose gjermanisht.",
+      "button": "Na kontaktoni",
+      "whatsapp": "Shkruaj në WhatsApp"
+    }
+  },
+  "architecture": {
+    "meta": {
+      "title": "Arkitektura — Reeds Towers",
+      "description": "“Blooming from the ground”: koncepti arkitektonik i Reeds Towers — shesh publik i peizazhuar, dy kulla me elementë cilindrikë vertikalë dhe kurora me tarraca të shkallëzuara."
+    },
+    "hero": {
+      "eyebrow": "Arkitektura",
+      "title": "Çel nga toka.",
+      "intro": "Reeds Towers është konceptuar si një sistem që rritet nga trualli. Bazamenti trajtohet si shesh publik i peizazhuar mbi parcelën prej 5,050.7 m²; mbi të ngrihen dy kulla të përbëra nga elementë cilindrikë vertikalë, që në majë shkallëzohen në tarraca të gjelbëruara."
+    },
+    "concept": {
+      "eyebrow": "Koncepti · Blooming from the ground",
+      "title": "Nga trualli te kurora.",
+      "paragraphs": [
+        "Bazamenti. Kullat zënë 1,786.45 m² gjurmë ndërtimi, ose 35.37% të truallit. Pjesa tjetër, 64.63%, i lihet sheshit publik, rrugëve dhe gjelbërimit, me retail dhe kafene në kuotën ±0.00 të hapura drejt Rrugës së Kavajës.",
+        "Trupi. Çdo kullë përbëhet nga një grup cilindrash vertikalë me veshje terrazzo të bardhë dhe xham. Ndarja e volumit e kthen lartësinë prej 191.89 m në një siluetë të hollë dhe i jep çdo njësie banimi një segment fasade të lakuar me lozhë. Katet teknike 15 dhe 34 ritmojnë vertikalisht trupin e Kullës A.",
+        "Kurora. Në majë, sipërfaqja e katit zvogëlohet në shtatë nivele të shkallëzuara, nga 630 m² në 41 m², deri në kuotën +188.10 m. Çdo nivel ka tarracën e vet të gjelbëruar, me orientim drejt malit të Dajtit, qytetit ose Adriatikut."
+      ]
+    },
+    "facade": {
+      "eyebrow": "Fasada",
+      "title": "Fasadë double-skin: terrazzo dhe xham strukturor.",
+      "body": "Fasada përbëhet nga dy shtresa: veshje qeramike terrazzo e bardhë dhe xham strukturor nga dyshemeja në tavan. Hapjet vertikale të larta e çojnë ndriçimin natyral në thellësi të planimetrisë, ndërsa gjeometria cilindrike e hijezon sipërfaqen e xhamit gjatë ditës."
+    },
+    "landscape": {
+      "eyebrow": "Peizazhi",
+      "title": "Gjelbërim i vazhdueshëm, nga sheshi te kurora.",
+      "body": "Një sistem i vazhdueshëm gjelbërimi shtrihet nga sheshi publik deri te tarracat e kurorës: specie mesdhetare vendase, zona me hije, elementë uji dhe pergola metalike të bardha."
+    },
+    "captions": {
+      "plaza": "Sheshi publik në Rrugën e Kavajës",
+      "facade": "Fasada cilindrike me veshje terrazzo",
+      "terrace": "Tarracë e gjelbëruar në katet e banimit",
+      "crown": "Kurora e shkallëzuar e Kullës A",
+      "mountains": "Kullat përballë malit të Dajtit"
+    }
+  },
+  "towers": {
+    "meta": {
+      "title": "Kullat — Prerjet dhe programi i Reeds Towers",
+      "description": "Prerje skematike e Kullës A (55 kate) dhe Kullës B (36 kate): parkim, retail, zyra, hotel, banim dhe restorant panoramik, me sipërfaqet për kat."
+    },
+    "hero": {
+      "eyebrow": "Kullat",
+      "title": "Dy kulla, një program mixed-use.",
+      "intro": "Reeds Towers përbëhet nga Kulla A me 55 kate mbi tokë dhe Kulla B me 36 kate, të dyja mbi pesë nivele parkimi nëntokësor. Sipërfaqja totale e ndërtimit është 83,576.33 m², nga të cilat 63,619.33 m² mbi tokë."
+    },
+    "section": {
+      "eyebrow": "Prerje skematike",
+      "title": "Funksionet, kat pas kati.",
+      "body": "Të dyja kullat janë vizatuar në të njëjtën shkallë. Gjerësia e çdo kati është proporcionale me sipërfaqen e tij.",
+      "hint": "Kaloni kursorin ose prekni një kat ose një funksion.",
+      "floor": "Kati",
+      "level": "Niveli",
+      "towers": [
+        {
+          "id": "A",
+          "name": "Kulla A",
+          "meta": "55 kate mbi tokë · 5 nën tokë · 191.89 m",
+          "entities": [
+            { "key": "restaurant", "name": "Restorant panoramik & sky lounge", "floors": "Katet 48 – 54", "area": "7 nivele të shkallëzuara · 630 → 41 m²" },
+            { "key": "residential", "name": "Banim", "floors": "Katet 6 – 47", "area": "40 kate · 996 → 630 m² / kat" },
+            { "key": "technical", "name": "Kate teknike", "floors": "Katet 15 dhe 34", "area": "Instalime dhe sisteme teknike" },
+            { "key": "hotel", "name": "Hotel", "floors": "Katet 3 – 5", "area": "996 m² / kat" },
+            { "key": "office", "name": "Zyra & shërbime", "floors": "Katet 1 – 2", "area": "996 m² / kat" },
+            { "key": "ground", "name": "Holl, lobby hoteli & retail", "floors": "Kati 0", "area": "996 m²" },
+            { "key": "parking", "name": "Parkim & shërbime", "floors": "Nivelet −5 deri −1", "area": "2,515 m² / nivel" }
+          ]
+        },
+        {
+          "id": "B",
+          "name": "Kulla B",
+          "meta": "36 kate mbi tokë · 5 nën tokë",
+          "entities": [
+            { "key": "restaurant", "name": "Restorant panoramik", "floors": "Katet 30 – 35", "area": "6 nivele të shkallëzuara · 537 → 82 m²" },
+            { "key": "residential", "name": "Banim", "floors": "Katet 4 – 29", "area": "25 kate · 790 → 571 m² / kat" },
+            { "key": "technical", "name": "Kat teknik", "floors": "Kati 15", "area": "Instalime dhe sisteme teknike" },
+            { "key": "office", "name": "Zyra & shërbime", "floors": "Katet 1 – 3", "area": "790 m² / kat" },
+            { "key": "ground", "name": "Holl & shërbime", "floors": "Kati 0", "area": "790 m²" },
+            { "key": "parking", "name": "Parkim", "floors": "Nivelet −5 deri −1", "area": "1,476 m² / nivel" }
+          ]
+        }
+      ]
+    },
+    "features": [
+      { "title": "Hoteli", "body": "Katet 3 – 5 të Kullës A, me dhoma double dhe suita. Lobby i dedikuar prej 120 m² në katin 0 dhe ashensorë të veçantë për hotelin." },
+      { "title": "Restoranti panoramik", "body": "Kurorë me 7 nivele në Kullën A dhe 6 nivele në Kullën B. Çdo nivel ka tarracë të jashtme me orientim të ndryshëm mbi qytet." },
+      { "title": "Wellness", "body": "Pishinë infinity, spa dhe zona lounge, të projektuara si pjesë e programit të shërbimeve për banorët." },
+      { "title": "Zyra & retail", "body": "Kulla A: 2 kate zyrash me 996 m² secili. Kulla B: 3 kate zyrash me 790 m². Retail dhe kafene në katin 0, me akses direkt nga sheshi." }
+    ],
+    "gallery": [
+      { "alt": "Ambient ndenjeje me tavan të lakuar dhe xhamim panoramik", "caption": "Njësi banimi · ambienti i ndenjjes" },
+      { "alt": "Pishinë infinity me pamje nga Tirana", "caption": "Pishina infinity" },
+      { "alt": "Atriumi i hotelit në tone ari", "caption": "Atriumi i hotelit" },
+      { "alt": "Restorant panoramik në kurorën e kullës", "caption": "Restoranti panoramik" },
+      { "alt": "Zona spa dhe wellness", "caption": "Spa & wellness" },
+      { "alt": "Tabela Reeds Rooftop në dru të errët", "caption": "Reeds Rooftop" }
+    ]
+  },
+  "residences": {
+    "meta": {
+      "title": "Rezidencat — Çmimet dhe njësitë e banimit në Reeds Towers",
+      "description": "Njësi banimi 1+1 dhe 2+1 nga 57 deri 101 m² në Reeds Towers, Tiranë. Nga €3,800/m², 30% paradhënie në rezervim dhe 70% në 10 këste gjashtëmujore."
+    },
+    "hero": {
+      "eyebrow": "Rezidencat",
+      "title": "Njësi banimi me fasadë të lakuar dhe pamje panoramike.",
+      "intro": "Planimetria, e ndërtuar mbi elementë cilindrikë, i jep çdo njësie një segment fasade xhami të lakuar dhe një lozhë. Numri i njësive ndryshon sipas katit: nga 10 në katet e ulëta të Kullës A deri në 5 në katet e sipërme të Kullës B."
+    },
+    "from": "1+1 nga 57 m² · 2+1 deri në 101 m²",
+    "plansTitle": "Planimetri tip · Kulla A",
+    "plans": [
+      { "name": "Katet 6 – 8", "detail": "10 njësi · 1+1 66 m² · 2+1 76 – 101 m²", "alt": "Planimetria tip, katet 6 deri 8" },
+      { "name": "Katet 16 – 21", "detail": "8 njësi · 1+1 60.4 – 66 m² · 2+1 78 – 101 m²", "alt": "Planimetria tip, katet 16 deri 21" },
+      { "name": "Katet 40 – 41", "detail": "1+1 57 m² · 2+1 74 – 101 m²", "alt": "Planimetria tip, katet 40 deri 41" }
+    ],
+    "interiors": {
+      "eyebrow": "Interierët",
+      "title": "Ambiente të lakuara, ndriçim natyral, pamje të hapura.",
+      "body": "Ambienti i ndenjjes ndjek kurbën e fasadës, me tavan të rrumbullakosur dhe xhamim deri në 270°. Dhomat e gjumit dhe nyjet sanitare vendosen në segmentet e brendshme; çdo njësi ka lozhë të jashtme."
+    },
+    "pricing": {
+      "eyebrow": "Çmimet",
+      "title": "Çmimi për m², sipas katit.",
+      "body": "Çmimet vlejnë për njësitë e banimit në të dyja kullat dhe llogariten mbi sipërfaqen e njësisë.",
+      "perM2": "/ m²",
+      "bands": [
+        { "floors": "Deri në katin 12", "price": "€3,800", "note": "Kulla A: katet 6 – 12 · Kulla B: katet 4 – 12" },
+        { "floors": "Katet 13 – 30", "price": "€4,200", "note": "Kulla A: katet 13 – 30 · Kulla B: katet 13 – 29" },
+        { "floors": "Mbi katin 30", "price": "Me kërkesë", "note": "Kulla A: katet 31 – 47" }
+      ],
+      "plan": {
+        "eyebrow": "Mënyra e pagesës",
+        "title": "30% në rezervim, 70% me këste në 5 vjet.",
+        "steps": [
+          { "value": "30%", "title": "Paradhënie", "body": "Paguhet në nënshkrimin e kontratës së rezervimit." },
+          { "value": "70%", "title": "Këste", "body": "Ndahet në 10 këste të barabarta prej 7%, një çdo 6 muaj." },
+          { "value": "5 vjet", "title": "Afati", "body": "Kësti i dhjetë paguhet në muajin e 60-të nga nënshkrimi." }
+        ]
+      },
+      "calculator": {
+        "title": "Llogaritësi i pagesës",
+        "band": "Brezi i kateve",
+        "bands": ["Deri në katin 12 · €3,800 / m²", "Katet 13 – 30 · €4,200 / m²"],
+        "area": "Sipërfaqja e njësisë",
+        "presets": "Tipologji",
+        "total": "Çmimi total",
+        "down": "Paradhënie 30%",
+        "installment": "Kësti gjashtëmujor",
+        "schedule": "Grafiku i pagesave",
+        "signing": "Nënshkrimi",
+        "month": "Muaji",
+        "installmentN": "Kësti"
+      },
+      "disclaimer": "Shifrat janë indikative. Çmimi përfundimtar, sipërfaqja e njësisë dhe grafiku i pagesave përcaktohen në kontratën e rezervimit."
+    },
+    "amenities": {
+      "eyebrow": "Shërbimet",
+      "title": "Shërbime hoteli për banorët.",
+      "items": ["Pishinë infinity me pamje nga qyteti", "Spa & wellness", "Restorant panoramik dhe lounge në kurorë", "Concierge dhe shërbime hoteli", "Shesh publik i peizazhuar me kafene", "Pesë nivele parkimi nëntokësor"]
+    },
+    "gallery": [
+      { "alt": "Ambient ndenjeje me tavan të lakuar", "caption": "Ambienti i ndenjjes" },
+      { "alt": "Nyje sanitare me vaskë dhe pamje nga qyteti", "caption": "Banja" },
+      { "alt": "Lozhë me pamje mbi Tiranë", "caption": "Lozha" },
+      { "alt": "Tarracë e gjelbëruar", "caption": "Tarraca" }
+    ],
+    "disclaimer": "Planimetritë janë nga vizatimet e projektit të zbatimit. Lista përfundimtare e njësive dhe finiturat konfirmohen nga zyra e shitjeve.",
+    "cta": "Kërko disponueshmërinë"
+  },
+  "units": {
+    "meta": {
+      "title": "Njësitë — Zgjidh katin dhe njësinë në Reeds Towers",
+      "description": "Zgjidhni kullën, katin dhe njësinë konkrete në planimetrinë e projektit të zbatimit. Sipërfaqja, çmimi dhe plani i pagesës për çdo njësi banimi në Reeds Towers."
+    },
+    "hero": {
+      "eyebrow": "Njësitë",
+      "title": "Zgjidhni katin. Zgjidhni njësinë.",
+      "intro": "Çdo kat ka planimetrinë e vet dhe sipërfaqe të ndryshme njësish. Zgjidhni kullën dhe katin, pastaj njësinë direkt në planimetrinë e projektit të zbatimit."
+    },
+    "tower": "Kulla",
+    "unitsLabel": "njësi",
+    "chooseFloor": "Zgjidhni katin",
+    "floor": "Kati",
+    "plate": "Sipërfaqja e katit",
+    "onFloor": "njësi në këtë kat",
+    "prompt": "Zgjidhni një njësi në planimetri ose në listë.",
+    "table": { "nr": "Nr.", "type": "Tipologjia", "area": "Sipërfaqja", "price": "Çmimi" },
+    "detail": {
+      "code": "Njësia",
+      "type": "Tipologjia",
+      "area": "Sipërfaqja",
+      "pricePerM2": "Çmimi për m²",
+      "total": "Çmimi total",
+      "down": "Paradhënie 30% në rezervim",
+      "installment": "10 këste gjashtëmujore",
+      "reserve": "Rezervo këtë njësi",
+      "requestPrice": "Kërko çmimin e kësaj njësie",
+      "onRequest": "Me kërkesë"
+    },
+    "legend": { "low": "€3,800 / m² · deri në katin 12", "mid": "€4,200 / m² · katet 13 – 30", "request": "Me kërkesë · mbi katin 30" },
+    "typologies": { "1+1": "1+1 · një dhomë gjumi", "2+1": "2+1 · dy dhoma gjumi" },
+    "note": "Sipërfaqet dhe planimetritë janë nga projekti i zbatimit. Disponueshmëria e çdo njësie dhe çmimi përfundimtar konfirmohen nga zyra e shitjeve në kontratën e rezervimit.",
+    "cta": "Zgjidh njësinë tënde"
+  },
+  "company": {
+    "meta": {
+      "title": "Kompania — Glob3x Group",
+      "description": "Glob3x Group: marrës, zhvillues dhe zbatues i të gjitha projekteve të veta. Ndërtime shumëkatëshe në Tiranë që nga 2008 dhe kantiere ndërkombëtare, përfshirë Soçi 2014."
+    },
+    "hero": {
+      "eyebrow": "Kompania",
+      "title": "Glob3x Group. Marrës, zhvillues dhe zbatues.",
+      "intro": "Glob3x Group është kompani ndërtimi dhe zhvillimi me qendër në Tiranë. Që nga viti 2008 i merr përsipër, i zhvillon dhe i zbaton vetë projektet e saj, nga koordinimi i projektimit deri te ndërtimi dhe dorëzimi, në Shqipëri dhe jashtë saj."
+    },
+    "model": {
+      "eyebrow": "Modeli ynë",
+      "statement": "Ne jemi marrës dhe zhvillues i të gjitha projekteve tona, dhe i zbatojmë ato me ekipet tona të ndërtimit.",
+      "steps": [
+        { "n": "01", "title": "Marrja përsipër", "body": "Analiza teknike dhe ekonomike e projektit, përzgjedhja e projektuesve dhe koordinimi i procedurave të lejes së ndërtimit." },
+        { "n": "02", "title": "Zhvillimi", "body": "Planifikimi i fazave, menaxhimi i projektit, financimi dhe shitja e njësive." },
+        { "n": "03", "title": "Zbatimi", "body": "Ndërtimi me ekipet tona, mbikëqyrja teknike, kontrolli i cilësisë në kantier dhe dorëzimi i objektit." }
+      ]
+    },
+    "facts": [
+      { "value": "2008", "label": "Themeluar në Tiranë" },
+      { "value": "820+", "label": "Punëtorë shqiptarë në kantieret e Soçit, 2014" },
+      { "value": "6", "label": "Kantiere të programit olimpik të zbatuara" },
+      { "value": "191 m", "label": "Reeds Towers, projekti më i lartë i kompanisë" }
+    ],
+    "timeline": {
+      "eyebrow": "Historia",
+      "title": "Nga Tirana te kantieret ndërkombëtare.",
+      "items": [
+        { "year": "2008", "title": "Themelimi", "body": "Glob3x nis veprimtarinë në Tiranë si zhvillues dhe sipërmarrës ndërtimi i godinave shumëkatëshe për banim dhe shërbime." },
+        { "year": "2014", "title": "Soçi 2014", "body": "Glob3x Construction zbaton punime në programin e ndërtimit të Olimpiadës Dimërore Soçi 2014 me mbi 820 punëtorë shqiptarë: stadiumi olimpik, stacioni hekurudhor i Soçit, komplekse turistike, objekte social-kulturore, godinat ndihmëse të stadiumit Adler dhe komplekset në Krasnaya Polyana." },
+        { "year": "2015 – 2024", "title": "Portofoli në Tiranë", "body": "Godina banimi dhe shërbimesh në rrugët Ali Demi, Besa, Jordan Misja dhe Ramazan Bogdani, një hotel në Varosh dhe pjesëmarrje në programin e ndërtimit Skopje East Gate në Maqedoninë e Veriut." },
+        { "year": "2025 →", "title": "Reeds Towers", "body": "Kompleks mixed-use me dy kulla, 55 dhe 36 kate mbi tokë dhe 83,576 m² sipërfaqe ndërtimi, zhvilluar dhe zbatuar nga Glob3x Group." }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Portofoli",
+      "title": "Projekte të zgjedhura.",
+      "items": [
+        { "name": "Reeds Towers", "detail": "Rruga e Kavajës · 55 + 36 kate · mixed-use" },
+        { "name": "Glow Tower", "detail": "Tiranë · kullë banimi" },
+        { "name": "Avi Residence Boulevard", "detail": "Rruga Jordan Misja · 8 dhe 9 kate · banim & shërbime" },
+        { "name": "Art Residence", "detail": "Rruga Ali Demi · 4, 6 dhe 7 kate · banim & shërbime" },
+        { "name": "New Corner Residence", "detail": "Rruga Besa · 6 dhe 7 kate · banim & shërbime" },
+        { "name": "Lorden Residence", "detail": "Rruga Ramazan Bogdani · 6 dhe 7 kate · banim & shërbime" }
+      ]
+    },
+    "values": {
+      "eyebrow": "Si punojmë",
+      "items": [
+        { "title": "Një subjekt, një përgjegjësi", "body": "Projektimi, ndërtimi dhe dorëzimi koordinohen nga e njëjta kompani; afatet dhe cilësia kontrollohen drejtpërdrejt në kantier." },
+        { "title": "Inxhinieri shumëkatëshe", "body": "Reeds Towers arrin 191.89 m mbi tokë mbi pesë kate nëntokësore, me kate teknike në nivelet 15 dhe 34 dhe një kurorë të shkallëzuar që e zvogëlon sipërfaqen e katit nga 630 m² në 41 m²." },
+        { "title": "Transparencë teknike", "body": "Projekt zbatimi i plotë, planimetri të publikuara, çmim i qartë për m² dhe plan pagese i njëjtë për çdo blerës." }
+      ]
+    },
+    "cta": "Kontakto kompaninë"
+  },
+  "location": {
+    "meta": {
+      "title": "Vendndodhja — Rruga e Kavajës, Tiranë",
+      "description": "Reeds Towers në Rrugën e Kavajës, Tiranë: distancat nga aeroporti, qendra dhe bregdeti, dhe pse të investosh në kryeqytetin e Shqipërisë."
+    },
+    "hero": {
+      "eyebrow": "Vendndodhja",
+      "title": "Rruga e Kavajës, Tiranë.",
+      "intro": "Trualli prej 5,050.7 m² ndodhet në Rrugën e Kavajës, aksi perëndimor i kryeqytetit, në distancë ecjeje nga Sheshi Skënderbej, Parku i Madh dhe zona e biznesit."
+    },
+    "address": "Rruga e Kavajës, Tiranë 1001, Shqipëri",
+    "open": "Hape në Google Maps",
+    "distances": {
+      "eyebrow": "Distancat",
+      "items": [
+        { "label": "Sheshi Skënderbej", "value": "10 min" },
+        { "label": "Aeroporti Ndërkombëtar i Tiranës", "value": "20 min" },
+        { "label": "Durrësi dhe bregdeti i Adriatikut", "value": "40 min" },
+        { "label": "Teleferiku i Dajtit", "value": "25 min" }
+      ]
+    },
+    "why": {
+      "eyebrow": "Pse Tirana",
+      "title": "Kryeqyteti që ndryshon më shpejt në Evropë.",
+      "items": [
+        { "title": "Pozicion strategjik", "body": "20 minuta nga Aeroporti Ndërkombëtar i Tiranës, 40 minuta nga bregdeti i Adriatikut në Durrës, në aksin kryesor midis qendrës dhe unazës së re." },
+        { "title": "Ekonomi në rritje", "body": "Shqipëria është vend kandidat për BE, me rritje të qëndrueshme të PBB-së dhe vite rekord turizmi. Tregu i banimit në Tiranë mbetet nën nivelin e kryeqyteteve mesdhetare." },
+        { "title": "Klimë mesdhetare", "body": "Mbi 2,500 orë diell në vit, dimra të butë dhe mali i Dajtit 15 minuta larg." }
+      ]
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt — Zyra e shitjeve Reeds Towers",
+      "description": "Kërko disponueshmërinë, planimetritë ose një prezantim privat të Reeds Towers në Tiranë."
+    },
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Fol me zyrën e shitjeve.",
+      "intro": "Na tregoni çfarë kërkoni. Ju kthejmë përgjigje brenda një dite pune, në shqip, anglisht, italisht ose gjermanisht."
+    },
+    "name": "Emri i plotë",
+    "email": "Email",
+    "phone": "Telefon (me prefiksin e shtetit)",
+    "country": "Vendi i banimit",
+    "budget": "Buxheti",
+    "budgetOptions": ["€150,000 – €250,000", "€250,000 – €350,000", "€350,000 – €500,000", "Mbi €500,000", "Investitor / disa njësi"],
+    "interest": "Jam i interesuar për",
+    "interestOptions": ["Njësi 1+1", "Njësi 2+1", "Katet e sipërme (31 – 47)", "Hapësirë zyre", "Disa njësi / investim"],
+    "message": "Mesazhi",
+    "consent": "Pranoj që Glob3x Group të më kontaktojë në lidhje me Reeds Towers.",
+    "submit": "Dërgo kërkesën",
+    "sending": "Duke dërguar…",
+    "whatsapp": "Shkruaj në WhatsApp",
+    "whatsappText": "Përshëndetje, jam i interesuar për Reeds Towers në Tiranë. Mund të më dërgoni më shumë informacion?",
+    "success": "Faleminderit. Kërkesa juaj u mor dhe zyra e shitjeve do t'ju kontaktojë së shpejti.",
+    "error": "Diçka shkoi keq. Provoni përsëri ose na shkruani në WhatsApp.",
+    "invalid": "Ju lutem kontrolloni fushat e shënuara.",
+    "office": "Zyra e shitjeve",
+    "selectedUnit": "Njësia e zgjedhur",
+    "unitMessage": "Dëshiroj të rezervoj njësinë {code}: {type}, {area} m², Kulla {tower}, kati {floor}.",
+    "pricing": {
+      "eyebrow": "Çmimet",
+      "title": "Nga €3,800 / m²",
+      "body": "30% paradhënie në nënshkrimin e kontratës së rezervimit, 70% në 10 këste gjashtëmujore gjatë 5 vjetëve.",
+      "link": "Çmimet & llogaritësi i pagesës"
+    }
+  },
+  "footer": {
+    "developer": "Zhvillues & zbatues",
+    "group": "Faqja e grupit",
+    "contactLabel": "Kontakt",
+    "navigation": "Navigimi",
+    "disclaimer": "Reeds Towers zhvillohet dhe zbatohet nga Glob3x Group sh.p.k. Renderat janë përshtypje artistike; detajet mund të ndryshojnë gjatë ndërtimit.",
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "language": "Gjuha"
+  }
+}
