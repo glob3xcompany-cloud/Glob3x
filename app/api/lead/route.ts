@@ -2,11 +2,12 @@ import { appendFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { NextResponse, type NextRequest } from "next/server";
 import { leadFromFormData, validateLead, type LeadInput } from "@/lib/lead";
+import { mailConfigured, sendLeadMail } from "@/lib/mailer";
 
 /**
- * Lead intake for the group website.
- * - Production: forwards to LEAD_WEBHOOK_URL (CRM / Make / Zapier / n8n) as JSON.
- * - Development without a webhook: appends to .leads/leads.ndjson so leads are never lost while testing.
+ * Lead intake for the group website. Every accepted lead is first appended to LEAD_LOG_DIR/leads.ndjson,
+ * so it survives even if e-mail or the CRM is down, then e-mailed to the company inbox (SMTP_*) and,
+ * if configured, forwarded to LEAD_WEBHOOK_URL (CRM / Make / Zapier / n8n) as JSON.
  */
 export async function POST(request: NextRequest) {
   const fd = await request.formData();
@@ -29,31 +30,49 @@ export async function POST(request: NextRequest) {
     userAgent: request.headers.get("user-agent"),
   };
 
+  await store(record);
+
+  let delivered = false;
+
+  if (mailConfigured) {
+    try {
+      await sendLeadMail(record);
+      delivered = true;
+    } catch (error) {
+      console.error("Lead e-mail failed", error);
+    }
+  }
+
   const webhook = process.env.LEAD_WEBHOOK_URL;
   if (webhook) {
-    const res = await fetch(webhook, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(record),
-    });
-    if (!res.ok) {
-      console.error("Lead webhook failed", res.status, await res.text().catch(() => ""));
-      return NextResponse.json({ ok: false }, { status: 502 });
+    try {
+      const res = await fetch(webhook, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(record),
+      });
+      if (res.ok) delivered = true;
+      else console.error("Lead webhook failed", res.status, await res.text().catch(() => ""));
+    } catch (error) {
+      console.error("Lead webhook failed", error);
     }
-    return NextResponse.json({ ok: true });
   }
 
-  if (process.env.NODE_ENV !== "production") {
-    await storeLocally(record);
-    return NextResponse.json({ ok: true });
+  // In development neither is usually configured; the on-disk log is enough.
+  if (!delivered && process.env.NODE_ENV === "production" && (mailConfigured || webhook)) {
+    return NextResponse.json({ ok: false }, { status: 502 });
   }
 
-  console.error("LEAD_WEBHOOK_URL is not configured; lead dropped", record.email);
-  return NextResponse.json({ ok: false }, { status: 503 });
+  return NextResponse.json({ ok: true });
 }
 
-async function storeLocally(record: LeadInput & Record<string, unknown>) {
-  const dir = path.join(process.cwd(), ".leads");
-  await mkdir(dir, { recursive: true });
-  await appendFile(path.join(dir, "leads.ndjson"), JSON.stringify(record) + "\n", "utf8");
+/** Append-only log, so a lead is never lost even when delivery fails. */
+async function store(record: LeadInput & Record<string, unknown>) {
+  try {
+    const dir = process.env.LEAD_LOG_DIR ?? path.join(process.cwd(), ".leads");
+    await mkdir(dir, { recursive: true });
+    await appendFile(path.join(dir, "leads.ndjson"), JSON.stringify(record) + "\n", "utf8");
+  } catch (error) {
+    console.error("Lead log failed", error);
+  }
 }

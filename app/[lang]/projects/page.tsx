@@ -3,12 +3,15 @@ import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
 import { Agents } from "@/components/agents";
 import { CtaBand } from "@/components/cta-band";
+import { JsonLd } from "@/components/json-ld";
 import { PageHero } from "@/components/page-hero";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeading } from "@/components/section-heading";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { PORTFOLIO, SECTORS, STATUSES, projectsBySector } from "@/lib/projects";
+import { href } from "@/lib/routes";
+import { breadcrumbJsonLd } from "@/lib/seo";
 import { getDictionary, projectCopy } from "../dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -26,6 +29,13 @@ export default async function ProjectsPage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: dict.nav.home, path: href(locale) },
+          { name: dict.nav.projects, path: href(locale, "projects") },
+        ])}
+      />
+
       <PageHero eyebrow={t.hero.eyebrow} title={t.hero.title} intro={t.hero.intro} image="/media/projects/reeds-towers/night-aerial.webp" position="object-[50%_30%]">
         <dl className="animate-rise mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-paper/20 pt-6 [animation-delay:360ms]">
           <div>

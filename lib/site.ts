@@ -5,7 +5,7 @@ export const site = {
   legalName: "Glob3x Group sh.p.k.",
   /** Public origin, used for canonical URLs, hreflang and the sitemap. */
   domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://glob3x.com",
-  email: "info@glob3x.al",
+  email: "info@glob3x.com",
   /** Sales line (Instagram bio). E.164 without "+", used for the WhatsApp deep link. */
   whatsapp: "355697003218",
   phoneDisplay: "+355 69 700 3218",
@@ -23,8 +23,8 @@ export const site = {
   foundingYear: 2008,
   /** Only verified profiles. */
   social: [{ name: "Instagram", url: "https://www.instagram.com/glob3xgroup/" }],
-  /** Dedicated Reeds Towers microsite (set NEXT_PUBLIC_REEDS_URL in production). */
-  reedsSite: process.env.NEXT_PUBLIC_REEDS_URL ?? "http://localhost:3000",
+  /** Dedicated Reeds Towers site, served as a section of this domain. Override with NEXT_PUBLIC_REEDS_URL in dev. */
+  reedsSite: process.env.NEXT_PUBLIC_REEDS_URL ?? "/reeds",
   skelaFlex: {
     phones: ["+355 69 608 6886", "+355 69 401 1207"],
     email: "flexskela@gmail.com",

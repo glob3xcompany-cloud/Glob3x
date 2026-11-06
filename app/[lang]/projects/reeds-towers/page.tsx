@@ -17,7 +17,7 @@ import { TowerSections } from "@/components/tower-sections";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { FLAGSHIP, PROJECTS } from "@/lib/projects";
-import { REEDS_SLUG, href, interestIndex, projectHref } from "@/lib/routes";
+import { REEDS_SLUG, href, interestIndex, projectHref, reedsSiteHref } from "@/lib/routes";
 import { site, whatsappUrl } from "@/lib/site";
 import { getDictionary, projectCopy } from "../../dictionaries";
 
@@ -56,7 +56,7 @@ export default async function ReedsPage() {
   const nextCopy = projectCopy(dict, next.slug);
   const interest = dict.contact.interestOptions[interestIndex(project)];
   const contactHref = `${href(locale, "contact")}?interest=${encodeURIComponent(interest)}`;
-  const microsite = `${site.reedsSite}/${locale === "sq" ? "sq" : "en"}`;
+  const microsite = reedsSiteHref(site.reedsSite, locale);
 
   return (
     <>
@@ -222,7 +222,7 @@ export default async function ReedsPage() {
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-paper/70">{t.residences.pricing.body}</p>
             </Reveal>
             <Reveal delay={120} className="lg:col-span-4 lg:justify-self-end">
-              <ArrowLink href={`${microsite}/residences`} external tone="dark">
+              <ArrowLink href={reedsSiteHref(site.reedsSite, locale, "residences")} external tone="dark">
                 {t.residences.pricing.link}
               </ArrowLink>
             </Reveal>

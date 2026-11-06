@@ -2,13 +2,23 @@
   "site": {
     "name": "Glob3x Group",
     "title": "Glob3x Group — Sviluppatore e impresa generale, Tirana",
-    "description": "Glob3x Group sviluppa e costruisce a Tirana dal 2008: torri, residenze, hospitality e grandi programmi di costruzione, dai cantieri olimpici di Sochi 2014 alle Reeds Towers di 191,89 m."
+    "description": "Glob3x Group sviluppa e costruisce a Tirana dal 2008: torri, residenze, hospitality e grandi programmi di costruzione, dai cantieri olimpici di Sochi 2014 alle Reeds Towers di 191,89 m.",
+    "keywords": [
+      "impresa di costruzioni Tirana",
+      "general contractor Albania",
+      "sviluppatore immobiliare Tirana",
+      "appartamenti in vendita Tirana",
+      "torri residenziali Albania",
+      "Reeds Towers",
+      "Glob3x Group"
+    ]
   },
   "nav": {
     "home": "Home",
     "group": "Glob3x Group",
     "projects": "Progetti",
     "towers": "Torri",
+    "reeds": "Reeds Towers",
     "construction": "Costruzioni",
     "contact": "Contatti",
     "cta": "Contatti",

@@ -15,7 +15,8 @@ import { Timeline } from "@/components/timeline";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { FLAGSHIP, type Project, TOWERS, getProject, projectsByStatus } from "@/lib/projects";
-import { REEDS_SLUG, href, projectHref } from "@/lib/routes";
+import { REEDS_SLUG, href, projectHref, reedsSiteHref } from "@/lib/routes";
+import { site } from "@/lib/site";
 import { type Dictionary, getDictionary, projectCopy } from "./dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -27,8 +28,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const PILLAR_IMAGES: Record<string, string> = {
   construction: "/media/group/site-cranes-dusk.webp",
-  realestate: "/media/projects/lorden-residence/building-1.webp",
-  towers: "/media/projects/reeds-towers/tower-portrait.webp",
+  realestate: "/media/projects/lorden-residence/render-court.webp",
+  towers: "/media/projects/reeds-towers/night-tower.webp",
   hospitality: "/media/projects/luxury-hotel-peze/pool-wide.webp",
   skela: "/media/skela-flex/facade-scaffold.webp",
 };
@@ -145,9 +146,12 @@ export default async function HomePage() {
                 ))}
               </dl>
             </Reveal>
-            <Reveal delay={200} className="mt-10">
-              <ArrowLink href={projectHref(locale, FLAGSHIP.slug)} tone="dark">
+            <Reveal delay={200} className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <Link href={projectHref(locale, FLAGSHIP.slug)} className="btn-primary">
                 {t.flagship.link}
+              </Link>
+              <ArrowLink href={reedsSiteHref(site.reedsSite, locale)} external tone="dark">
+                {dict.reeds.microsite}
               </ArrowLink>
             </Reveal>
           </div>

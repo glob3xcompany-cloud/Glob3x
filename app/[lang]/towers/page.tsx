@@ -6,6 +6,7 @@ import { lang } from "next/root-params";
 import { ArrowLink } from "@/components/arrow-link";
 import { CtaBand } from "@/components/cta-band";
 import { FactList } from "@/components/fact-list";
+import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/motion/reveal";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
@@ -16,7 +17,8 @@ import { formatNumber } from "@/lib/format";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { TOWERS, factNumber } from "@/lib/projects";
-import { projectHref } from "@/lib/routes";
+import { href, projectHref } from "@/lib/routes";
+import { breadcrumbJsonLd } from "@/lib/seo";
 import { getDictionary, projectCopy } from "../dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -51,11 +53,19 @@ export default async function TowersPage() {
       floors: floors ? ("v" in floors ? floors.v : "n" in floors ? String(floors.n) : undefined) : undefined,
       gfa: factNumber(p, "gfa"),
       kicker: copy.kicker,
+      elevation: p.elevation,
     };
   });
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: dict.nav.home, path: href(locale) },
+          { name: dict.nav.towers, path: href(locale, "towers") },
+        ])}
+      />
+
       <PageHero eyebrow={t.hero.eyebrow} title={t.hero.title} intro={t.hero.intro} image="/media/projects/reeds-towers/night-tower.webp" position="object-[50%_40%]" />
 
       <Stats items={stats} locale={locale} columns={3} />

@@ -52,6 +52,13 @@ export type Distance = { place: PlaceKey; v: string };
 
 export type Media = { src: string; w: number; h: number; position?: string };
 
+/**
+ * A render of the building together with where the building sits inside it, as fractions of the
+ * image box (`top`/`base` vertically, `cx`/`width` horizontally). The tower comparison uses this to
+ * draw the real buildings at one shared metric scale instead of abstract blocks.
+ */
+export type Elevation = Media & { top: number; base: number; cx: number; width: number };
+
 export type Project = {
   slug: string;
   sector: Sector;
@@ -67,6 +74,8 @@ export type Project = {
   logo?: string;
   hero: Media;
   cover: Media;
+  /** Towers only: the render used in the shared-scale height comparison. */
+  elevation?: Elevation;
   gallery: Media[];
   plans?: Media[];
   /** Muted background loop for the hero; `film` is the full-quality cut opened by the "watch film" button. */
@@ -89,7 +98,8 @@ export const PROJECTS: readonly Project[] = [
     flagship: true,
     externalUrl: "reeds",
     hero: m(`${R}/reeds-towers/hero-aerial.webp`, 2560, 1429),
-    cover: m(`${R}/reeds-towers/towers-mountains.webp`, 2000, 1407),
+    cover: m(`${R}/reeds-towers/tower-portrait.webp`, 1378, 2000, "object-[50%_30%]"),
+    elevation: { src: `${R}/reeds-towers/tower-portrait.webp`, w: 1378, h: 2000, top: 0.015, base: 0.845, cx: 0.5, width: 0.26 },
     video: { src: `${R}/reeds-towers/hero-loop.mp4`, poster: `${R}/reeds-towers/hero-poster.jpg`, film: `${R}/reeds-towers/film-720.mp4` },
     gallery: [
       m(`${R}/reeds-towers/dusk.webp`, 2400, 1698),
@@ -139,6 +149,7 @@ export const PROJECTS: readonly Project[] = [
     country: "AL",
     hero: m(`${R}/glow-tower/hero.webp`, 2400, 1743),
     cover: m(`${R}/glow-tower/tower.webp`, 1800, 2250, "object-top"),
+    elevation: { src: `${R}/glow-tower/tower.webp`, w: 1800, h: 2250, top: 0.152, base: 0.885, cx: 0.5, width: 0.5 },
     gallery: [
       m(`${R}/glow-tower/tower-render.webp`, 1250, 1791),
       m(`${R}/glow-tower/colonnade.webp`, 2400, 1250),
@@ -176,6 +187,7 @@ export const PROJECTS: readonly Project[] = [
     country: "AL",
     hero: m(`${R}/urban-millefeuille/towers-2.webp`, 2400, 2353, "object-[50%_30%]"),
     cover: m(`${R}/urban-millefeuille/tower.webp`, 1676, 2400, "object-top"),
+    elevation: { src: `${R}/urban-millefeuille/tower.webp`, w: 1676, h: 2400, top: 0.215, base: 0.825, cx: 0.48, width: 0.23 },
     gallery: [
       m(`${R}/urban-millefeuille/towers-2.webp`, 2400, 2353),
       m(`${R}/urban-millefeuille/renders.webp`, 1451, 2078),
@@ -204,15 +216,14 @@ export const PROJECTS: readonly Project[] = [
     country: "AL",
     forSale: true,
     logo: `${R}/lorden-residence/logo.webp`,
-    hero: m(`${R}/lorden-residence/hero.webp`, 2400, 1440),
-    cover: m(`${R}/lorden-residence/building-1.webp`, 2000, 1200),
+    hero: m(`${R}/lorden-residence/building-3.webp`, 2000, 1200),
+    cover: m(`${R}/lorden-residence/aerial-render.webp`, 1646, 1397),
     gallery: [
       m(`${R}/lorden-residence/render-court.webp`, 1497, 1690),
       m(`${R}/lorden-residence/aerial-render.webp`, 1646, 1397),
       m(`${R}/lorden-residence/night-aerial.webp`, 1354, 2400),
       m(`${R}/lorden-residence/building-3.webp`, 2000, 1200),
       m(`${R}/lorden-residence/night.webp`, 2000, 1200),
-      m(`${R}/lorden-residence/facade.webp`, 2000, 1200),
       m(`${R}/lorden-residence/site-bw.webp`, 1380, 2259),
       m(`${R}/lorden-residence/site-bw-2.webp`, 1837, 1131),
       m(`${R}/lorden-residence/plan-3d-1.webp`, 1080, 1080),
@@ -275,14 +286,11 @@ export const PROJECTS: readonly Project[] = [
     forSale: true,
     logo: `${R}/avi-residence-boulevard/logo.webp`,
     hero: m(`${R}/avi-residence-boulevard/hero.webp`, 2400, 1680),
-    cover: m(`${R}/avi-residence-boulevard/facade-2.webp`, 2000, 1400),
+    cover: m(`${R}/avi-residence-boulevard/facade-photo.webp`, 1098, 1576, "object-[50%_35%]"),
     gallery: [
       m(`${R}/avi-residence-boulevard/render.webp`, 2400, 1462),
       m(`${R}/avi-residence-boulevard/garden-aerial.webp`, 1418, 2009),
       m(`${R}/avi-residence-boulevard/facade-photo.webp`, 1098, 1576),
-      m(`${R}/avi-residence-boulevard/facade-1.webp`, 2000, 1125),
-      m(`${R}/avi-residence-boulevard/facade-3.webp`, 2000, 1400),
-      m(`${R}/avi-residence-boulevard/facade-4.webp`, 2000, 1400),
       m(`${R}/avi-residence-boulevard/construction.webp`, 836, 1514),
       m(`${R}/avi-residence-boulevard/construction-2.webp`, 860, 867),
     ],

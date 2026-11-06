@@ -3,6 +3,9 @@ import type { Project } from "./projects";
 
 export const REEDS_SLUG = "reeds-towers";
 
+/** Reeds Towers has a dedicated site of its own, served as a section of this domain. */
+export const reedsSiteHref = (base: string, locale: Locale, slug?: string) => `${base}/${locale === "sq" ? "sq" : "en"}${slug ? `/${slug}` : ""}`;
+
 /** Index into contact.interestOptions for a project, so the contact form preselection follows the locale. */
 export function interestIndex(project: Project): number {
   if (project.slug === REEDS_SLUG) return 2;
@@ -19,6 +22,8 @@ export const NAV = [
   { key: "group", slug: "group" },
   { key: "projects", slug: "projects" },
   { key: "towers", slug: "towers" },
+  // The flagship gets its own entry: it is the project the company leads with.
+  { key: "reeds", slug: `projects/${REEDS_SLUG}` },
   { key: "construction", slug: "construction" },
 ] as const;
 

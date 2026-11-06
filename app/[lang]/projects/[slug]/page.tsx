@@ -8,11 +8,13 @@ import { DistanceList, FactList } from "@/components/fact-list";
 import { FilmDialog } from "@/components/film-dialog";
 import { Gallery } from "@/components/gallery";
 import { HeroVideo } from "@/components/hero-video";
+import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/motion/reveal";
 import { StatusBadge } from "@/components/status-badge";
 import { isLocale } from "@/lib/i18n";
 import { projectMotion } from "@/lib/motion";
 import { pageMeta } from "@/lib/page-meta";
+import { breadcrumbJsonLd, projectJsonLd } from "@/lib/seo";
 import { PROJECTS, getProject } from "@/lib/projects";
 import { REEDS_SLUG, href, interestIndex, projectHref } from "@/lib/routes";
 import { whatsappUrl } from "@/lib/site";
@@ -61,6 +63,17 @@ async function ProjectContent({ params }: Pick<PageProps<"/[lang]/projects/[slug
 
   return (
     <>
+      <JsonLd
+        data={[
+          projectJsonLd(project, copy, locale, projectHref(locale, slug)),
+          breadcrumbJsonLd([
+            { name: dict.nav.home, path: href(locale) },
+            { name: dict.nav.projects, path: href(locale, "projects") },
+            { name: copy.name, path: projectHref(locale, slug) },
+          ]),
+        ]}
+      />
+
       {/* Hero */}
       <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden bg-ink text-paper">
         {motion ? (
