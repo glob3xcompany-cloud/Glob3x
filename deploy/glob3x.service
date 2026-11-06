@@ -11,7 +11,7 @@ Environment=NODE_ENV=production
 Environment=PORT=3001
 Environment=HOSTNAME=127.0.0.1
 EnvironmentFile=-/var/www/glob3x/app/.env.production
-ExecStart=/usr/bin/node node_modules/next/dist/bin/next start -p 3001 -H 127.0.0.1
+ExecStart=/usr/local/bin/node node_modules/next/dist/bin/next start -p 3001 -H 127.0.0.1
 Restart=on-failure
 RestartSec=5
 # Hardening

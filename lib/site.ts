@@ -3,7 +3,8 @@ export const site = {
   /** "Glob3x Group" is the company name: it is never translated or shortened in copy. */
   company: "Glob3x Group",
   legalName: "Glob3x Group sh.p.k.",
-  domain: "https://glob3x.al",
+  /** Public origin, used for canonical URLs, hreflang and the sitemap. */
+  domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://glob3x.com",
   email: "info@glob3x.al",
   /** Sales line (Instagram bio). E.164 without "+", used for the WhatsApp deep link. */
   whatsapp: "355697003218",

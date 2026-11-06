@@ -14,7 +14,7 @@
 set -euo pipefail
 
 REPO_URL="${1:-https://github.com/glob3xcompany-cloud/Glob3x.git}"
-DOMAIN="${2:-glob3x.al}"
+DOMAIN="${2:-glob3x.com}"
 LE_EMAIL="${3:-glob3xcompany@gmail.com}"
 APP_USER="glob3x"
 APP_HOME="/var/www/glob3x"
