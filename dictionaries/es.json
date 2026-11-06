@@ -131,20 +131,19 @@
     ],
     "pillars": {
       "eyebrow": "Glob3x Group",
-      "title": "Una empresa. Cinco pilares. Cada fase de un edificio.",
+      "title": "Una empresa. Cuatro pilares. Cada fase de un edificio.",
       "body": "Glob3x Group promueve, construye, equipa y opera. Controlar toda la cadena es lo que permite a la empresa garantizar calidad, plazos y precio en cada proyecto que firma.",
       "items": [
         { "key": "construction", "title": "Glob3x Construction", "body": "Contratista general desde 2008: estructuras de hormigón armado, edificios residenciales y de uso mixto en altura, y grandes programas ejecutados en Sochi y Skopie.", "href": "construction" },
         { "key": "realestate", "title": "Glob3x Real Estate", "body": "Promoción y venta directa de residencias en los corredores de crecimiento de Tirana: las calles Ramazan Bogdani, Besa, Jordan Misja y Ali Demi.", "href": "projects#residences" },
         { "key": "towers", "title": "Torres", "body": "Desarrollos de uso mixto en altura: Reeds Towers (191,89 m), Glow Tower (95,50 m) y Urban Millefeuille (95 m), tres proyectos verticales para la capital.", "href": "towers" },
-        { "key": "hospitality", "title": "Hostelería y costa", "body": "Un hotel de lujo en Pezë, al suroeste de Tirana, y tres villas junto al mar en Drymades, en la costa jónica.", "href": "projects#hospitality" },
-        { "key": "skela", "title": "Skela Flex", "body": "Alquiler de andamios y equipos de seguridad en obra con supervisión técnica, para las obras de la empresa y para contratistas terceros.", "href": "construction#skela-flex" }
+        { "key": "hospitality", "title": "Hostelería y costa", "body": "Un hotel de lujo en Pezë, al suroeste de Tirana, y tres villas junto al mar en Drymades, en la costa jónica.", "href": "projects#hospitality" }
       ]
     },
     "flagship": {
       "eyebrow": "Proyecto insignia · Reeds Towers",
       "title": "191,89 metros. Dos torres. Una dirección en la Rruga e Kavajës.",
-      "body": "Aprobado por el Consejo Nacional del Territorio (decisión n.º 28, 18 de abril de 2025): 55 y 36 plantas sobre rasante sobre cinco niveles subterráneos, con residencias, hotel, oficinas, comercio y un restaurante panorámico en las plantas 48 a 54. Promovido y construido por Glob3x Group.",
+      "body": "Cincuenta y cinco y treinta y seis plantas sobre rasante sobre cinco niveles subterráneos, con residencias, hotel, oficinas, comercio y un restaurante panorámico en las plantas 48 a 54. Promovido y construido por Glob3x Group.",
       "link": "Descubrir Reeds Towers",
       "facts": [
         { "value": "55 + 36", "label": "plantas sobre rasante" },
@@ -213,7 +212,7 @@
     },
     "hero": {
       "eyebrow": "Glob3x Group",
-      "title": "Una empresa, cinco pilares, un único estándar.",
+      "title": "Una empresa, cuatro pilares, un único estándar.",
       "intro": "Glob3x Group es una familia de empresas que promueven, construyen, equipan y operan edificios. Cada proyecto de esta web indica exactamente qué papel desempeñó la empresa."
     },
     "manifesto": {
@@ -227,20 +226,19 @@
     },
     "companies": {
       "eyebrow": "Empresas",
-      "title": "Los cinco pilares",
+      "title": "Los cuatro pilares",
       "items": [
         { "title": "Glob3x Construction", "kicker": "Contratista general · desde 2008", "body": "Estructuras de hormigón armado y edificios residenciales y de uso mixto en altura en Tirana; programas a gran escala en Sochi (2014) y Skopie (2019).", "href": "construction" },
         { "title": "Glob3x Real Estate", "kicker": "Promoción y venta directa", "body": "Art Residence, New Corner Residence, Avi Residence Boulevard y Lorden Residence: viviendas en los corredores de crecimiento de Tirana, vendidas directamente por los agentes de la empresa.", "href": "projects#residences" },
         { "title": "Torres", "kicker": "Desarrollo de uso mixto en altura", "body": "Reeds Towers, Glow Tower y Urban Millefeuille: 191,89 m, 95,50 m y 95 m de residencias, hoteles, oficinas y comercio a lo largo de los ejes principales de la capital.", "href": "towers" },
-        { "title": "Hostelería y costa", "kicker": "Hotel y villas", "body": "Un hotel de lujo con piscina en el patio, restaurante y spa en Pezë, y tres villas junto al mar en Drymades, en la costa jónica.", "href": "projects#hospitality" },
-        { "title": "Skela Flex", "kicker": "Andamios y equipos de obra", "body": "Alquiler de andamios, redes de seguridad y equipos de obra con supervisión técnica, desde la base de la empresa en la calle Besa.", "href": "construction#skela-flex" }
+        { "title": "Hostelería y costa", "kicker": "Hotel y villas", "body": "Un hotel de lujo con piscina en el patio, restaurante y spa en Pezë, y tres villas junto al mar en Drymades, en la costa jónica.", "href": "projects#hospitality" }
       ]
     },
     "values": {
       "eyebrow": "Cómo trabajamos",
       "title": "Cuatro compromisos de ingeniería",
       "items": [
-        { "title": "Licencias antes que promesas", "body": "La situación legal de cada promoción se publica. Reeds Towers cuenta con la aprobación completa del Consejo Nacional del Territorio: decisión n.º 28 de 18 de abril de 2025." },
+        { "title": "Licencias antes que promesas", "body": "Las licencias de obras se obtienen antes de iniciar la comercialización y la situación legal de cada promoción se publica en su página de proyecto." },
         { "title": "Un único responsable", "body": "Promotora, constructora y vendedora son la misma empresa en la mayoría de los proyectos. Plazos y calidad se controlan directamente en obra, no a través de intermediarios." },
         { "title": "Medido, no descrito", "body": "Cada página de proyecto indica plantas, sótanos, superficie construida bruta y programa. Las cifras proceden de los documentos de proyecto, no del marketing." },
         { "title": "Capacidad de ejecución internacional", "body": "Cientos de cuadrillas movilizadas a través de fronteras, con plazos fijados por el calendario olímpico. La misma organización de obra dirige hoy las torres de la empresa en Tirana." }
@@ -301,7 +299,7 @@
         "name": "Reeds Towers",
         "kicker": "Rruga e Kavajës · Tirana",
         "tagline": "Donde la visión toca el cielo.",
-        "intro": "Dos torres de 55 y 36 plantas sobre rasante que alcanzan 191,89 m sobre la Rruga e Kavajës, sobre cinco niveles subterráneos de más de 2.500 m² cada uno. Aprobado por el Consejo Nacional del Territorio, decisión n.º 28 de 18 de abril de 2025.",
+        "intro": "Dos torres de 55 y 36 plantas sobre rasante que alcanzan 191,89 m sobre la Rruga e Kavajës, sobre cinco niveles subterráneos de más de 2.500 m² cada uno.",
         "body": [
           "Reeds Towers reúne, en 83.576 m² de superficie construida bruta, un centro de negocios de unos 996 m² por planta en la planta baja y las dos primeras plantas, plantas hoteleras 3 a 5 de unos 1.000 m² cada una, residencias de la planta 6 a la 47 y un restaurante panorámico en las plantas 48 a 54 con vistas de 360° sobre Tirana, el monte Dajti y el Adriático.",
           "Las torres se componen de elementos cilíndricos verticales revestidos de terrazo blanco y muro cortina estructural. Las viviendas van desde apartamentos 1+1 de unos 57 m² hasta apartamentos 2+1 de unos 101 m², cada uno con un segmento de fachada acristalada curva y una logia.",
@@ -561,13 +559,13 @@
   },
   "construction": {
     "meta": {
-      "title": "Construcción — Glob3x Construction y Skela Flex",
-      "description": "Glob3x Construction: contratista general desde 2008 con experiencia en el programa olímpico de Sochi y en un centro comercial de 44.000 m² en Skopie. Skela Flex: alquiler de andamios en Tirana."
+      "title": "Construcción — Glob3x Construction",
+      "description": "Glob3x Construction: contratista general desde 2008 con experiencia en el programa olímpico de Sochi y en un centro comercial de 44.000 m² en Skopie."
     },
     "hero": {
       "eyebrow": "Glob3x Construction",
       "title": "Los equipos detrás del skyline.",
-      "intro": "Contratista general desde 2008. Edificios en altura en Tirana, obras del programa olímpico en Sochi, un centro comercial de 44.000 m² en Skopie. Además de Skela Flex, el negocio de andamios de la empresa."
+      "intro": "Contratista general desde 2008. Edificios en altura en Tirana, obras del programa olímpico en Sochi, un centro comercial de 44.000 m² en Skopie."
     },
     "facts": [
       { "value": "2008", "label": "Primeros edificios en altura en Tirana" },
@@ -581,8 +579,7 @@
       "items": [
         { "title": "Contratista general", "body": "Edificios residenciales y de uso mixto en altura en Tirana, ejecutados como promotora-constructora o para clientes terceros." },
         { "title": "Estructuras de hormigón armado", "body": "Cimentaciones, pórticos, núcleos y forjados a gran escala, con la organización de obra probada en los programas de Sochi y Skopie." },
-        { "title": "Grandes programas en el extranjero", "body": "Movilización de cientos de trabajadores y encargados para programas con plazo fijo, desde el calendario olímpico hasta centros comerciales regionales." },
-        { "title": "Andamios y equipos de obra", "body": "A través de Skela Flex: alquiler de andamios, redes de seguridad y supervisión técnica para las obras de la empresa y de otros contratistas." }
+        { "title": "Grandes programas en el extranjero", "body": "Movilización de cientos de trabajadores y encargados para programas con plazo fijo, desde el calendario olímpico hasta centros comerciales regionales." }
       ]
     },
     "references": {
@@ -602,14 +599,6 @@
         "body": "Art Residence (Ali Demi), New Corner Residence (Besa), Lorden Residence (Ramazan Bogdani) y el hotel de lujo de Pezë, todos construidos por Glob3x Construction para Glob3x Real Estate."
       }
     },
-    "skela": {
-      "eyebrow": "Skela Flex",
-      "title": "Su socio para construir con seguridad.",
-      "body": "Skela Flex alquila andamios y equipos de seguridad en obra y acompaña cada trabajo con supervisión técnica, desde una sola fachada hasta el envolvente completo de una torre. Con sede en la calle Besa de Tirana, atiende obras en todo el país.",
-      "items": ["Andamios de fachada y torres de andamio", "Redes de seguridad y protección de bordes", "Entrega, montaje y desmontaje", "Inspección y asesoramiento en obra"],
-      "contact": "Contactos de Skela Flex",
-      "instagram": "Skela Flex en Instagram"
-    },
     "cta": {
       "title": "¿Tiene una obra, una estructura o una licitación?",
       "body": "Envíenos los planos y el calendario. Le responderemos con un plan de obra realista y un precio que podemos mantener.",
@@ -626,20 +615,19 @@
     "hero": {
       "eyebrow": "Contacto",
       "title": "Hablemos.",
-      "intro": "Díganos qué busca: una vivienda, una inversión, un socio constructor o andamios para su obra. La persona adecuada le responderá en un día laborable."
+      "intro": "Díganos qué busca: una vivienda, una inversión o un socio constructor. La persona adecuada le responderá en un día laborable."
     },
     "office": "Sede central",
     "hours": "Lunes – viernes, 9:00 – 18:00",
     "directions": "Abrir en Google Maps",
     "agentsTitle": "Agentes de ventas",
     "agentsBody": "Líneas directas con las personas que venden nuestras residencias.",
-    "skelaTitle": "Skela Flex",
     "name": "Nombre completo",
     "email": "Correo electrónico",
     "phone": "Teléfono (con prefijo del país)",
     "country": "País",
     "interest": "Me interesa",
-    "interestOptions": ["Comprar una vivienda", "Un local comercial", "Reeds Towers", "Torres e inversión", "Villas y hostelería", "Servicios de construcción", "Alquiler de andamios (Skela Flex)", "Otro"],
+    "interestOptions": ["Comprar una vivienda", "Un local comercial", "Reeds Towers", "Torres e inversión", "Villas y hostelería", "Servicios de construcción", "Otro"],
     "message": "Mensaje (opcional)",
     "consent": "Acepto que Glob3x Group se ponga en contacto conmigo en relación con mi solicitud. Mis datos no se compartirán con terceros.",
     "submit": "Enviar solicitud",

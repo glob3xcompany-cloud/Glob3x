@@ -51,14 +51,6 @@ export default async function ContactPage() {
                   {t.directions} →
                 </a>
               </div>
-              <div className="grid gap-2 text-paper/70">
-                <p className="eyebrow text-paper/50">{t.skelaTitle}</p>
-                {site.skelaFlex.phones.map((p) => (
-                  <a key={p} href={telHref(p)} className="hover:text-paper">{p}</a>
-                ))}
-                <a href={`mailto:${site.skelaFlex.email}`} className="hover:text-paper">{site.skelaFlex.email}</a>
-                <span>{site.skelaFlex.address}</span>
-              </div>
             </Reveal>
           </div>
           <div className="relative min-h-[20rem] lg:col-span-5">

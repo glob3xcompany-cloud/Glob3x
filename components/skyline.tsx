@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useId, useState } from "react";
 import { formatNumber } from "@/lib/format";
-import type { Elevation } from "@/lib/projects";
+import type { Massing } from "@/lib/projects";
 import { useInView } from "./motion/use-in-view";
 
 export type SkylineTower = {
@@ -14,7 +14,7 @@ export type SkylineTower = {
   floors?: string;
   gfa?: number;
   kicker: string;
-  elevation?: Elevation;
+  massing?: Massing;
 };
 
 const W = 1000;
@@ -25,24 +25,15 @@ const REF_HEIGHT = 32; // typical 10-storey Tirana block
 const GRID = [50, 100, 150];
 
 /**
- * Each tower is its own render, cropped to the building and drawn at one shared metric scale, so the
- * comparison stays readable as buildings rather than abstract blocks. `elevation` says where the
- * building sits inside the render; everything else follows from the real height in metres.
+ * Each tower is a background-free miniature whose image box is the building itself, so its height in
+ * metres is the only input: the width follows from the aspect ratio and every tower ends up at the
+ * same metric scale, standing on the shared ground line.
  */
 function geometry(tower: SkylineTower, cx: number) {
   const h = tower.height * SCALE;
   const top = BASE - h;
-  const e = tower.elevation;
-  if (!e) return { h, top, w: 70, image: null };
-
-  const imageH = h / (e.base - e.top);
-  const imageW = imageH * (e.w / e.h);
-  return {
-    h,
-    top,
-    w: e.width * imageW,
-    image: { x: cx - e.cx * imageW, y: top - e.top * imageH, width: imageW, height: imageH, src: e.src },
-  };
+  const w = tower.massing ? h * (tower.massing.w / tower.massing.h) : 70;
+  return { h, top, w, x: cx - w / 2, src: tower.massing?.src };
 }
 
 export function Skyline({ towers, labels, locale }: { towers: SkylineTower[]; labels: { reference: string; height: string; floors: string; gfa: string }; locale: string }) {
@@ -60,7 +51,7 @@ export function Skyline({ towers, labels, locale }: { towers: SkylineTower[]; la
             return (
               <clipPath key={t.slug} id={`${uid}-${t.slug}`}>
                 <rect
-                  x={slot * (i + 1) - g.w / 2}
+                  x={g.x}
                   y={g.top}
                   width={g.w}
                   height={g.h}
@@ -99,27 +90,19 @@ export function Skyline({ towers, labels, locale }: { towers: SkylineTower[]; la
                 style={{ opacity: active && !on ? 0.45 : 1, transition: "opacity 0.35s" }}
                 className="cursor-pointer"
               >
-                {g.image ? (
-                  <image
-                    href={g.image.src}
-                    x={g.image.x}
-                    y={g.image.y}
-                    width={g.image.width}
-                    height={g.image.height}
-                    clipPath={`url(#${uid}-${t.slug})`}
-                    preserveAspectRatio="none"
-                  />
+                {g.src ? (
+                  <image href={g.src} x={g.x} y={g.top} width={g.w} height={g.h} clipPath={`url(#${uid}-${t.slug})`} preserveAspectRatio="none" />
                 ) : (
-                  <rect x={cx - g.w / 2} y={g.top} width={g.w} height={g.h} className="fill-ink" clipPath={`url(#${uid}-${t.slug})`} />
+                  <rect x={g.x} y={g.top} width={g.w} height={g.h} className="fill-ink" clipPath={`url(#${uid}-${t.slug})`} />
                 )}
-                <rect
-                  x={cx - g.w / 2}
-                  y={g.top}
-                  width={g.w}
-                  height={g.h}
-                  fill="none"
-                  strokeWidth={on ? 2 : 1}
-                  className={on ? "stroke-blue" : "stroke-ink/25"}
+                {/* Footprint tick: marks where the miniature meets the ground line on hover. */}
+                <line
+                  x1={g.x}
+                  x2={g.x + g.w}
+                  y1={BASE}
+                  y2={BASE}
+                  strokeWidth={on ? 3 : 2}
+                  className={on ? "stroke-blue" : "stroke-ink/30"}
                   style={{ opacity: inView ? 1 : 0, transition: `opacity 0.6s ${700 + i * 160}ms, stroke-width 0.3s` }}
                 />
                 <text

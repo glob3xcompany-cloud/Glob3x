@@ -134,20 +134,19 @@
     ],
     "pillars": {
       "eyebrow": "Glob3x Group",
-      "title": "Një kompani. Pesë shtylla. Çdo fazë e një ndërtese.",
+      "title": "Një kompani. Katër shtylla. Çdo fazë e një ndërtese.",
       "body": "Glob3x Group zhvillon, ndërton, pajis dhe operon. Zotërimi i të gjithë zinxhirit është ajo që i lejon kompanisë të garantojë cilësinë, afatet dhe çmimin në çdo projekt që nënshkruan.",
       "items": [
         { "key": "construction", "title": "Glob3x Construction", "body": "Kontraktor i përgjithshëm që nga viti 2008: struktura betonarmeje, ndërtesa shumëkatëshe banimi dhe me funksione të përziera, programe të mëdha të realizuara në Soçi dhe Shkup.", "href": "construction" },
         { "key": "realestate", "title": "Glob3x Real Estate", "body": "Zhvillim dhe shitje e drejtpërdrejtë e rezidencave në korridoret e zhvillimit të Tiranës: rrugët Ramazan Bogdani, Besa, Jordan Misja dhe Ali Demi.", "href": "projects#residences" },
         { "key": "towers", "title": "Kullat", "body": "Zhvillime të larta me funksione të përziera: Reeds Towers (191,89 m), Glow Tower (95,50 m) dhe Urban Millefeuille (95 m), tre projekte vertikale për kryeqytetin.", "href": "towers" },
-        { "key": "hospitality", "title": "Hoteleri dhe bregdet", "body": "Një hotel luksoz në Pezë, në jugperëndim të Tiranës, dhe tre vila buzë detit në Drimadhe, në bregdetin e Jonit.", "href": "projects#hospitality" },
-        { "key": "skela", "title": "Skela Flex", "body": "Qira skelash dhe pajisje sigurie për kantierë me mbikëqyrje teknike, për kantieret e kompanisë dhe për kontraktorë të tretë.", "href": "construction#skela-flex" }
+        { "key": "hospitality", "title": "Hoteleri dhe bregdet", "body": "Një hotel luksoz në Pezë, në jugperëndim të Tiranës, dhe tre vila buzë detit në Drimadhe, në bregdetin e Jonit.", "href": "projects#hospitality" }
       ]
     },
     "flagship": {
       "eyebrow": "Projekti kryesor · Reeds Towers",
       "title": "191,89 metra. Dy kulla. Një adresë në Rrugën e Kavajës.",
-      "body": "Miratuar nga Këshilli Kombëtar i Territorit (vendimi nr. 28, 18 prill 2025): 55 dhe 36 kate mbi tokë mbi pesë kate nëntokësore, me rezidenca, hotel, zyra, tregti dhe një restorant panoramik në katet 48 deri 54. Zhvilluar dhe ndërtuar nga Glob3x Group.",
+      "body": "Pesëdhjetë e pesë dhe tridhjetë e gjashtë kate mbi tokë mbi pesë kate nëntokësore, me rezidenca, hotel, zyra, tregti dhe një restorant panoramik në katet 48 deri 54. Zhvilluar dhe ndërtuar nga Glob3x Group.",
       "link": "Zbuloni Reeds Towers",
       "facts": [
         { "value": "55 + 36", "label": "kate mbi tokë" },
@@ -216,7 +215,7 @@
     },
     "hero": {
       "eyebrow": "Glob3x Group",
-      "title": "Një kompani, pesë shtylla, një standard i vetëm.",
+      "title": "Një kompani, katër shtylla, një standard i vetëm.",
       "intro": "Glob3x Group është një familje kompanish që zhvillojnë, ndërtojnë, pajisin dhe operojnë ndërtesa. Çdo projekt në këtë faqe tregon saktësisht rolin që ka luajtur kompania."
     },
     "manifesto": {
@@ -230,20 +229,19 @@
     },
     "companies": {
       "eyebrow": "Kompanitë",
-      "title": "Pesë shtyllat",
+      "title": "Katër shtyllat",
       "items": [
         { "title": "Glob3x Construction", "kicker": "Kontraktor i përgjithshëm · që nga 2008", "body": "Struktura betonarmeje dhe ndërtesa shumëkatëshe banimi e me funksione të përziera në Tiranë; programe në shkallë të gjerë në Soçi (2014) dhe Shkup (2019).", "href": "construction" },
         { "title": "Glob3x Real Estate", "kicker": "Zhvillim dhe shitje e drejtpërdrejtë", "body": "Art Residence, New Corner Residence, Avi Residence Boulevard dhe Lorden Residence: banesa në korridoret e zhvillimit të Tiranës, të shitura drejtpërdrejt nga agjentët e kompanisë.", "href": "projects#residences" },
         { "title": "Kullat", "kicker": "Zhvillim i lartë me funksione të përziera", "body": "Reeds Towers, Glow Tower dhe Urban Millefeuille: 191,89 m, 95,50 m dhe 95 m rezidenca, hotele, zyra dhe tregti përgjatë akseve kryesore të kryeqytetit.", "href": "towers" },
-        { "title": "Hoteleri dhe bregdet", "kicker": "Hotel dhe vila", "body": "Një hotel luksoz me pishinë në oborr, restorant dhe spa në Pezë, dhe tre vila buzë detit në Drimadhe, në bregdetin e Jonit.", "href": "projects#hospitality" },
-        { "title": "Skela Flex", "kicker": "Skela dhe pajisje kantieri", "body": "Qira skelash, rrjeta sigurie dhe pajisje kantieri me mbikëqyrje teknike, nga baza e kompanisë në Rrugën Besa.", "href": "construction#skela-flex" }
+        { "title": "Hoteleri dhe bregdet", "kicker": "Hotel dhe vila", "body": "Një hotel luksoz me pishinë në oborr, restorant dhe spa në Pezë, dhe tre vila buzë detit në Drimadhe, në bregdetin e Jonit.", "href": "projects#hospitality" }
       ]
     },
     "values": {
       "eyebrow": "Si punojmë",
       "title": "Katër angazhime inxhinierike",
       "items": [
-        { "title": "Lejet para premtimeve", "body": "Statusi ligjor i çdo zhvillimi publikohet. Reeds Towers ka miratimin e plotë të Këshillit Kombëtar të Territorit: vendimi nr. 28, datë 18 prill 2025." },
+        { "title": "Lejet para premtimeve", "body": "Lejet e ndërtimit merren para se të fillojë marketingu dhe statusi ligjor i çdo zhvillimi publikohet në faqen e tij." },
         { "title": "Një palë e vetme përgjegjëse", "body": "Zhvilluesi, ndërtuesi dhe shitësi janë e njëjta kompani në shumicën e projekteve. Afatet dhe cilësia kontrollohen drejtpërdrejt në kantier, jo përmes ndërmjetësve." },
         { "title": "E matur, jo e përshkruar", "body": "Çdo faqe projekti tregon katet, nivelet nëntokësore, sipërfaqen bruto dhe programin funksional. Shifrat vijnë nga dokumentet e projektimit, jo nga marketingu." },
         { "title": "Kapacitet ndërkombëtar realizimi", "body": "Qindra ekipe të mobilizuara përtej kufijve, me afate të fiksuara nga kalendari olimpik. E njëjta organizim kantieri drejton sot kullat e kompanisë në Tiranë." }
@@ -304,7 +302,7 @@
         "name": "Reeds Towers",
         "kicker": "Rruga e Kavajës · Tiranë",
         "tagline": "Aty ku vizioni prek qiellin.",
-        "intro": "Dy kulla me 55 dhe 36 kate mbi tokë që ngrihen 191,89 m mbi Rrugën e Kavajës, mbi pesë kate nëntokësore me mbi 2.500 m² secili. Miratuar nga Këshilli Kombëtar i Territorit, vendimi nr. 28, datë 18 prill 2025.",
+        "intro": "Dy kulla me 55 dhe 36 kate mbi tokë që ngrihen 191,89 m mbi Rrugën e Kavajës, mbi pesë kate nëntokësore me mbi 2.500 m² secili.",
         "body": [
           "Reeds Towers bashkon, në 83.576 m² sipërfaqe bruto ndërtimi, një qendër biznesi prej rreth 996 m² për kat në katin përdhes dhe dy katet e para, katet e hotelit 3 deri 5 me rreth 1.000 m² secili, rezidenca nga kati 6 deri 47 dhe një restorant panoramik në katet 48 deri 54 me pamje 360° mbi Tiranën, malin e Dajtit dhe Adriatikun.",
           "Kullat përbëhen nga elemente vertikale cilindrike të veshura me terraco të bardhë dhe xhamëri strukturore. Njësitë e banimit variojnë nga apartamente 1+1 prej rreth 57 m² deri në apartamente 2+1 prej rreth 101 m², secila me një segment fasade të lakuar me xham dhe një lozhë.",
@@ -564,13 +562,13 @@
   },
   "construction": {
     "meta": {
-      "title": "Ndërtim — Glob3x Construction dhe Skela Flex",
-      "description": "Glob3x Construction: kontraktor i përgjithshëm që nga viti 2008 me përvojë në programin olimpik të Soçit dhe një qendër tregtare 44.000 m² në Shkup. Skela Flex: qira skelash në Tiranë."
+      "title": "Ndërtim — Glob3x Construction",
+      "description": "Glob3x Construction: kontraktor i përgjithshëm që nga viti 2008 me përvojë në programin olimpik të Soçit dhe një qendër tregtare 44.000 m² në Shkup."
     },
     "hero": {
       "eyebrow": "Glob3x Construction",
       "title": "Ekipet pas siluetës së qytetit.",
-      "intro": "Kontraktor i përgjithshëm që nga viti 2008. Ndërtesa shumëkatëshe në Tiranë, kantiere të programit olimpik në Soçi, një qendër tregtare 44.000 m² në Shkup. Plus Skela Flex, biznesi i skelave i vetë kompanisë."
+      "intro": "Kontraktor i përgjithshëm që nga viti 2008. Ndërtesa shumëkatëshe në Tiranë, kantiere të programit olimpik në Soçi, një qendër tregtare 44.000 m² në Shkup."
     },
     "facts": [
       { "value": "2008", "label": "Ndërtesat e para shumëkatëshe në Tiranë" },
@@ -584,8 +582,7 @@
       "items": [
         { "title": "Kontraktim i përgjithshëm", "body": "Ndërtesa shumëkatëshe banimi dhe me funksione të përziera në Tiranë, të realizuara si zhvillues-ndërtues ose për klientë të tretë." },
         { "title": "Struktura betonarmeje", "body": "Themele, korniza, bërthama dhe soleta në shkallë të gjerë, me organizimin e kantierit të provuar në programet e Soçit dhe Shkupit." },
-        { "title": "Programe të mëdha jashtë vendit", "body": "Mobilizim i qindra punonjësve dhe mbikëqyrësve për programe me afate fikse, nga kalendari olimpik te qendrat tregtare rajonale." },
-        { "title": "Skela dhe pajisje kantieri", "body": "Përmes Skela Flex: qira skelash, rrjeta sigurie dhe mbikëqyrje teknike për kantieret e kompanisë dhe për kontraktorë të tjerë." }
+        { "title": "Programe të mëdha jashtë vendit", "body": "Mobilizim i qindra punonjësve dhe mbikëqyrësve për programe me afate fikse, nga kalendari olimpik te qendrat tregtare rajonale." }
       ]
     },
     "references": {
@@ -605,14 +602,6 @@
         "body": "Art Residence (Ali Demi), New Corner Residence (Besa), Lorden Residence (Ramazan Bogdani) dhe hoteli luksoz në Pezë, të gjitha të ndërtuara nga Glob3x Construction për Glob3x Real Estate."
       }
     },
-    "skela": {
-      "eyebrow": "Skela Flex",
-      "title": "Partneri juaj për ndërtim të sigurt.",
-      "body": "Skela Flex jep me qira skela dhe pajisje sigurie për kantierë dhe mbështet çdo punë me mbikëqyrje teknike, nga një fasadë e vetme deri te mbështjellja e plotë e një ndërtese të lartë. Me bazë në Rrugën Besa në Tiranë, në shërbim të kantiereve në gjithë vendin.",
-      "items": ["Skela fasade dhe kulle", "Rrjeta sigurie dhe mbrojtje anësore", "Transport, montim dhe çmontim", "Inspektim dhe këshillim në kantier"],
-      "contact": "Kontaktet e Skela Flex",
-      "instagram": "Skela Flex në Instagram"
-    },
     "cta": {
       "title": "Keni një kantier, një strukturë ose një tender?",
       "body": "Na dërgoni vizatimet dhe afatet. Do t'ju kthehemi me një grafik realist dhe një çmim që mund ta mbajmë.",
@@ -629,20 +618,19 @@
     "hero": {
       "eyebrow": "Kontakt",
       "title": "Le të flasim.",
-      "intro": "Na tregoni çfarë kërkoni: një banesë, një investim, një partner ndërtimi ose skela për kantierin tuaj. Personi i duhur do t'ju përgjigjet brenda një dite pune."
+      "intro": "Na tregoni çfarë kërkoni: një banesë, një investim ose një partner ndërtimi. Personi i duhur do t'ju përgjigjet brenda një dite pune."
     },
     "office": "Zyra qendrore",
     "hours": "E hënë – e premte, 09:00 – 18:00",
     "directions": "Hap në Google Maps",
     "agentsTitle": "Agjentët e shitjeve",
     "agentsBody": "Linja të drejtpërdrejta me njerëzit që shesin rezidencat tona.",
-    "skelaTitle": "Skela Flex",
     "name": "Emri i plotë",
     "email": "Email",
     "phone": "Telefon (me prefiksin e shtetit)",
     "country": "Shteti",
     "interest": "Jam i interesuar për",
-    "interestOptions": ["Blerje apartamenti", "Hapësirë tregtare", "Reeds Towers", "Kullat dhe investim", "Vila dhe hoteleri", "Shërbime ndërtimi", "Qira skelash (Skela Flex)", "Tjetër"],
+    "interestOptions": ["Blerje apartamenti", "Hapësirë tregtare", "Reeds Towers", "Kullat dhe investim", "Vila dhe hoteleri", "Shërbime ndërtimi", "Tjetër"],
     "message": "Mesazhi (opsional)",
     "consent": "Pranoj që Glob3x Group të më kontaktojë në lidhje me kërkesën time. Të dhënat e mia nuk do t'u jepen palëve të treta.",
     "submit": "Dërgo kërkesën",

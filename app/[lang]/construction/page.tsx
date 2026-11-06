@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
 import { ArrowLink } from "@/components/arrow-link";
 import { CtaBand } from "@/components/cta-band";
-import { Gallery } from "@/components/gallery";
 import { ParallaxImage } from "@/components/motion/parallax-image";
 import { Reveal } from "@/components/motion/reveal";
 import { PageHero } from "@/components/page-hero";
@@ -13,7 +11,6 @@ import { Stats } from "@/components/stats";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { projectHref } from "@/lib/routes";
-import { site, telHref } from "@/lib/site";
 import { getDictionary } from "../dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -21,15 +18,6 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!isLocale(locale)) return {};
   return pageMeta(locale, "construction", (await getDictionary(locale)).construction.meta, "/media/group/site-cranes-dusk.webp");
 }
-
-const SKELA_GALLERY = [
-  { src: "/media/skela-flex/full-wrap.webp", w: 1400, h: 1400 },
-  { src: "/media/skela-flex/site-net.webp", w: 1200, h: 1600 },
-  { src: "/media/skela-flex/truck.webp", w: 1600, h: 1200 },
-  { src: "/media/skela-flex/green-net.webp", w: 1400, h: 1399 },
-  { src: "/media/skela-flex/stock.webp", w: 1600, h: 1200 },
-  { src: "/media/skela-flex/concrete-frame.webp", w: 1600, h: 1200 },
-];
 
 export default async function ConstructionPage() {
   const locale = await lang();
@@ -47,7 +35,7 @@ export default async function ConstructionPage() {
       <section className="bg-paper py-24 md:py-32">
         <div className="container-x">
           <SectionHeading eyebrow={t.services.eyebrow} title={t.services.title} />
-          <div className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {t.services.items.map((s, i) => (
               <Reveal key={s.title} delay={i * 100} className="bg-paper p-7 md:p-9">
                 <p className="eyebrow text-blue">{`0${i + 1}`}</p>
@@ -112,50 +100,6 @@ export default async function ConstructionPage() {
                 {dict.common.allProjects}
               </ArrowLink>
             </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* Skela Flex */}
-      <section id="skela-flex" className="scroll-mt-20 bg-navy py-24 text-paper md:py-32">
-        <div className="container-x">
-          <div className="grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <SectionHeading eyebrow={t.skela.eyebrow} title={t.skela.title} body={t.skela.body} tone="dark" />
-              <Reveal delay={200}>
-                <ul className="mt-8 grid gap-2 border-t border-line-dark pt-6 text-sm">
-                  {t.skela.items.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-px w-4 shrink-0 bg-gold" aria-hidden="true" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
-              <Reveal delay={280} className="mt-10 border-t border-line-dark pt-8 text-sm">
-                <p className="eyebrow text-paper/50">{t.skela.contact}</p>
-                <ul className="mt-3 grid gap-2">
-                  {site.skelaFlex.phones.map((p) => (
-                    <li key={p}>
-                      <a href={telHref(p)} className="hover:text-gold">{p}</a>
-                    </li>
-                  ))}
-                  <li>
-                    <a href={`mailto:${site.skelaFlex.email}`} className="hover:text-gold">{site.skelaFlex.email}</a>
-                  </li>
-                  <li className="text-paper/60">{site.skelaFlex.address}</li>
-                </ul>
-                <ArrowLink href={site.skelaFlex.instagram} external tone="dark" className="mt-6">
-                  {t.skela.instagram}
-                </ArrowLink>
-              </Reveal>
-            </div>
-            <div className="lg:col-span-7">
-              <div className="relative mb-4 aspect-[4/5] overflow-hidden sm:hidden">
-                <Image src="/media/skela-flex/hero.webp" alt="" fill sizes="100vw" className="object-cover" />
-              </div>
-              <Gallery items={SKELA_GALLERY} alt="Skela Flex" openLabel={dict.common.openImage} closeLabel={dict.common.closeImage} />
-            </div>
           </div>
         </div>
       </section>

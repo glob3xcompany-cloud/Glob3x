@@ -25,12 +25,6 @@ export const site = {
   social: [{ name: "Instagram", url: "https://www.instagram.com/glob3xgroup/" }],
   /** Dedicated Reeds Towers site, served as a section of this domain. Override with NEXT_PUBLIC_REEDS_URL in dev. */
   reedsSite: process.env.NEXT_PUBLIC_REEDS_URL ?? "/reeds",
-  skelaFlex: {
-    phones: ["+355 69 608 6886", "+355 69 401 1207"],
-    email: "flexskela@gmail.com",
-    instagram: "https://www.instagram.com/skelaflex/",
-    address: "Rruga Besa, Tirana",
-  },
   salesAgents: [
     { name: "Mariglen Shkambi", phone: "+355 69 205 0747" },
     { name: "Emiljana Ndreka", phone: "+355 69 700 3214" },

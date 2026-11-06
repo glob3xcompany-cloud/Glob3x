@@ -132,20 +132,19 @@
     ],
     "pillars": {
       "eyebrow": "Glob3x Group",
-      "title": "One company. Five pillars. Every stage of a building.",
+      "title": "One company. Four pillars. Every stage of a building.",
       "body": "Glob3x Group develops, builds, equips and operates. Owning the whole chain is what lets the company guarantee quality, programme and price on every project it signs.",
       "items": [
         { "key": "construction", "title": "Glob3x Construction", "body": "General contractor since 2008: reinforced-concrete structures, multi-storey residential and mixed-use buildings, and large programmes delivered in Sochi and Skopje.", "href": "construction" },
         { "key": "realestate", "title": "Glob3x Real Estate", "body": "Development and direct sale of residences in Tirana's growth corridors: Ramazan Bogdani, Besa, Jordan Misja and Ali Demi streets.", "href": "projects#residences" },
         { "key": "towers", "title": "Towers", "body": "High-rise mixed-use developments: Reeds Towers (191.89 m), Glow Tower (95.50 m) and Urban Millefeuille (95 m), three vertical projects for the capital.", "href": "towers" },
-        { "key": "hospitality", "title": "Hospitality & coast", "body": "A luxury hotel in Pezë, south-west of Tirana, and three seaside villas in Drymades on the Ionian coast.", "href": "projects#hospitality" },
-        { "key": "skela", "title": "Skela Flex", "body": "Scaffolding rental and site-safety equipment with technical supervision, for the company's own sites and for third-party contractors.", "href": "construction#skela-flex" }
+        { "key": "hospitality", "title": "Hospitality & coast", "body": "A luxury hotel in Pezë, south-west of Tirana, and three seaside villas in Drymades on the Ionian coast.", "href": "projects#hospitality" }
       ]
     },
     "flagship": {
       "eyebrow": "Flagship · Reeds Towers",
       "title": "191.89 metres. Two towers. One address on Kavaja Street.",
-      "body": "Approved by the National Territory Council (decision No. 28, 18 April 2025): 55 and 36 floors above ground over five underground levels, with residences, a hotel, offices, retail and a panoramic restaurant on floors 48 to 54. Developed and built by Glob3x Group.",
+      "body": "Fifty-five and thirty-six floors above ground over five underground levels, with residences, a hotel, offices, retail and a panoramic restaurant on floors 48 to 54. Developed and built by Glob3x Group.",
       "link": "Discover Reeds Towers",
       "facts": [
         { "value": "55 + 36", "label": "floors above ground" },
@@ -214,7 +213,7 @@
     },
     "hero": {
       "eyebrow": "Glob3x Group",
-      "title": "One company, five pillars, a single standard.",
+      "title": "One company, four pillars, a single standard.",
       "intro": "Glob3x Group is a family of companies that develop, build, equip and operate buildings. Each project on this website states exactly which role the company played."
     },
     "manifesto": {
@@ -228,20 +227,19 @@
     },
     "companies": {
       "eyebrow": "Companies",
-      "title": "The five pillars",
+      "title": "The four pillars",
       "items": [
         { "title": "Glob3x Construction", "kicker": "General contractor · since 2008", "body": "Reinforced-concrete structures and multi-storey residential and mixed-use buildings in Tirana; large-scale programmes in Sochi (2014) and Skopje (2019).", "href": "construction" },
         { "title": "Glob3x Real Estate", "kicker": "Development & direct sales", "body": "Art Residence, New Corner Residence, Avi Residence Boulevard and Lorden Residence: homes in Tirana's growth corridors, sold directly by the company's agents.", "href": "projects#residences" },
         { "title": "Towers", "kicker": "High-rise mixed-use development", "body": "Reeds Towers, Glow Tower and Urban Millefeuille: 191.89 m, 95.50 m and 95 m of residences, hotels, offices and retail along the capital's main axes.", "href": "towers" },
-        { "title": "Hospitality & coast", "kicker": "Hotel and villas", "body": "A luxury hotel with courtyard pool, restaurant and spa in Pezë, and three seaside villas in Drymades on the Ionian coast.", "href": "projects#hospitality" },
-        { "title": "Skela Flex", "kicker": "Scaffolding & site equipment", "body": "Scaffolding rental, safety nets and site equipment with technical supervision, from the company's base on Besa Street.", "href": "construction#skela-flex" }
+        { "title": "Hospitality & coast", "kicker": "Hotel and villas", "body": "A luxury hotel with courtyard pool, restaurant and spa in Pezë, and three seaside villas in Drymades on the Ionian coast.", "href": "projects#hospitality" }
       ]
     },
     "values": {
       "eyebrow": "How we work",
       "title": "Four engineering commitments",
       "items": [
-        { "title": "Permits before promises", "body": "The legal status of every development is published. Reeds Towers carries full approval by the National Territory Council: decision No. 28 of 18 April 2025." },
+        { "title": "Permits before promises", "body": "Building permits are obtained before marketing begins, and the legal status of every development is published on its project page." },
         { "title": "One responsible party", "body": "Developer, builder and seller are the same company on most projects. Programme and quality are controlled directly on site, not through intermediaries." },
         { "title": "Measured, not described", "body": "Every project page states floors, underground levels, gross floor area and programme. Figures come from the design documents, not from marketing." },
         { "title": "International delivery capacity", "body": "Hundreds of crews mobilised across borders, on deadlines fixed by the Olympic calendar. The same site organisation now runs the company's towers in Tirana." }
@@ -302,7 +300,7 @@
         "name": "Reeds Towers",
         "kicker": "Kavaja Street · Tirana",
         "tagline": "Where the vision touches the sky.",
-        "intro": "Two towers of 55 and 36 floors above ground rising 191.89 m above Kavaja Street, over five underground levels of more than 2,500 m² each. Approved by the National Territory Council, decision No. 28 of 18 April 2025.",
+        "intro": "Two towers of 55 and 36 floors above ground rising 191.89 m above Kavaja Street, over five underground levels of more than 2,500 m² each.",
         "body": [
           "Reeds Towers brings together, in 83,576 m² of gross floor area, a business hub of about 996 m² per floor on the ground and first two levels, hotel floors 3 to 5 of about 1,000 m² each, residences from floor 6 to 47 and a panoramic restaurant on floors 48 to 54 with 360° views over Tirana, Dajti mountain and the Adriatic.",
           "The towers are composed of vertical cylindrical elements clad in white terrazzo and structural glazing. Residential units range from 1+1 apartments of about 57 m² to 2+1 apartments of about 101 m², each with a curved glazed façade segment and a loggia.",
@@ -562,13 +560,13 @@
   },
   "construction": {
     "meta": {
-      "title": "Construction — Glob3x Construction & Skela Flex",
-      "description": "Glob3x Construction: general contractor since 2008 with Olympic-programme experience in Sochi and a 44,000 m² shopping centre in Skopje. Skela Flex: scaffolding rental in Tirana."
+      "title": "Construction — Glob3x Construction",
+      "description": "Glob3x Construction: general contractor since 2008 with Olympic-programme experience in Sochi and a 44,000 m² shopping centre in Skopje."
     },
     "hero": {
       "eyebrow": "Glob3x Construction",
       "title": "The crews behind the skyline.",
-      "intro": "General contractor since 2008. Multi-storey buildings in Tirana, Olympic-programme sites in Sochi, a 44,000 m² shopping centre in Skopje. Plus Skela Flex, the company's own scaffolding business."
+      "intro": "General contractor since 2008. Multi-storey buildings in Tirana, Olympic-programme sites in Sochi, a 44,000 m² shopping centre in Skopje."
     },
     "facts": [
       { "value": "2008", "label": "First multi-storey buildings in Tirana" },
@@ -582,8 +580,7 @@
       "items": [
         { "title": "General contracting", "body": "Multi-storey residential and mixed-use buildings in Tirana, delivered as developer-builder or for third-party clients." },
         { "title": "Reinforced-concrete structures", "body": "Foundations, frames, cores and slabs at scale, with the site organisation proven on the Sochi and Skopje programmes." },
-        { "title": "Large programmes abroad", "body": "Mobilisation of hundreds of workers and supervisors for fixed-deadline programmes, from the Olympic calendar to regional shopping centres." },
-        { "title": "Scaffolding & site equipment", "body": "Through Skela Flex: scaffolding rental, safety nets and technical supervision for the company's own sites and other contractors." }
+        { "title": "Large programmes abroad", "body": "Mobilisation of hundreds of workers and supervisors for fixed-deadline programmes, from the Olympic calendar to regional shopping centres." }
       ]
     },
     "references": {
@@ -603,14 +600,6 @@
         "body": "Art Residence (Ali Demi), New Corner Residence (Besa), Lorden Residence (Ramazan Bogdani) and the luxury hotel in Pezë, all built by Glob3x Construction for Glob3x Real Estate."
       }
     },
-    "skela": {
-      "eyebrow": "Skela Flex",
-      "title": "Your partner for safe construction.",
-      "body": "Skela Flex rents scaffolding and site-safety equipment and supports every job with technical supervision, from a single façade to a full high-rise wrap. Based on Besa Street in Tirana, serving sites across the country.",
-      "items": ["Façade and tower scaffolding", "Safety nets and edge protection", "Delivery, assembly and dismantling", "On-site inspection and advice"],
-      "contact": "Skela Flex contacts",
-      "instagram": "Skela Flex on Instagram"
-    },
     "cta": {
       "title": "Have a site, a structure or a tender?",
       "body": "Send us the drawings and the timeline. We will come back with a realistic programme and a price we can keep.",
@@ -627,20 +616,19 @@
     "hero": {
       "eyebrow": "Contact",
       "title": "Let's talk.",
-      "intro": "Tell us what you are looking for: a home, an investment, a construction partner or scaffolding for your site. The right person will answer within one working day."
+      "intro": "Tell us what you are looking for: a home, an investment or a construction partner. The right person will answer within one working day."
     },
     "office": "Head office",
     "hours": "Monday – Friday, 09:00 – 18:00",
     "directions": "Open in Google Maps",
     "agentsTitle": "Sales agents",
     "agentsBody": "Direct lines to the people who sell our residences.",
-    "skelaTitle": "Skela Flex",
     "name": "Full name",
     "email": "Email",
     "phone": "Phone (with country code)",
     "country": "Country",
     "interest": "I am interested in",
-    "interestOptions": ["Buying an apartment", "Commercial space", "Reeds Towers", "Towers and investment", "Villas and hospitality", "Construction services", "Scaffolding rental (Skela Flex)", "Other"],
+    "interestOptions": ["Buying an apartment", "Commercial space", "Reeds Towers", "Towers and investment", "Villas and hospitality", "Construction services", "Other"],
     "message": "Message (optional)",
     "consent": "I agree that Glob3x Group contacts me about my request. My data will not be shared with third parties.",
     "submit": "Send request",

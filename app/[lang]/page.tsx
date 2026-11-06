@@ -31,7 +31,6 @@ const PILLAR_IMAGES: Record<string, string> = {
   realestate: "/media/projects/lorden-residence/render-court.webp",
   towers: "/media/projects/reeds-towers/night-tower.webp",
   hospitality: "/media/projects/luxury-hotel-peze/pool-wide.webp",
-  skela: "/media/skela-flex/facade-scaffold.webp",
 };
 
 function Cards({ projects, dict, locale, tone = "light", size = "md" }: { projects: Project[]; dict: Dictionary; locale: string; tone?: "light" | "dark"; size?: "md" | "tall" }) {

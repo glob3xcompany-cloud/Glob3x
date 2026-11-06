@@ -67,7 +67,6 @@ const PROTECTED = [
   "Skanderbeg Square",
   "Dajti",
   "Durrës",
-  "KKTU",
   "WhatsApp",
   "Instagram",
 ].sort((a, b) => b.length - a.length);

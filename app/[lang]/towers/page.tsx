@@ -53,7 +53,7 @@ export default async function TowersPage() {
       floors: floors ? ("v" in floors ? floors.v : "n" in floors ? String(floors.n) : undefined) : undefined,
       gfa: factNumber(p, "gfa"),
       kicker: copy.kicker,
-      elevation: p.elevation,
+      massing: p.massing,
     };
   });
 

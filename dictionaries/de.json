@@ -131,20 +131,19 @@
     ],
     "pillars": {
       "eyebrow": "Glob3x Group",
-      "title": "Ein Unternehmen. Fünf Säulen. Jede Phase eines Gebäudes.",
+      "title": "Ein Unternehmen. Vier Säulen. Jede Phase eines Gebäudes.",
       "body": "Glob3x Group entwickelt, baut, rüstet aus und betreibt. Die Kontrolle über die gesamte Kette erlaubt es dem Unternehmen, Qualität, Termine und Preis bei jedem Projekt zu garantieren, das es unterzeichnet.",
       "items": [
         { "key": "construction", "title": "Glob3x Construction", "body": "Generalunternehmer seit 2008: Stahlbetontragwerke, mehrgeschossige Wohn- und gemischt genutzte Gebäude sowie Großprogramme in Sotschi und Skopje.", "href": "construction" },
         { "key": "realestate", "title": "Glob3x Real Estate", "body": "Entwicklung und Direktverkauf von Wohnungen in den Wachstumskorridoren Tiranas: Rruga Ramazan Bogdani, Besa, Jordan Misja und Ali Demi.", "href": "projects#residences" },
         { "key": "towers", "title": "Türme", "body": "Gemischt genutzte Hochhausprojekte: Reeds Towers (191,89 m), Glow Tower (95,50 m) und Urban Millefeuille (95 m), drei vertikale Projekte für die Hauptstadt.", "href": "towers" },
-        { "key": "hospitality", "title": "Hospitality und Küste", "body": "Ein Luxushotel in Pezë, südwestlich von Tirana, und drei Villen am Meer in Drymades an der Ionischen Küste.", "href": "projects#hospitality" },
-        { "key": "skela", "title": "Skela Flex", "body": "Vermietung von Gerüsten und Baustellensicherheitsausrüstung mit technischer Betreuung, für eigene Baustellen und für Drittunternehmen.", "href": "construction#skela-flex" }
+        { "key": "hospitality", "title": "Hospitality und Küste", "body": "Ein Luxushotel in Pezë, südwestlich von Tirana, und drei Villen am Meer in Drymades an der Ionischen Küste.", "href": "projects#hospitality" }
       ]
     },
     "flagship": {
       "eyebrow": "Flaggschiff · Reeds Towers",
       "title": "191,89 Meter. Zwei Türme. Eine Adresse an der Rruga e Kavajës.",
-      "body": "Genehmigt vom Nationalen Territorialrat (Beschluss Nr. 28 vom 18. April 2025): 55 und 36 Geschosse über Grund auf fünf Untergeschossen, mit Wohnungen, Hotel, Büros, Einzelhandel und einem Panoramarestaurant in den Geschossen 48 bis 54. Entwickelt und gebaut von Glob3x Group.",
+      "body": "Fünfundfünfzig und sechsunddreißig Geschosse über Grund auf fünf Untergeschossen, mit Wohnungen, Hotel, Büros, Einzelhandel und einem Panoramarestaurant in den Geschossen 48 bis 54. Entwickelt und gebaut von Glob3x Group.",
       "link": "Reeds Towers entdecken",
       "facts": [
         { "value": "55 + 36", "label": "Geschosse über Grund" },
@@ -213,7 +212,7 @@
     },
     "hero": {
       "eyebrow": "Glob3x Group",
-      "title": "Ein Unternehmen, fünf Säulen, ein Standard.",
+      "title": "Ein Unternehmen, vier Säulen, ein Standard.",
       "intro": "Glob3x Group ist eine Familie von Gesellschaften, die Gebäude entwickeln, bauen, ausrüsten und betreiben. Jedes Projekt auf dieser Website benennt genau, welche Rolle das Unternehmen übernommen hat."
     },
     "manifesto": {
@@ -227,20 +226,19 @@
     },
     "companies": {
       "eyebrow": "Gesellschaften",
-      "title": "Die fünf Säulen",
+      "title": "Die vier Säulen",
       "items": [
         { "title": "Glob3x Construction", "kicker": "Generalunternehmer · seit 2008", "body": "Stahlbetontragwerke sowie mehrgeschossige Wohn- und gemischt genutzte Gebäude in Tirana; Großprogramme in Sotschi (2014) und Skopje (2019).", "href": "construction" },
         { "title": "Glob3x Real Estate", "kicker": "Entwicklung und Direktverkauf", "body": "Art Residence, New Corner Residence, Avi Residence Boulevard und Lorden Residence: Wohnungen in den Wachstumskorridoren Tiranas, direkt von den Beratern des Unternehmens verkauft.", "href": "projects#residences" },
         { "title": "Türme", "kicker": "Gemischt genutzte Hochhausentwicklung", "body": "Reeds Towers, Glow Tower und Urban Millefeuille: 191,89 m, 95,50 m und 95 m mit Wohnungen, Hotels, Büros und Einzelhandel entlang der Hauptachsen der Hauptstadt.", "href": "towers" },
-        { "title": "Hospitality und Küste", "kicker": "Hotel und Villen", "body": "Ein Luxushotel mit Innenhofpool, Restaurant und Spa in Pezë sowie drei Villen am Meer in Drymades an der Ionischen Küste.", "href": "projects#hospitality" },
-        { "title": "Skela Flex", "kicker": "Gerüste und Baustellenausrüstung", "body": "Vermietung von Gerüsten, Sicherheitsnetzen und Baustellenausrüstung mit technischer Betreuung, vom Stützpunkt des Unternehmens in der Rruga Besa.", "href": "construction#skela-flex" }
+        { "title": "Hospitality und Küste", "kicker": "Hotel und Villen", "body": "Ein Luxushotel mit Innenhofpool, Restaurant und Spa in Pezë sowie drei Villen am Meer in Drymades an der Ionischen Küste.", "href": "projects#hospitality" }
       ]
     },
     "values": {
       "eyebrow": "Wie wir arbeiten",
       "title": "Vier ingenieurtechnische Verpflichtungen",
       "items": [
-        { "title": "Genehmigungen vor Versprechen", "body": "Der rechtliche Status jedes Projekts wird veröffentlicht. Reeds Towers besitzt die vollständige Genehmigung des Nationalen Territorialrats: Beschluss Nr. 28 vom 18. April 2025." },
+        { "title": "Genehmigungen vor Versprechen", "body": "Baugenehmigungen liegen vor, bevor die Vermarktung beginnt, und der rechtliche Status jedes Projekts wird auf seiner Projektseite veröffentlicht." },
         { "title": "Ein Verantwortlicher", "body": "Entwickler, Bauunternehmer und Verkäufer sind bei den meisten Projekten dasselbe Unternehmen. Termine und Qualität werden direkt auf der Baustelle kontrolliert, nicht über Zwischenhändler." },
         { "title": "Gemessen, nicht beschrieben", "body": "Jede Projektseite nennt Geschosse, Untergeschosse, Bruttogeschossfläche und Nutzungsprogramm. Die Zahlen stammen aus den Planungsunterlagen, nicht aus dem Marketing." },
         { "title": "Internationale Ausführungskapazität", "body": "Hunderte Kolonnen über Grenzen hinweg mobilisiert, mit Terminen, die der olympische Kalender vorgab. Dieselbe Baustellenorganisation führt heute die Türme des Unternehmens in Tirana aus." }
@@ -301,7 +299,7 @@
         "name": "Reeds Towers",
         "kicker": "Rruga e Kavajës · Tirana",
         "tagline": "Wo die Vision den Himmel berührt.",
-        "intro": "Zwei Türme mit 55 und 36 Geschossen über Grund, die 191,89 m über der Rruga e Kavajës aufragen, auf fünf Untergeschossen mit jeweils mehr als 2.500 m². Genehmigt vom Nationalen Territorialrat, Beschluss Nr. 28 vom 18. April 2025.",
+        "intro": "Zwei Türme mit 55 und 36 Geschossen über Grund, die 191,89 m über der Rruga e Kavajës aufragen, auf fünf Untergeschossen mit jeweils mehr als 2.500 m².",
         "body": [
           "Reeds Towers vereint auf 83.576 m² Bruttogeschossfläche ein Business-Zentrum mit rund 996 m² je Geschoss im Erdgeschoss und in den ersten beiden Obergeschossen, Hotelgeschosse 3 bis 5 mit je rund 1.000 m², Wohnungen vom 6. bis zum 47. Geschoss und ein Panoramarestaurant in den Geschossen 48 bis 54 mit 360°-Blick über Tirana, den Dajti und die Adria.",
           "Die Türme bestehen aus vertikalen zylindrischen Elementen, verkleidet mit weißem Terrazzo und Structural Glazing. Die Wohnungen reichen von 1+1-Einheiten mit rund 57 m² bis zu 2+1-Einheiten mit rund 101 m², jede mit einem gekrümmten verglasten Fassadensegment und einer Loggia.",
@@ -561,13 +559,13 @@
   },
   "construction": {
     "meta": {
-      "title": "Bau — Glob3x Construction und Skela Flex",
-      "description": "Glob3x Construction: Generalunternehmer seit 2008 mit Erfahrung aus dem olympischen Bauprogramm in Sotschi und einem 44.000 m² großen Einkaufszentrum in Skopje. Skela Flex: Gerüstvermietung in Tirana."
+      "title": "Bau — Glob3x Construction",
+      "description": "Glob3x Construction: Generalunternehmer seit 2008 mit Erfahrung aus dem olympischen Bauprogramm in Sotschi und einem 44.000 m² großen Einkaufszentrum in Skopje."
     },
     "hero": {
       "eyebrow": "Glob3x Construction",
       "title": "Die Kolonnen hinter der Skyline.",
-      "intro": "Generalunternehmer seit 2008. Mehrgeschossige Gebäude in Tirana, Baustellen des olympischen Programms in Sotschi, ein 44.000 m² großes Einkaufszentrum in Skopje. Dazu Skela Flex, das unternehmenseigene Gerüstgeschäft."
+      "intro": "Generalunternehmer seit 2008. Mehrgeschossige Gebäude in Tirana, Baustellen des olympischen Programms in Sotschi, ein 44.000 m² großes Einkaufszentrum in Skopje."
     },
     "facts": [
       { "value": "2008", "label": "Erste mehrgeschossige Gebäude in Tirana" },
@@ -581,8 +579,7 @@
       "items": [
         { "title": "Generalunternehmung", "body": "Mehrgeschossige Wohn- und gemischt genutzte Gebäude in Tirana, ausgeführt als Entwickler-Bauherr oder für Drittauftraggeber." },
         { "title": "Stahlbetontragwerke", "body": "Gründungen, Skelette, Kerne und Decken im großen Maßstab, mit der in den Programmen Sotschi und Skopje bewährten Baustellenorganisation." },
-        { "title": "Großprogramme im Ausland", "body": "Mobilisierung von Hunderten Arbeitskräften und Bauleitern für Programme mit festem Termin, vom olympischen Kalender bis zu regionalen Einkaufszentren." },
-        { "title": "Gerüste und Baustellenausrüstung", "body": "Über Skela Flex: Gerüstvermietung, Sicherheitsnetze und technische Betreuung für eigene Baustellen und andere Unternehmen." }
+        { "title": "Großprogramme im Ausland", "body": "Mobilisierung von Hunderten Arbeitskräften und Bauleitern für Programme mit festem Termin, vom olympischen Kalender bis zu regionalen Einkaufszentren." }
       ]
     },
     "references": {
@@ -602,14 +599,6 @@
         "body": "Art Residence (Ali Demi), New Corner Residence (Besa), Lorden Residence (Ramazan Bogdani) und das Luxushotel in Pezë, alle gebaut von Glob3x Construction für Glob3x Real Estate."
       }
     },
-    "skela": {
-      "eyebrow": "Skela Flex",
-      "title": "Ihr Partner für sicheres Bauen.",
-      "body": "Skela Flex vermietet Gerüste und Baustellensicherheitsausrüstung und begleitet jeden Auftrag mit technischer Betreuung, von einer einzelnen Fassade bis zur vollständigen Einrüstung eines Hochhauses. Mit Sitz in der Rruga Besa in Tirana, für Baustellen im ganzen Land.",
-      "items": ["Fassaden- und Turmgerüste", "Sicherheitsnetze und Absturzsicherung", "Lieferung, Montage und Demontage", "Prüfung und Beratung vor Ort"],
-      "contact": "Kontakt Skela Flex",
-      "instagram": "Skela Flex auf Instagram"
-    },
     "cta": {
       "title": "Haben Sie eine Baustelle, ein Tragwerk oder eine Ausschreibung?",
       "body": "Senden Sie uns die Pläne und den Zeitplan. Wir antworten mit einem realistischen Terminplan und einem Preis, den wir halten können.",
@@ -626,20 +615,19 @@
     "hero": {
       "eyebrow": "Kontakt",
       "title": "Sprechen wir.",
-      "intro": "Sagen Sie uns, was Sie suchen: eine Wohnung, eine Investition, einen Baupartner oder Gerüste für Ihre Baustelle. Die richtige Person antwortet innerhalb eines Arbeitstages."
+      "intro": "Sagen Sie uns, was Sie suchen: eine Wohnung, eine Investition oder einen Baupartner. Die richtige Person antwortet innerhalb eines Arbeitstages."
     },
     "office": "Hauptsitz",
     "hours": "Montag – Freitag, 09:00 – 18:00 Uhr",
     "directions": "In Google Maps öffnen",
     "agentsTitle": "Verkaufsberater",
     "agentsBody": "Direkte Durchwahl zu den Menschen, die unsere Wohnungen verkaufen.",
-    "skelaTitle": "Skela Flex",
     "name": "Vor- und Nachname",
     "email": "E-Mail",
     "phone": "Telefon (mit Ländervorwahl)",
     "country": "Land",
     "interest": "Ich interessiere mich für",
-    "interestOptions": ["Kauf einer Wohnung", "Gewerbefläche", "Reeds Towers", "Türme und Investition", "Villen und Hospitality", "Bauleistungen", "Gerüstvermietung (Skela Flex)", "Sonstiges"],
+    "interestOptions": ["Kauf einer Wohnung", "Gewerbefläche", "Reeds Towers", "Türme und Investition", "Villen und Hospitality", "Bauleistungen", "Sonstiges"],
     "message": "Nachricht (optional)",
     "consent": "Ich bin einverstanden, dass Glob3x Group mich zu meiner Anfrage kontaktiert. Meine Daten werden nicht an Dritte weitergegeben.",
     "submit": "Anfrage senden",

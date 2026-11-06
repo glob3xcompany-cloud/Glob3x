@@ -53,11 +53,11 @@ export type Distance = { place: PlaceKey; v: string };
 export type Media = { src: string; w: number; h: number; position?: string };
 
 /**
- * A render of the building together with where the building sits inside it, as fractions of the
- * image box (`top`/`base` vertically, `cx`/`width` horizontally). The tower comparison uses this to
- * draw the real buildings at one shared metric scale instead of abstract blocks.
+ * A background-free 3D miniature of the building, cropped so the image box *is* the building: its
+ * bottom edge is the ground line and its top edge the stated height. The tower comparison scales it
+ * by height alone, which keeps all three towers at one shared metric scale.
  */
-export type Elevation = Media & { top: number; base: number; cx: number; width: number };
+export type Massing = Media;
 
 export type Project = {
   slug: string;
@@ -74,8 +74,8 @@ export type Project = {
   logo?: string;
   hero: Media;
   cover: Media;
-  /** Towers only: the render used in the shared-scale height comparison. */
-  elevation?: Elevation;
+  /** Towers only: the cut-out miniature used in the shared-scale height comparison. */
+  massing?: Massing;
   gallery: Media[];
   plans?: Media[];
   /** Muted background loop for the hero; `film` is the full-quality cut opened by the "watch film" button. */
@@ -99,7 +99,7 @@ export const PROJECTS: readonly Project[] = [
     externalUrl: "reeds",
     hero: m(`${R}/reeds-towers/hero-aerial.webp`, 2560, 1429),
     cover: m(`${R}/reeds-towers/tower-portrait.webp`, 1378, 2000, "object-[50%_30%]"),
-    elevation: { src: `${R}/reeds-towers/tower-portrait.webp`, w: 1378, h: 2000, top: 0.015, base: 0.845, cx: 0.5, width: 0.26 },
+    massing: m(`${R}/reeds-towers/massing.webp`, 218, 1210),
     video: { src: `${R}/reeds-towers/hero-loop.mp4`, poster: `${R}/reeds-towers/hero-poster.jpg`, film: `${R}/reeds-towers/film-720.mp4` },
     gallery: [
       m(`${R}/reeds-towers/dusk.webp`, 2400, 1698),
@@ -131,7 +131,6 @@ export const PROJECTS: readonly Project[] = [
       { k: "footprint", n: 1786.45, unit: "m²" },
       { k: "programme", items: ["residential", "hotel", "offices", "retail", "restaurant"] },
       { k: "unitSizes", v: "57 – 101 m²" },
-      { k: "permit", v: "KKTU 28 · 18.04.2025" },
     ],
     distances: [
       { place: "skanderbeg", v: "10 min" },
@@ -149,7 +148,7 @@ export const PROJECTS: readonly Project[] = [
     country: "AL",
     hero: m(`${R}/glow-tower/hero.webp`, 2400, 1743),
     cover: m(`${R}/glow-tower/tower.webp`, 1800, 2250, "object-top"),
-    elevation: { src: `${R}/glow-tower/tower.webp`, w: 1800, h: 2250, top: 0.152, base: 0.885, cx: 0.5, width: 0.5 },
+    massing: m(`${R}/glow-tower/massing.webp`, 477, 1077),
     gallery: [
       m(`${R}/glow-tower/tower-render.webp`, 1250, 1791),
       m(`${R}/glow-tower/colonnade.webp`, 2400, 1250),
@@ -187,7 +186,7 @@ export const PROJECTS: readonly Project[] = [
     country: "AL",
     hero: m(`${R}/urban-millefeuille/towers-2.webp`, 2400, 2353, "object-[50%_30%]"),
     cover: m(`${R}/urban-millefeuille/tower.webp`, 1676, 2400, "object-top"),
-    elevation: { src: `${R}/urban-millefeuille/tower.webp`, w: 1676, h: 2400, top: 0.215, base: 0.825, cx: 0.48, width: 0.23 },
+    massing: m(`${R}/urban-millefeuille/massing.webp`, 241, 1193),
     gallery: [
       m(`${R}/urban-millefeuille/towers-2.webp`, 2400, 2353),
       m(`${R}/urban-millefeuille/renders.webp`, 1451, 2078),
