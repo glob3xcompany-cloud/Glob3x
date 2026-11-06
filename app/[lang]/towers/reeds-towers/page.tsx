@@ -17,7 +17,7 @@ import { TowerSections } from "@/components/tower-sections";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { FLAGSHIP, PROJECTS } from "@/lib/projects";
-import { REEDS_SLUG, href, interestIndex, projectHref, reedsSiteHref } from "@/lib/routes";
+import { REEDS_PAGE, REEDS_SLUG, href, interestIndex, projectHref, reedsSiteHref } from "@/lib/routes";
 import { site, whatsappUrl } from "@/lib/site";
 import { getDictionary, projectCopy } from "../../dictionaries";
 
@@ -39,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const copy = projectCopy(dict, REEDS_SLUG);
-  return pageMeta(locale, `projects/${REEDS_SLUG}`, { title: `${copy.name} — ${dict.reeds.hero.subtitle}`, description: copy.intro }, `${R}/hero-poster.jpg`);
+  return pageMeta(locale, REEDS_PAGE, { title: `${copy.name} — ${dict.reeds.hero.subtitle}`, description: copy.intro }, `${R}/hero-poster.jpg`);
 }
 
 export default async function ReedsPage() {

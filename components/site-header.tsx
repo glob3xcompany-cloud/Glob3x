@@ -2,11 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ComponentProps } from "react";
 import type { Locale } from "@/lib/i18n";
-import { NAV, href } from "@/lib/routes";
+import { NAV, href, isExternalNav, navHref, type NavItem } from "@/lib/routes";
 import { BrandLogo } from "./brand-logo";
 import { LanguageMenu } from "./language-menu";
+
+function NavLink({ item, ...props }: { item: NavItem } & Omit<ComponentProps<"a">, "ref"> & { href: string }) {
+  return isExternalNav(item) ? <a {...props} /> : <Link {...props} />;
+}
 
 type NavDict = Record<(typeof NAV)[number]["key"], string> & {
   contact: string;
@@ -37,7 +41,11 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
   }, [open]);
 
   const solid = scrolled || open;
-  const isActive = (slug: string) => (slug ? pathname === href(locale, slug) || pathname.startsWith(href(locale, slug) + "/") : pathname === href(locale));
+  const isActive = (item: NavItem) => {
+    if (isExternalNav(item)) return false;
+    const target = href(locale, item.slug);
+    return item.slug ? pathname === target || pathname.startsWith(target + "/") : pathname === target;
+  };
 
   return (
     <header
@@ -52,16 +60,17 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
 
         <nav className="hidden items-center gap-7 text-[0.8125rem] font-medium tracking-[0.08em] lg:flex">
           {NAV.map((item) => (
-            <Link
+            <NavLink
               key={item.key}
-              href={href(locale, item.slug)}
-              aria-current={isActive(item.slug) ? "page" : undefined}
+              item={item}
+              href={navHref(locale, item)}
+              aria-current={isActive(item) ? "page" : undefined}
               className={`border-b pb-0.5 transition-[opacity,border-color] hover:opacity-100 ${
-                isActive(item.slug) ? "border-gold opacity-100" : "border-transparent opacity-75"
+                isActive(item) ? "border-gold opacity-100" : "border-transparent opacity-75"
               }`}
             >
               {nav[item.key]}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
@@ -90,14 +99,15 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
       <div id="mobile-menu" className={`lg:hidden ${open ? "block" : "hidden"} h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-paper text-ink`}>
         <nav className="container-x flex flex-col py-6">
           {NAV.map((item) => (
-            <Link
+            <NavLink
               key={item.key}
-              href={href(locale, item.slug)}
+              item={item}
+              href={navHref(locale, item)}
               onClick={() => setOpen(false)}
-              className={`font-display border-b border-line py-5 text-3xl ${isActive(item.slug) ? "text-blue" : ""}`}
+              className={`font-display border-b border-line py-5 text-3xl ${isActive(item) ? "text-blue" : ""}`}
             >
               {nav[item.key]}
-            </Link>
+            </NavLink>
           ))}
           <Link href={href(locale, "contact")} onClick={() => setOpen(false)} className="font-display border-b border-line py-5 text-3xl">
             {nav.contact}

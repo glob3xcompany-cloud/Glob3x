@@ -2,7 +2,7 @@ import { cacheLife } from "next/cache";
 import Link from "next/link";
 import { type Locale, localeName, locales } from "@/lib/i18n";
 import { PROJECTS } from "@/lib/projects";
-import { NAV, href, projectHref } from "@/lib/routes";
+import { NAV, href, isExternalNav, navHref, projectHref } from "@/lib/routes";
 import { site, siteAddress, telHref } from "@/lib/site";
 import { BrandLogo } from "./brand-logo";
 
@@ -47,7 +47,11 @@ export async function SiteFooter({ dict, nav, names, locale }: { dict: FooterDic
             <ul className="mt-4 grid gap-2.5 text-sm">
               {NAV.map((item) => (
                 <li key={item.key}>
-                  <Link href={href(locale, item.slug)} className="hover:text-gold">{nav[item.key]}</Link>
+                  {isExternalNav(item) ? (
+                    <a href={navHref(locale, item)} className="hover:text-gold">{nav[item.key]}</a>
+                  ) : (
+                    <Link href={navHref(locale, item)} className="hover:text-gold">{nav[item.key]}</Link>
+                  )}
                 </li>
               ))}
               <li>

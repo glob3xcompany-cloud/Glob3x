@@ -20,7 +20,7 @@ import { REEDS_SLUG, href, interestIndex, projectHref } from "@/lib/routes";
 import { whatsappUrl } from "@/lib/site";
 import { getDictionary, projectCopy } from "../../dictionaries";
 
-/** Reeds Towers has its own, richer page at projects/reeds-towers/page.tsx. */
+/** Reeds Towers has its own, richer page at towers/reeds-towers/page.tsx. */
 export async function generateStaticParams() {
   return PROJECTS.filter((p) => p.slug !== REEDS_SLUG).map((p) => ({ slug: p.slug }));
 }

@@ -14,7 +14,7 @@ npm run typecheck && npm run lint
 
 | Path | Purpose |
 | --- | --- |
-| `app/[lang]/` | Pages: home (`/`), `group`, `projects`, `projects/[slug]`, `projects/reeds-towers` (rich flagship page), `towers`, `construction`, `contact` |
+| `app/[lang]/` | Pages: home (`/`), `group`, `projects`, `projects/[slug]`, `towers`, `towers/reeds-towers` (rich flagship page; the Reeds nav entry opens the dedicated site at `/reeds`), `construction`, `contact` |
 | `lib/projects.ts` | **Single source of truth for the portfolio** – sector, typology, status, role, country, facts (numbers), media, distances |
 | `lib/site.ts` | Company data: phones, WhatsApp, addresses per language, Skela Flex, sales agents |
 | `lib/i18n.ts` | Locales, negotiation (`Accept-Language` → exact → base language → `en`), RTL, native names |

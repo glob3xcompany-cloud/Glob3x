@@ -1,0 +1,22 @@
+# systemd unit for the Reeds Towers site (branch reeds-site, basePath /reeds). Installed to /etc/systemd/system/glob3x-reeds.service
+[Unit]
+Description=Reeds Towers site (Next.js)
+After=network.target
+
+[Service]
+Type=simple
+User=glob3x
+WorkingDirectory=/var/www/reeds/app
+Environment=NODE_ENV=production
+Environment=PORT=3002
+Environment=HOSTNAME=127.0.0.1
+EnvironmentFile=-/var/www/reeds/app/.env.production
+ExecStart=/usr/local/bin/node node_modules/next/dist/bin/next start -p 3002 -H 127.0.0.1
+Restart=on-failure
+RestartSec=5
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

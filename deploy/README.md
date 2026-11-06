@@ -45,6 +45,16 @@ certbot --nginx -d glob3x.al -d www.glob3x.al --redirect -m you@glob3x.al --agre
 bash /var/www/glob3x/app/deploy/update.sh
 ```
 
+## Reeds Towers at /reeds
+
+The Reeds Towers site is a separate Next.js app (branch `reeds-site`, `basePath: "/reeds"`)
+in `/var/www/reeds/app`, running as `glob3x-reeds` on `127.0.0.1:3002`. nginx sends
+`/reeds` there and everything else to the group site. To redeploy it:
+
+```bash
+bash /var/www/glob3x/app/deploy/update-reeds.sh
+```
+
 ## Optional runtime keys
 
 Edit `/var/www/glob3x/app/.env.production` (LEAD_WEBHOOK_URL, DEEPL_API_KEY,
