@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { asset } from "@/lib/site";
 import { prefersReducedMotion, useInView } from "./use-in-view";
 
 /**
@@ -62,7 +63,7 @@ export function ParallaxImage({
       <div data-reveal="clip" data-shown={inView || undefined} className="absolute inset-0 overflow-hidden">
         <div ref={inner} className="absolute inset-x-0" style={{ top: `-${strength}%`, bottom: `-${strength}%` }}>
           <div className="reveal-scale absolute inset-0">
-            <Image src={src} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+            <Image src={asset(src)} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
           </div>
         </div>
       </div>

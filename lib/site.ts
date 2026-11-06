@@ -16,5 +16,15 @@ export const site = {
 /** Mirrors `basePath` in next.config.ts. Links use <Link>, which adds it automatically; metadata does not. */
 export const BASE_PATH = "/reeds";
 
+/**
+ * Public URL of a file in /public. Next adds `basePath` to <Link> and to its own chunks, but NOT to
+ * <Image src>, <video src> or <source src>, so a bare "/media/…" path 404s once the site is served
+ * under /reeds. Every media path goes through here; it is idempotent so prefixed or absolute URLs pass.
+ */
+export function asset(path: string): string {
+  if (/^(https?:)?\/\//.test(path) || path.startsWith(`${BASE_PATH}/`)) return path;
+  return `${BASE_PATH}${path.startsWith("/") ? "" : "/"}${path}`;
+}
+
 export const whatsappUrl = (text: string) =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;

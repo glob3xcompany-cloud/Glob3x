@@ -1,3 +1,4 @@
+import { asset } from "@/lib/site";
 import { FilmDialog } from "./film-dialog";
 
 type HeroDict = {
@@ -18,10 +19,10 @@ export function Hero({ dict, closeLabel }: { dict: HeroDict; closeLabel: string 
         loop
         playsInline
         preload="metadata"
-        poster="/media/reeds/hero-poster.jpg"
+        poster={asset("/media/reeds/hero-poster.jpg")}
         aria-hidden="true"
       >
-        <source src="/media/reeds/hero-loop.mp4" type="video/mp4" />
+        <source src={asset("/media/reeds/hero-loop.mp4")} type="video/mp4" />
       </video>
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgb(14_15_18/0.85)_0%,rgb(14_15_18/0.25)_45%,rgb(14_15_18/0.35)_100%)]" />
 

@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
+import { asset } from "@/lib/site";
 import { groupFor, paymentPlan, PLAN_GROUPS, pricePerM2, residentialFloors, unitCode, type PlanUnit } from "@/lib/units";
 
 export type UnitSelectorLabels = {
@@ -63,7 +64,6 @@ function parseInitial(params: URLSearchParams | null) {
 
 export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabels; contactHref: string }) {
   const params = useSearchParams();
-  const pathname = usePathname();
   const [initial] = useState(() => parseInitial(params));
   const [tower, setTower] = useState<TowerId>(initial.tower);
   const [floor, setFloor] = useState(initial.floor);
@@ -78,7 +78,8 @@ export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabe
 
   function sync(t: TowerId, f: number, n: number | null) {
     const q = n ? `?unit=${unitCode(t, f, n)}` : "";
-    window.history.replaceState(null, "", `${pathname}${q}`);
+    // window.location keeps the /reeds basePath; usePathname() strips it, and a stripped URL 404s when reloaded or shared.
+    window.history.replaceState(null, "", `${window.location.pathname}${q}`);
   }
   function pickTower(t: TowerId) {
     const first = residentialFloors(t).at(-1)!.floor;
@@ -190,7 +191,7 @@ export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabe
           <div className="relative mt-6 bg-white" style={{ aspectRatio: `${group.w} / ${group.h}` }}>
             <Image
               key={group.image}
-              src={group.image}
+              src={asset(group.image)}
               alt={`${labels.tower} ${tower} · ${labels.floor} ${floor}`}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"

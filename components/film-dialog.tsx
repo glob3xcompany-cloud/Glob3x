@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { asset } from "@/lib/site";
 
 export function FilmDialog({ label, closeLabel }: { label: string; closeLabel: string }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -57,9 +58,9 @@ export function FilmDialog({ label, closeLabel }: { label: string; closeLabel: s
             controls
             playsInline
             preload="none"
-            poster="/media/reeds/hero-poster.jpg"
+            poster={asset("/media/reeds/hero-poster.jpg")}
             className="aspect-[1280/633] w-full bg-ink"
-            src="/media/reeds/film-720.mp4"
+            src={asset("/media/reeds/film-720.mp4")}
           />
         </div>
       </dialog>

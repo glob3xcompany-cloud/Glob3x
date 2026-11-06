@@ -12,6 +12,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/page-meta";
 import { href } from "@/lib/routes";
+import { asset } from "@/lib/site";
 import { getDictionary } from "../dictionaries";
 
 const PLAN_SRC = ["/media/reeds/plan-typical-a.webp", "/media/reeds/plan-typical-b.webp", "/media/reeds/plan-typical-c.webp"];
@@ -65,7 +66,7 @@ export default async function ResidencesPage() {
                 <figure className="plan-card group">
                   <div className="relative aspect-[1569/1693] overflow-hidden bg-paper">
                     <Image
-                      src={PLAN_SRC[i]}
+                      src={asset(PLAN_SRC[i])}
                       alt={p.alt}
                       fill
                       sizes="(min-width: 768px) 30vw, 100vw"

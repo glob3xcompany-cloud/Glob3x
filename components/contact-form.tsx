@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import type { LeadErrors } from "@/lib/lead";
+import { BASE_PATH } from "@/lib/site";
 
 const noop = () => () => {};
 const useSearch = () => useSyncExternalStore(noop, () => window.location.search, () => "");
@@ -54,7 +55,8 @@ export function ContactForm({ dict, locale, whatsappHref }: { dict: ContactDict;
     setStatus({ kind: "sending" });
     setErrors({});
     try {
-      const res = await fetch("/api/lead", { method: "POST", body: new FormData(form) });
+      // fetch() does not know about basePath: without the prefix this would hit the group site's API instead.
+      const res = await fetch(`${BASE_PATH}/api/lead`, { method: "POST", body: new FormData(form) });
       if (res.status === 422) {
         const data = (await res.json()) as { errors: LeadErrors };
         setErrors(data.errors);
