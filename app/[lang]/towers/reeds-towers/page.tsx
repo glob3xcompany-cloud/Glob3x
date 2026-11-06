@@ -307,7 +307,7 @@ export default async function ReedsPage() {
 
       {/* Next project */}
       <Link href={projectHref(locale, next.slug)} className="group relative block overflow-hidden bg-ink text-paper">
-        <div className="relative aspect-[21/9] min-h-[16rem]">
+        <div className="relative h-64 md:h-auto md:aspect-[21/9]">
           <Image src={next.cover.src} alt="" fill sizes="100vw" className={`object-cover opacity-60 transition-transform duration-[1600ms] ease-out-expo group-hover:scale-[1.03] ${next.cover.position ?? ""}`} />
           <div className="absolute inset-0 bg-[linear-gradient(to_top,rgb(14_17_23/0.9),rgb(14_17_23/0.2))]" />
           <div className="container-x absolute inset-x-0 bottom-0 pb-12">

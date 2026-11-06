@@ -120,13 +120,13 @@
     "hero": {
       "eyebrow": "Tirana · developer and general contractor since 2008",
       "title": "We design, build and deliver the buildings that define Tirana.",
-      "body": "Glob3x Group controls the entire chain of a building: land, design coordination, permits, structure, envelope, systems and hand-over. Eleven projects in three countries, from the Sochi 2014 Olympic sites to Reeds Towers, a 191.89 m landmark with full approval on Kavaja Street.",
+      "body": "Glob3x Group controls the entire chain of a building: land, design coordination, permits, structure, envelope, systems and hand-over. Eleven projects in three countries, from the Sochi 2014 Olympic sites to Reeds Towers, a 191.89 m landmark on Kavaja Street.",
       "primary": "Explore the projects",
       "secondary": "The towers"
     },
     "facts": [
       { "value": "2008", "label": "Founded in Tirana" },
-      { "value": "191.89 m", "label": "Reeds Towers, the tallest project approved for the company" },
+      { "value": "191.89 m", "label": "Reeds Towers, the company's tallest project" },
       { "value": "820+", "label": "Workers deployed on the Sochi 2014 Olympic sites" },
       { "value": "3", "label": "Countries: Albania, North Macedonia, Russia" }
     ],
@@ -149,7 +149,7 @@
       "facts": [
         { "value": "55 + 36", "label": "floors above ground" },
         { "value": "83,576 m²", "label": "gross floor area" },
-        { "value": "2025", "label": "building permit approved" }
+        { "value": "5", "label": "basement levels" }
       ]
     },
     "towers": {
@@ -194,7 +194,7 @@
         { "year": "2008", "title": "Founded in Tirana", "body": "Glob3x Group starts building multi-storey residential buildings in the capital, as developer and general contractor at the same time." },
         { "year": "2014", "title": "Sochi Winter Olympics", "body": "More than 820 Albanian workers deliver sites of the Olympic construction programme in Sochi, Adler and Krasnaya Polyana." },
         { "year": "2019", "title": "Skopje East Gate", "body": "More than 500 professionals complete the company's phase of a 44,000 m² shopping centre in North Macedonia." },
-        { "year": "2025 →", "title": "Reeds Towers", "body": "The building permit for the 191.89 m Reeds Towers is approved. Glob3x Group enters the league of landmark developers." }
+        { "year": "2025 →", "title": "Reeds Towers", "body": "The 191.89 m Reeds Towers enter development. Glob3x Group enters the league of landmark developers." }
       ],
       "link": "The full story"
     },
@@ -222,7 +222,7 @@
       "body": [
         "Glob3x Group started on site, not in a sales office. Founded in 2008, the company began building multi-storey residential buildings in Tirana, acting as developer and general contractor at the same time. That double role still defines it: the company sells what it builds, and builds what it sells.",
         "In 2014 Glob3x Construction took more than 820 Albanian workers to Russia for the Sochi Winter Olympics construction programme: the Sochi railway station, the Krasnaya Polyana tourist village and the auxiliary buildings of the Adler stadium. In 2019 more than 500 professionals completed the company's phase of Skopje East Gate, a 44,000 m² shopping centre in North Macedonia.",
-        "Today Glob3x Group has three residential buildings completed in Tirana, Lorden Residence under construction and on sale, a luxury hotel in Pezë and three villas in Drymades in development, and three towers in design, led by Reeds Towers, one of the tallest projects ever approved in Albania."
+        "Today Glob3x Group has three residential buildings completed in Tirana, Lorden Residence under construction and on sale, a luxury hotel in Pezë and three villas in Drymades in development, and three towers in design, led by Reeds Towers, one of the tallest projects ever designed in Albania."
       ]
     },
     "companies": {
@@ -262,7 +262,7 @@
         { "year": "2014", "title": "Sochi Winter Olympics", "body": "Glob3x Construction takes part in the Olympic construction programme with more than 820 Albanian workers: the Sochi railway station, the Krasnaya Polyana tourist village and the auxiliary buildings of the Adler stadium." },
         { "year": "2019", "title": "Skopje East Gate", "body": "A 44,000 m² shopping centre in North Macedonia: more than 500 professionals bring the company's phase of the project to completion." },
         { "year": "2015 – 2024", "title": "Tirana portfolio", "body": "Art Residence (2,844.77 m²), New Corner Residence (5,908 m²) and Avi Residence Boulevard (7,220.40 m²) are completed; Lorden Residence (11,064.54 m²) starts on site." },
-        { "year": "2025 →", "title": "Towers and coast", "body": "The permit for the 191.89 m Reeds Towers is approved. Glow Tower and Urban Millefeuille advance in design; the Pezë hotel and the Drymades villas enter development." }
+        { "year": "2025 →", "title": "Towers and coast", "body": "The 191.89 m Reeds Towers enter development. Glow Tower and Urban Millefeuille advance in design; the Pezë hotel and the Drymades villas enter development." }
       ]
     },
     "cta": {

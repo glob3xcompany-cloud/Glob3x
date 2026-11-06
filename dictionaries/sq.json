@@ -122,13 +122,13 @@
     "hero": {
       "eyebrow": "Tiranë · zhvillues dhe kontraktor i përgjithshëm që nga viti 2008",
       "title": "Projektojmë, ndërtojmë dhe dorëzojmë ndërtesat që përcaktojnë Tiranën.",
-      "body": "Glob3x Group kontrollon të gjithë zinxhirin e një ndërtese: truallin, koordinimin e projektimit, lejet, strukturën, fasadën, sistemet dhe dorëzimin. Njëmbëdhjetë projekte në tre shtete, nga kantieret olimpike të Soçit 2014 deri te Reeds Towers, një pikë referimi 191,89 m me leje të plotë në Rrugën e Kavajës.",
+      "body": "Glob3x Group kontrollon të gjithë zinxhirin e një ndërtese: truallin, koordinimin e projektimit, lejet, strukturën, fasadën, sistemet dhe dorëzimin. Njëmbëdhjetë projekte në tre shtete, nga kantieret olimpike të Soçit 2014 deri te Reeds Towers, një pikë referimi 191,89 m në Rrugën e Kavajës.",
       "primary": "Shikoni projektet",
       "secondary": "Kullat"
     },
     "facts": [
       { "value": "2008", "label": "Themeluar në Tiranë" },
-      { "value": "191,89 m", "label": "Reeds Towers, projekti më i lartë i miratuar për kompaninë" },
+      { "value": "191,89 m", "label": "Reeds Towers, projekti më i lartë i kompanisë" },
       { "value": "820+", "label": "Punonjës të angazhuar në kantieret olimpike të Soçit 2014" },
       { "value": "3", "label": "Shtete: Shqipëri, Maqedonia e Veriut, Rusi" }
     ],
@@ -151,7 +151,7 @@
       "facts": [
         { "value": "55 + 36", "label": "kate mbi tokë" },
         { "value": "83.576 m²", "label": "sipërfaqe bruto ndërtimi" },
-        { "value": "2025", "label": "leja e ndërtimit e miratuar" }
+        { "value": "5", "label": "kate nëntokësore" }
       ]
     },
     "towers": {
@@ -196,7 +196,7 @@
         { "year": "2008", "title": "Themelimi në Tiranë", "body": "Glob3x Group fillon ndërtimin e ndërtesave shumëkatëshe të banimit në kryeqytet, njëkohësisht si zhvillues dhe kontraktor i përgjithshëm." },
         { "year": "2014", "title": "Lojërat Olimpike Dimërore të Soçit", "body": "Mbi 820 punonjës shqiptarë realizojnë kantiere të programit olimpik të ndërtimit në Soçi, Adler dhe Krasnaya Polyana." },
         { "year": "2019", "title": "Skopje East Gate", "body": "Mbi 500 profesionistë përfundojnë fazën e kompanisë në një qendër tregtare 44.000 m² në Maqedoninë e Veriut." },
-        { "year": "2025 →", "title": "Reeds Towers", "body": "Miratohet leja e ndërtimit për Reeds Towers, 191,89 m. Glob3x Group hyn në ligën e zhvilluesve të projekteve simbol." }
+        { "year": "2025 →", "title": "Reeds Towers", "body": "Reeds Towers, 191,89 m, hyn në fazën e zhvillimit. Glob3x Group hyn në ligën e zhvilluesve të projekteve simbol." }
       ],
       "link": "Historia e plotë"
     },
@@ -224,7 +224,7 @@
       "body": [
         "Glob3x Group nisi në kantier, jo në një zyrë shitjesh. E themeluar në vitin 2008, kompania filloi ndërtimin e ndërtesave shumëkatëshe të banimit në Tiranë, duke vepruar njëkohësisht si zhvillues dhe kontraktor i përgjithshëm. Ky rol i dyfishtë e përcakton ende: kompania shet atë që ndërton dhe ndërton atë që shet.",
         "Në vitin 2014 Glob3x Construction çoi mbi 820 punonjës shqiptarë në Rusi për programin e ndërtimit të Lojërave Olimpike Dimërore të Soçit: stacionin hekurudhor të Soçit, fshatin turistik Krasnaya Polyana dhe ndërtesat ndihmëse të stadiumit të Adlerit. Në vitin 2019 mbi 500 profesionistë përfunduan fazën e kompanisë në Skopje East Gate, një qendër tregtare 44.000 m² në Maqedoninë e Veriut.",
-        "Sot Glob3x Group ka tre ndërtesa banimi të përfunduara në Tiranë, Lorden Residence në ndërtim dhe në shitje, një hotel luksoz në Pezë dhe tre vila në Drimadhe në zhvillim, si dhe tre kulla në projektim, të udhëhequra nga Reeds Towers, një nga projektet më të larta të miratuara ndonjëherë në Shqipëri."
+        "Sot Glob3x Group ka tre ndërtesa banimi të përfunduara në Tiranë, Lorden Residence në ndërtim dhe në shitje, një hotel luksoz në Pezë dhe tre vila në Drimadhe në zhvillim, si dhe tre kulla në projektim, të udhëhequra nga Reeds Towers, një nga projektet më të larta të projektuara ndonjëherë në Shqipëri."
       ]
     },
     "companies": {
@@ -264,7 +264,7 @@
         { "year": "2014", "title": "Lojërat Olimpike Dimërore të Soçit", "body": "Glob3x Construction merr pjesë në programin olimpik të ndërtimit me mbi 820 punonjës shqiptarë: stacioni hekurudhor i Soçit, fshati turistik Krasnaya Polyana dhe ndërtesat ndihmëse të stadiumit të Adlerit." },
         { "year": "2019", "title": "Skopje East Gate", "body": "Një qendër tregtare 44.000 m² në Maqedoninë e Veriut: mbi 500 profesionistë çojnë në përfundim fazën e kompanisë në projekt." },
         { "year": "2015 – 2024", "title": "Portofoli i Tiranës", "body": "Përfundohen Art Residence (2.844,77 m²), New Corner Residence (5.908 m²) dhe Avi Residence Boulevard (7.220,40 m²); Lorden Residence (11.064,54 m²) nis në kantier." },
-        { "year": "2025 →", "title": "Kullat dhe bregdeti", "body": "Miratohet leja për Reeds Towers, 191,89 m. Glow Tower dhe Urban Millefeuille avancojnë në projektim; hoteli në Pezë dhe vilat në Drimadhe hyjnë në zhvillim." }
+        { "year": "2025 →", "title": "Kullat dhe bregdeti", "body": "Reeds Towers, 191,89 m, hyn në zhvillim. Glow Tower dhe Urban Millefeuille avancojnë në projektim; hoteli në Pezë dhe vilat në Drimadhe hyjnë në zhvillim." }
       ]
     },
     "cta": {

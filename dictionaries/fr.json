@@ -119,13 +119,13 @@
     "hero": {
       "eyebrow": "Tirana · promoteur et entreprise générale depuis 2008",
       "title": "Nous concevons, construisons et livrons les bâtiments qui définissent Tirana.",
-      "body": "Glob3x Group maîtrise toute la chaîne d'un bâtiment : foncier, coordination de la conception, permis, structure, enveloppe, équipements techniques et livraison. Onze projets dans trois pays, des chantiers olympiques de Sotchi 2014 à Reeds Towers, un repère urbain de 191,89 m entièrement autorisé sur la Rruga e Kavajës.",
+      "body": "Glob3x Group maîtrise toute la chaîne d'un bâtiment : foncier, coordination de la conception, permis, structure, enveloppe, équipements techniques et livraison. Onze projets dans trois pays, des chantiers olympiques de Sotchi 2014 à Reeds Towers, un repère urbain de 191,89 m sur la Rruga e Kavajës.",
       "primary": "Découvrir les projets",
       "secondary": "Les tours"
     },
     "facts": [
       { "value": "2008", "label": "Fondation à Tirana" },
-      { "value": "191,89 m", "label": "Reeds Towers, le projet le plus haut autorisé pour la société" },
+      { "value": "191,89 m", "label": "Reeds Towers, le projet le plus haut de la société" },
       { "value": "820+", "label": "Ouvriers mobilisés sur les chantiers olympiques de Sotchi 2014" },
       { "value": "3", "label": "Pays : Albanie, Macédoine du Nord, Russie" }
     ],
@@ -148,7 +148,7 @@
       "facts": [
         { "value": "55 + 36", "label": "niveaux hors sol" },
         { "value": "83 576 m²", "label": "surface de plancher brute" },
-        { "value": "2025", "label": "permis de construire accordé" }
+        { "value": "5", "label": "niveaux de sous-sol" }
       ]
     },
     "towers": {
@@ -193,7 +193,7 @@
         { "year": "2008", "title": "Fondation à Tirana", "body": "Glob3x Group commence à construire des immeubles résidentiels de plusieurs niveaux dans la capitale, à la fois comme promoteur et entreprise générale." },
         { "year": "2014", "title": "Jeux olympiques d'hiver de Sotchi", "body": "Plus de 820 ouvriers albanais livrent des chantiers du programme de construction olympique à Sotchi, Adler et Krasnaïa Poliana." },
         { "year": "2019", "title": "Skopje East Gate", "body": "Plus de 500 professionnels achèvent la phase confiée à la société d'un centre commercial de 44 000 m² en Macédoine du Nord." },
-        { "year": "2025 →", "title": "Reeds Towers", "body": "Le permis de construire des Reeds Towers de 191,89 m est accordé. Glob3x Group entre dans la catégorie des promoteurs de repères urbains." }
+        { "year": "2025 →", "title": "Reeds Towers", "body": "Les Reeds Towers de 191,89 m entrent en phase de développement. Glob3x Group entre dans la catégorie des promoteurs de repères urbains." }
       ],
       "link": "L'histoire complète"
     },
@@ -221,7 +221,7 @@
       "body": [
         "Glob3x Group est née sur le chantier, pas dans un bureau de vente. Fondée en 2008, la société a commencé par construire des immeubles résidentiels de plusieurs niveaux à Tirana, à la fois comme promoteur et entreprise générale. Ce double rôle la définit encore : la société vend ce qu'elle construit et construit ce qu'elle vend.",
         "En 2014, Glob3x Construction a emmené plus de 820 ouvriers albanais en Russie pour le programme de construction des Jeux olympiques d'hiver de Sotchi : la gare de Sotchi, le village touristique de Krasnaïa Poliana et les bâtiments annexes du stade d'Adler. En 2019, plus de 500 professionnels ont achevé la phase confiée à la société de Skopje East Gate, un centre commercial de 44 000 m² en Macédoine du Nord.",
-        "Aujourd'hui, Glob3x Group compte trois immeubles résidentiels livrés à Tirana, Lorden Residence en construction et en vente, un hôtel de luxe à Pezë et trois villas à Drymades en développement, et trois tours en conception, menées par Reeds Towers, l'un des projets les plus hauts jamais autorisés en Albanie."
+        "Aujourd'hui, Glob3x Group compte trois immeubles résidentiels livrés à Tirana, Lorden Residence en construction et en vente, un hôtel de luxe à Pezë et trois villas à Drymades en développement, et trois tours en conception, menées par Reeds Towers, l'un des projets les plus hauts jamais conçus en Albanie."
       ]
     },
     "companies": {
@@ -261,7 +261,7 @@
         { "year": "2014", "title": "Jeux olympiques d'hiver de Sotchi", "body": "Glob3x Construction participe au programme de construction olympique avec plus de 820 ouvriers albanais : la gare de Sotchi, le village touristique de Krasnaïa Poliana et les bâtiments annexes du stade d'Adler." },
         { "year": "2019", "title": "Skopje East Gate", "body": "Un centre commercial de 44 000 m² en Macédoine du Nord : plus de 500 professionnels mènent à terme la phase confiée à la société." },
         { "year": "2015 – 2024", "title": "Portefeuille de Tirana", "body": "Art Residence (2 844,77 m²), New Corner Residence (5 908 m²) et Avi Residence Boulevard (7 220,40 m²) sont livrés ; Lorden Residence (11 064,54 m²) entre en chantier." },
-        { "year": "2025 →", "title": "Tours et littoral", "body": "Le permis des Reeds Towers de 191,89 m est accordé. Glow Tower et Urban Millefeuille avancent en conception ; l'hôtel de Pezë et les villas de Drymades entrent en développement." }
+        { "year": "2025 →", "title": "Tours et littoral", "body": "Les Reeds Towers de 191,89 m entrent en développement. Glow Tower et Urban Millefeuille avancent en conception ; l'hôtel de Pezë et les villas de Drymades entrent en développement." }
       ]
     },
     "cta": {

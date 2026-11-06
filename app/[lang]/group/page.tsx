@@ -105,7 +105,7 @@ export default async function GroupPage() {
         </div>
       </section>
 
-      <div className="relative aspect-[21/9] min-h-[18rem]">
+      <div className="relative h-72 md:h-auto md:aspect-[21/9]">
         <ParallaxImage src="/media/group/reeds-terraces.webp" alt="" sizes="100vw" className="h-full" strength={8} />
       </div>
 
