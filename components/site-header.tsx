@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/lib/i18n";
 import { NAV, href } from "@/lib/routes";
+import { site } from "@/lib/site";
 import { PlansDock } from "./plans-cta";
 
 type NavDict = Record<(typeof NAV)[number]["key"], string> & {
@@ -43,6 +44,9 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
   const otherPath = pathname.replace(/^\/(en|sq)(?=\/|$)/, `/${other}`);
   const solid = scrolled || open;
   const isActive = (slug: string) => pathname === href(locale, slug);
+  // "Home" is the welcome page of the group website, in the language being read. It lies outside this
+  // microsite's basePath, so it is a plain <a>: <Link> would prefix it with /reeds.
+  const groupHome = `${site.groupSite}/${locale}`;
   // Lands on the selector itself, past the page banner.
   const plansHref = `${href(locale, "units")}#selector`;
   const dock = !open && !NO_DOCK.some(isActive);
@@ -57,11 +61,15 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
         }`}
       >
         <div className="container-x flex h-16 items-center justify-between md:h-20">
-          <Link href={href(locale)} className="font-display text-xl tracking-[0.18em] uppercase md:text-2xl">
+          <Link href={href(locale)} className="font-display text-xl tracking-[0.18em] whitespace-nowrap uppercase md:text-2xl">
             Reeds Towers
           </Link>
 
-          <nav className="hidden items-center gap-7 text-[0.8125rem] font-medium tracking-[0.08em] lg:flex">
+          {/* Eight links, the language switch and the call button need the width of xl to sit on one line; below that the menu button takes over. */}
+          <nav className="hidden items-center gap-5 text-[0.8125rem] font-medium tracking-[0.08em] whitespace-nowrap xl:flex 2xl:gap-7">
+            <a href={groupHome} className="border-b border-transparent pb-0.5 opacity-75 transition-[opacity,border-color] hover:opacity-100">
+              {nav.home}
+            </a>
             {NAV.map((item) => (
               <Link
                 key={item.slug}
@@ -76,7 +84,7 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-6 lg:flex">
+          <div className="hidden items-center gap-5 whitespace-nowrap xl:flex 2xl:gap-6">
             <Link href={otherPath} hrefLang={other} className="text-[0.75rem] font-semibold tracking-[0.2em] uppercase opacity-80 hover:opacity-100">
               {other}
             </Link>
@@ -93,7 +101,7 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 items-center gap-3 text-[0.75rem] font-semibold tracking-[0.2em] uppercase lg:hidden"
+            className="flex h-10 items-center gap-3 text-[0.75rem] font-semibold tracking-[0.2em] uppercase xl:hidden"
           >
             {open ? nav.close : nav.menu}
             <span className="relative block h-3 w-6">
@@ -105,11 +113,14 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
 
         <div
           id="mobile-menu"
-          className={`lg:hidden ${open ? "block" : "hidden"} h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-paper text-ink`}
+          className={`xl:hidden ${open ? "block" : "hidden"} h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-paper text-ink md:h-[calc(100dvh-5rem)]`}
         >
           <nav className="container-x flex flex-col py-6" onClick={() => setOpen(false)}>
-            <Link href={href(locale)} className="font-display border-b border-line py-5 text-3xl">
+            <a href={groupHome} className="font-display border-b border-line py-5 text-3xl">
               {nav.home}
+            </a>
+            <Link href={href(locale)} className={`font-display border-b border-line py-5 text-3xl ${pathname === href(locale) ? "text-gold" : ""}`}>
+              Reeds Towers
             </Link>
             {NAV.map((item) => (
               <Link
