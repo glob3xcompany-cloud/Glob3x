@@ -14,9 +14,10 @@ export function BrandLogo({ size = "md", className = "" }: { size?: "sm" | "md" 
       <Image src="/brand/glob3x-mark.png" alt="" width={px} height={h} priority className="h-auto shrink-0" />
       <span className={`flex items-start leading-none ${size === "lg" ? "text-2xl" : size === "sm" ? "text-base" : "text-lg md:text-xl"}`}>
         <span className={`${word} tracking-[0.2em]`}>Glob</span>
-        {/* A word space after GLOB, then "3X" set tight with "Group" centred beneath it. */}
-        <span className="ml-[0.35em] flex flex-col items-center">
-          <span className={`${word} tracking-[0.02em]`}>3x</span>
+        {/* A narrow space after GLOB (its tracking already trails the B), then "3X" set tight with "Group" centred beneath it. */}
+        <span className="ml-[0.12em] flex flex-col items-center">
+          {/* Cormorant's default old-style 3 drops below the baseline; lining figures sit level with the X. */}
+          <span className={`${word} tracking-[0.02em] lining-nums`}>3x</span>
           {/* Zero-width holder: "Group" is a little wider than "3X" and must not push the two words apart. The negative margin takes back the letter-spacing that trails its last letter. */}
           <span className={`mt-1 flex w-0 justify-center ${size === "sm" ? "hidden" : ""}`}>
             <span className="-mr-[0.42em] text-[0.5rem] font-semibold tracking-[0.42em] whitespace-nowrap uppercase opacity-70">Group</span>
