@@ -181,7 +181,8 @@ export function Skyline({ towers, labels, locale }: { towers: SkylineTower[]; la
                 <span className={`block text-[0.8125rem] leading-snug font-semibold transition-colors md:text-sm ${on ? "text-blue" : "text-ink"} group-hover:text-blue`}>{t.name}</span>
                 {t.floors ? (
                   <span className="mt-1 block text-[0.6875rem] leading-snug text-muted md:text-xs">
-                    {t.floors} {labels.floors.toLowerCase()}
+                    {/* German capitalises nouns, so only the other languages take the label in lower case after the number. */}
+                    {t.floors} {locale === "de" ? labels.floors : labels.floors.toLowerCase()}
                   </span>
                 ) : null}
                 {t.gfa ? <span className="block text-[0.6875rem] leading-snug text-muted md:text-xs">{formatNumber(locale, t.gfa, 0)} m²</span> : null}
