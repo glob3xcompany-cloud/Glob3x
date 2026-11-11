@@ -28,17 +28,18 @@ export function PlansDock({ href, label, hint }: { href: string; label: string; 
       <Link
         href={href}
         title={hint}
-        className="group animate-rise pointer-events-auto flex w-full max-w-sm items-center gap-3 rounded-full border border-gold/50 bg-ink/90 py-2 pr-2 pl-4 text-paper shadow-[0_14px_40px_-10px_rgb(0_0_0/0.6)] backdrop-blur-md transition-colors duration-300 [animation-delay:500ms] hover:border-gold hover:bg-ink min-[380px]:gap-3.5 min-[380px]:pl-5 lg:w-auto lg:max-w-none lg:gap-3 lg:py-1.5 lg:pr-1.5 lg:pl-4"
+        className="group animate-rise pointer-events-auto flex w-full max-w-sm items-center gap-3 rounded-full border border-gold-2/50 bg-gold py-2 pr-2 pl-4 text-ink shadow-[0_10px_28px_-14px_rgb(14_15_18/0.45)] transition-colors duration-300 [animation-delay:500ms] hover:bg-gold-2 min-[380px]:gap-3.5 min-[380px]:pl-5 lg:w-auto lg:max-w-none lg:gap-3 lg:py-1.5 lg:pr-1.5 lg:pl-4"
       >
-        <PlanIcon className="h-5 w-5 shrink-0 text-gold lg:h-4 lg:w-4" />
+        {/* The gold of the header's call button, with ink for everything on it; the arrow sits on an ink disc. */}
+        <PlanIcon className="h-5 w-5 shrink-0 lg:h-4 lg:w-4" />
         <span className="min-w-0 flex-1">
           {/* The narrowest phones (320px) get a slightly tighter label so it never clips. */}
           <span className="block text-[0.6875rem] font-semibold tracking-[0.1em] whitespace-nowrap uppercase min-[380px]:text-[0.75rem] min-[380px]:tracking-[0.18em] lg:text-[0.6875rem]">{label}</span>
-          <span className="mt-0.5 block truncate text-[0.6875rem] text-paper/60 lg:hidden">{hint}</span>
+          <span className="mt-0.5 block truncate text-[0.6875rem] text-ink/70 lg:hidden">{hint}</span>
         </span>
         <span
           aria-hidden="true"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold text-base text-ink transition-transform duration-300 ease-out-expo group-hover:translate-x-0.5 group-active:scale-95 lg:h-8 lg:w-8 lg:text-sm"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink text-base text-gold transition-transform duration-300 ease-out-expo group-hover:translate-x-0.5 group-active:scale-95 lg:h-8 lg:w-8 lg:text-sm"
         >
           →
         </span>
