@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
+import Script from "next/script";
+import { ConsentBanner } from "@/components/consent-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TAG_ID, trackingBootstrap, trackingEnabled } from "@/lib/analytics";
 import { isLocale, locales } from "@/lib/i18n";
-import { BASE_PATH, site } from "@/lib/site";
+import { BASE_PATH, privacyUrl, site } from "@/lib/site";
 import { getDictionary } from "./dictionaries";
 import "../globals.css";
 
@@ -53,9 +56,16 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   return (
     <html lang={locale} data-scroll-behavior="smooth" className={`${display.variable} ${sans.variable} h-full`}>
       <body className="min-h-full flex flex-col">
+        {trackingEnabled ? (
+          <Script id="tracking-consent" strategy="beforeInteractive">
+            {trackingBootstrap()}
+          </Script>
+        ) : null}
+        {TAG_ID ? <Script src={`https://www.googletagmanager.com/gtag/js?id=${TAG_ID}`} strategy="afterInteractive" /> : null}
         <SiteHeader nav={dict.nav} locale={locale} />
         <main className="flex-1">{children}</main>
-        <SiteFooter dict={dict.footer} nav={dict.nav} locale={locale} />
+        <SiteFooter dict={dict.footer} cookies={dict.cookies} nav={dict.nav} locale={locale} />
+        {trackingEnabled ? <ConsentBanner dict={dict.cookies} privacyHref={privacyUrl(locale)} /> : null}
       </body>
     </html>
   );

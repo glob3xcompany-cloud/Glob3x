@@ -26,5 +26,8 @@ export function asset(path: string): string {
   return `${BASE_PATH}${path.startsWith("/") ? "" : "/"}${path}`;
 }
 
+/** The privacy and cookie policy lives on the group site and covers this one; it is outside basePath, so use a plain <a>. */
+export const privacyUrl = (locale: string) => `${site.groupSite}/${locale}/privacy`;
+
 export const whatsappUrl = (text: string) =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;

@@ -390,6 +390,7 @@
     "interestOptions": ["Njësi 1+1", "Njësi 2+1", "Katet e sipërme (31 – 47)", "Hapësirë zyre", "Disa njësi / investim"],
     "message": "Mesazhi",
     "consent": "Pranoj që Glob3x Group të më kontaktojë në lidhje me Reeds Towers.",
+    "privacy": "Politika e privatësisë",
     "submit": "Dërgo kërkesën",
     "sending": "Duke dërguar…",
     "whatsapp": "Shkruaj në WhatsApp",
@@ -414,6 +415,15 @@
     "navigation": "Navigimi",
     "disclaimer": "Reeds Towers zhvillohet dhe zbatohet nga Glob3x Group sh.p.k. Renderat janë përshtypje artistike; detajet mund të ndryshojnë gjatë ndërtimit.",
     "rights": "Të gjitha të drejtat e rezervuara.",
+    "privacy": "Politika e privatësisë",
     "language": "Gjuha"
+  },
+  "cookies": {
+    "label": "Pëlqimi për cookies",
+    "text": "Me pëlqimin tuaj përdorim cookies të Google dhe Meta (Facebook, Instagram) për të parë cilat reklama dhe faqe sjellin kërkesa dhe për t'ua shfaqur reklamat tona atyre që e kanë vizituar këtë faqe. Gjuha që zgjidhni ruhet gjithmonë.",
+    "accept": "Pranoj",
+    "reject": "Refuzoj",
+    "privacy": "Politika e privatësisë",
+    "settings": "Cilësimet e cookies"
   }
 }

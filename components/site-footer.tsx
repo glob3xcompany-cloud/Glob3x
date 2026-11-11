@@ -1,8 +1,10 @@
 import { cacheLife } from "next/cache";
 import Link from "next/link";
+import { trackingEnabled } from "@/lib/analytics";
 import type { Locale } from "@/lib/i18n";
 import { NAV, href } from "@/lib/routes";
-import { site } from "@/lib/site";
+import { privacyUrl, site } from "@/lib/site";
+import { ConsentSettingsButton } from "./consent-banner";
 
 type FooterDict = {
   developer: string;
@@ -12,6 +14,7 @@ type FooterDict = {
   disclaimer: string;
   rights: string;
   language: string;
+  privacy: string;
 };
 type NavDict = Record<(typeof NAV)[number]["key"], string> & { home: string };
 
@@ -21,7 +24,7 @@ async function getYear() {
   return new Date().getFullYear();
 }
 
-export async function SiteFooter({ dict, nav, locale }: { dict: FooterDict; nav: NavDict; locale: Locale }) {
+export async function SiteFooter({ dict, cookies, nav, locale }: { dict: FooterDict; cookies: { settings: string }; nav: NavDict; locale: Locale }) {
   const year = await getYear();
   return (
     <footer className="border-t border-line-dark bg-ink-2 text-paper">
@@ -85,9 +88,13 @@ export async function SiteFooter({ dict, nav, locale }: { dict: FooterDict; nav:
           </div>
         </div>
         <p className="mt-12 max-w-3xl text-[0.75rem] leading-relaxed text-paper/45">{dict.disclaimer}</p>
-        <p className="mt-4 text-[0.75rem] text-paper/45">
-          © {year} {site.company}. {dict.rights}
-        </p>
+        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[0.75rem] text-paper/45">
+          <p>
+            © {year} {site.company}. {dict.rights}
+          </p>
+          <a href={privacyUrl(locale)} className="hover:text-gold">{dict.privacy}</a>
+          {trackingEnabled ? <ConsentSettingsButton label={cookies.settings} /> : null}
+        </div>
       </div>
     </footer>
   );

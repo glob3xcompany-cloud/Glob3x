@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useSyncExternalStore, type FormEvent } from "react";
+import { track } from "@/lib/analytics";
 import type { LeadErrors } from "@/lib/lead";
-import { BASE_PATH } from "@/lib/site";
+import { BASE_PATH, privacyUrl } from "@/lib/site";
 
 const noop = () => () => {};
 const useSearch = () => useSyncExternalStore(noop, () => window.location.search, () => "");
@@ -26,6 +27,7 @@ export type ContactDict = {
   interestOptions: string[];
   message: string;
   consent: string;
+  privacy: string;
   submit: string;
   sending: string;
   whatsapp: string;
@@ -54,16 +56,23 @@ export function ContactForm({ dict, locale, whatsappHref }: { dict: ContactDict;
     const form = e.currentTarget;
     setStatus({ kind: "sending" });
     setErrors({});
+    const data = new FormData(form);
     try {
       // fetch() does not know about basePath: without the prefix this would hit the group site's API instead.
-      const res = await fetch(`${BASE_PATH}/api/lead`, { method: "POST", body: new FormData(form) });
+      const res = await fetch(`${BASE_PATH}/api/lead`, { method: "POST", body: data });
       if (res.status === 422) {
-        const data = (await res.json()) as { errors: LeadErrors };
-        setErrors(data.errors);
+        const body = (await res.json()) as { errors: LeadErrors };
+        setErrors(body.errors);
         setStatus({ kind: "error", invalid: true });
         return;
       }
       if (!res.ok) throw new Error(String(res.status));
+      track("lead", {
+        form: "reeds",
+        interest: String(data.get("interest") ?? ""),
+        budget: String(data.get("budget") ?? ""),
+        unit_type: unit?.type ?? "",
+      });
       form.reset();
       setStatus({ kind: "success" });
     } catch {
@@ -145,7 +154,12 @@ export function ContactForm({ dict, locale, whatsappHref }: { dict: ContactDict;
 
       <label className={`flex items-start gap-3 text-sm text-paper/70 ${errors.consent ? "text-red-300" : ""}`}>
         <input type="checkbox" name="consent" required className="mt-1 h-4 w-4 shrink-0 accent-gold" />
-        <span>{dict.consent}</span>
+        <span>
+          {dict.consent}{" "}
+          <a href={privacyUrl(locale)} target="_blank" className="underline underline-offset-4 hover:text-paper">
+            {dict.privacy}
+          </a>
+        </span>
       </label>
 
       {status.kind === "error" ? (

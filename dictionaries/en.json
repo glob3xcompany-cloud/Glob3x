@@ -390,6 +390,7 @@
     "interestOptions": ["1+1 unit", "2+1 unit", "Upper floors (31 – 47)", "Office space", "Multiple units / investment"],
     "message": "Message",
     "consent": "I agree that Glob3x Group may contact me about Reeds Towers.",
+    "privacy": "Privacy policy",
     "submit": "Send request",
     "sending": "Sending…",
     "whatsapp": "Chat on WhatsApp",
@@ -414,6 +415,15 @@
     "navigation": "Navigation",
     "disclaimer": "Reeds Towers is developed and built by Glob3x Group sh.p.k. Renderings are artistic impressions; details may change during construction.",
     "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
     "language": "Language"
+  },
+  "cookies": {
+    "label": "Cookie consent",
+    "text": "With your consent we use cookies from Google and Meta (Facebook, Instagram) to see which of our advertisements and pages lead to enquiries and to show our advertisements to people who visited this website. Your language setting is always kept.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "privacy": "Privacy policy",
+    "settings": "Cookie settings"
   }
 }
