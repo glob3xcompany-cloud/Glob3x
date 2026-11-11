@@ -96,8 +96,8 @@ body {
   animation: kenburns 7s var(--ease-out-expo) both;
 }
 
-/* Where the floating plans button is centred (below lg), the footer ends above it so its last links stay reachable. */
-@media (width < 64rem) {
+/* Where the floating plans button lies along the bottom edge (below xl), the footer ends above it so its last links stay reachable. */
+@media (width < 80rem) {
   body:has([data-plans-dock]) > footer {
     padding-bottom: 5.5rem;
   }
