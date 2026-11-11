@@ -27,7 +27,10 @@ export function organizationJsonLd(locale: Locale, knowsAbout: string[]) {
     "@id": ORGANIZATION_ID,
     name: site.company,
     legalName: site.legalName,
-    alternateName: ["Glob3x", "Glob 3X", "Glob3x Group sh.p.k."],
+    // Every spelling people search for, including the name in the business register ("GLOB 3X GROUP", formerly "GLOB-3X").
+    alternateName: ["Glob3x", "Glob 3X", "GLOB 3X GROUP", "Glob 3X Group", "GLOB-3X", "Glob3x Group sh.p.k.", "Glob3x Construction", "Glob3x Real Estate"],
+    // NIPT in the Albanian business register (QKB).
+    taxID: "K82221013D",
     url: url(`/${locale}`),
     logo: url("/icon.png"),
     image: url("/media/projects/reeds-towers/hero-poster.jpg"),
