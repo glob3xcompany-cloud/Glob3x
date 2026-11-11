@@ -633,6 +633,7 @@
     "interestOptions": ["Blerje apartamenti", "Hapësirë tregtare", "Reeds Towers", "Kullat dhe investim", "Vila dhe hoteleri", "Shërbime ndërtimi", "Tjetër"],
     "message": "Mesazhi (opsional)",
     "consent": "Pranoj që Glob3x Group të më kontaktojë në lidhje me kërkesën time. Të dhënat e mia nuk do t'u jepen palëve të treta.",
+    "privacy": "Politika e privatësisë",
     "submit": "Dërgo kërkesën",
     "sending": "Duke dërguar…",
     "whatsapp": "Shkruani në WhatsApp",
@@ -649,6 +650,92 @@
     "language": "Gjuha",
     "legal": "Ligjore",
     "disclaimer": "Pamjet 3D janë përshtypje artistike. Sipërfaqet, numri i kateve dhe specifikimet mund të ndryshojnë gjatë zhvillimit të projektit dhe lejeve. Asgjë në këtë faqe nuk përbën ofertë kontraktuale.",
-    "rights": "Të gjitha të drejtat e rezervuara."
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "privacy": "Politika e privatësisë"
+  },
+  "cookies": {
+    "label": "Pëlqimi për cookies",
+    "text": "Me pëlqimin tuaj përdorim cookies të Google dhe Meta (Facebook, Instagram) për të parë cilat reklama dhe faqe sjellin kërkesa dhe për t'ua shfaqur reklamat tona atyre që e kanë vizituar këtë faqe. Gjuha që zgjidhni ruhet gjithmonë.",
+    "accept": "Pranoj",
+    "reject": "Refuzoj",
+    "privacy": "Politika e privatësisë",
+    "settings": "Cilësimet e cookies"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politika e privatësisë dhe e cookies",
+      "description": "Si i trajton Glob3x Group të dhënat personale që dërgoni përmes glob3x.com dhe cilat cookies përdor faqja."
+    },
+    "eyebrow": "Privatësia",
+    "title": "Politika e privatësisë dhe e cookies",
+    "intro": "Kjo faqe shpjegon cilat të dhëna personale marrim përmes glob3x.com, përfshirë faqet e Reeds Towers në glob3x.com/reeds, çfarë bëjmë me to dhe si mund t'i kontrolloni.",
+    "updated": "Përditësuar më: 10 nëntor 2026",
+    "sections": [
+      {
+        "title": "Kush është përgjegjës",
+        "body": [
+          "Glob3x Group sh.p.k., Rruga Abdyl Frashëri, EGT Tower, kati 5, Tiranë, është përgjegjëse për të dhënat personale që përpunohen në këtë faqe.",
+          "Për çdo pyetje rreth të dhënave tuaja, shkruani në info@glob3x.com ose telefononi +355 69 700 3218."
+        ]
+      },
+      {
+        "title": "Çfarë marrim kur na kontaktoni",
+        "body": [
+          "Kur dërgoni një formular kontakti marrim emrin, adresën e email-it, numrin e telefonit dhe shtetin tuaj, temën që zgjidhni dhe mesazhin, si dhe, në faqet e Reeds Towers, buxhetin dhe apartamentin që keni zgjedhur.",
+          "Regjistrojmë gjithashtu gjuhën e faqes, faqen nga u dërgua formulari, orën dhe llojin e shfletuesit. I përdorim për t'ju përgjigjur në gjuhën e duhur dhe për të ndaluar spam-in.",
+          "Nëse plotësoni një nga formularët tanë brenda Facebook-ut ose Instagram-it, Meta na dërgon të dhënat që shkruani aty dhe ne i përdorim në të njëjtën mënyrë."
+        ]
+      },
+      {
+        "title": "Pse i përdorim",
+        "body": [
+          "I përdorim të dhënat tuaja vetëm për t'iu përgjigjur kërkesës dhe për t'ju dërguar informacionin që kërkuat për projektet tona. Baza ligjore është pëlqimi juaj, i dhënë me kutinë në formular, dhe hapat që na kërkoni të ndërmarrim përpara një blerjeje të mundshme.",
+          "Nuk i shesim të dhënat tuaja dhe nuk ua japim kompanive të tjera për marketingun e tyre."
+        ]
+      },
+      {
+        "title": "Kush i merr",
+        "body": [
+          "Kërkesa juaj ruhet në serverin tonë dhe dërgohet në email-in e kompanisë dhe në sistemin tonë të menaxhimit të klientëve, ku e trajton ekipi i shitjeve.",
+          "Kompanitë që mbajnë faqen dhe email-in tonë i përpunojnë të dhënat në emrin tonë dhe vetëm sipas udhëzimeve tona.",
+          "Nëse na shkruani në WhatsApp ose plotësoni një formular tonin në Facebook ose Instagram, për atë bisedë ose formular vlen edhe politika e privatësisë së Meta-s."
+        ]
+      },
+      {
+        "title": "Cookies dhe matja",
+        "body": [
+          "Gjithmonë aktive: një cookie me emrin \"lang\" që mban mend gjuhën tuaj për një vit, dhe zgjedhja juaj për cookies, që ruhet në shfletuesin tuaj.",
+          "Vetëm me pëlqimin tuaj: cookies të Google Ads dhe Google Analytics dhe Meta Pixel (Facebook, Instagram). Na tregojnë cilat reklama dhe faqe sjellin kërkesa dhe na lejojnë t'ua shfaqim reklamat tona në Facebook dhe Instagram atyre që e kanë vizituar këtë faqe. Vendosen vetëm pasi zgjidhni \"Pranoj\" dhe skadojnë pas jo më shumë se 13 muajsh.",
+          "Për Meta Pixel, Meta Platforms Ireland Ltd. dhe Glob3x Group janë bashkërisht përgjegjëse për mbledhjen e të dhënave në këtë faqe dhe dërgimin e tyre te Meta; çfarë bën Meta me to më pas përshkruhet në politikën e privatësisë së Meta-s.",
+          "Nëse zgjidhni \"Refuzoj\", nuk vendoset asnjë cookie reklamimi apo analitike dhe Meta Pixel nuk ngarkohet. Google mund të marrë sërish sinjale pa cookies dhe pa identifikues, për shembull që një faqe u pa ose një formular u dërgua, të cilat i përdor vetëm për matje të përmbledhura.",
+          "Mund ta ndryshoni ose ta tërhiqni zgjedhjen në çdo kohë te \"Cilësimet e cookies\" në fund të çdo faqeje."
+        ]
+      },
+      {
+        "title": "Transferimet jashtë Shqipërisë",
+        "body": [
+          "Google dhe Meta mund t'i përpunojnë të dhënat e matjes në Shtetet e Bashkuara dhe në vende të tjera. Për këto transferime ato mbështeten në klauzolat standarde kontraktuale të Komisionit Evropian dhe në Kuadrin e Privatësisë së të Dhënave BE–SHBA."
+        ]
+      },
+      {
+        "title": "Sa kohë i ruajmë",
+        "body": [
+          "Kërkesat i ruajmë deri në 24 muaj pas kontaktit tonë të fundit me ju. Nëse bëheni klient, zbatohen afatet e ruajtjes së kontratës dhe të ligjit."
+        ]
+      },
+      {
+        "title": "Të drejtat tuaja",
+        "body": [
+          "Mund të na kërkoni në çdo kohë t'i shihni, t'i korrigjoni ose t'i fshini të dhënat tuaja, të kufizoni ose të kundërshtoni përdorimin e tyre, ose t'i merrni në një format të transferueshëm. Mund ta tërhiqni pëlqimin në çdo kohë; kjo nuk prek atë që është bërë më parë.",
+          "Shkruani në info@glob3x.com. Mund të paraqisni gjithashtu ankesë te Komisioneri për të Drejtën e Informimit dhe Mbrojtjen e të Dhënave Personale (idp.al) ose, nëse jetoni në Bashkimin Evropian, tek autoriteti i mbrojtjes së të dhënave në vendin tuaj."
+        ]
+      },
+      {
+        "title": "Ndryshimet",
+        "body": [
+          "E përditësojmë këtë faqe kur ndryshon mënyra si punojmë. Data në krye tregon versionin e fundit."
+        ]
+      }
+    ]
   }
 }

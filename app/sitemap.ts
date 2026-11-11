@@ -5,7 +5,7 @@ import { projectPath } from "@/lib/routes";
 import { site } from "@/lib/site";
 
 const PROJECT_PAGES = PROJECTS.map((p) => projectPath(p.slug));
-const PAGES = ["", "group", "projects", "towers", "construction", "contact", ...PROJECT_PAGES];
+const PAGES = ["", "group", "projects", "towers", "construction", "contact", "privacy", ...PROJECT_PAGES];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const url = (locale: string, slug: string) => `${site.domain}/${locale}${slug ? `/${slug}` : ""}`;

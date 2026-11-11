@@ -630,6 +630,7 @@
     "interestOptions": ["L'achat d'un appartement", "Une surface commerciale", "Reeds Towers", "Les tours et l'investissement", "Les villas et l'hôtellerie", "Des services de construction", "Autre"],
     "message": "Message (facultatif)",
     "consent": "J'accepte que Glob3x Group me contacte au sujet de ma demande. Mes données ne seront pas partagées avec des tiers.",
+    "privacy": "Politique de confidentialité",
     "submit": "Envoyer la demande",
     "sending": "Envoi en cours…",
     "whatsapp": "Écrire sur WhatsApp",
@@ -646,6 +647,92 @@
     "language": "Langue",
     "legal": "Mentions légales",
     "disclaimer": "Les images de synthèse sont des vues d'artiste. Les surfaces, le nombre de niveaux et les spécifications peuvent évoluer au cours des études et de l'instruction des permis. Rien sur ce site ne constitue une offre contractuelle.",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité"
+  },
+  "cookies": {
+    "label": "Consentement aux cookies",
+    "text": "Avec votre accord, nous utilisons des cookies Google et Meta (Facebook, Instagram) pour savoir quelles annonces et pages mènent à des demandes et pour montrer nos annonces aux personnes qui ont visité ce site. Votre choix de langue est toujours conservé.",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "privacy": "Politique de confidentialité",
+    "settings": "Paramètres des cookies"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité et de cookies",
+      "description": "Comment Glob3x Group traite les données personnelles que vous envoyez via glob3x.com et quels cookies le site utilise."
+    },
+    "eyebrow": "Confidentialité",
+    "title": "Politique de confidentialité et de cookies",
+    "intro": "Cette page explique quelles données personnelles nous recevons via glob3x.com, y compris les pages Reeds Towers sur glob3x.com/reeds, ce que nous en faisons et comment vous pouvez les contrôler.",
+    "updated": "Dernière mise à jour : 10 novembre 2026",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "body": [
+          "Glob3x Group sh.p.k., Rruga Abdyl Frashëri, EGT Tower, 5e étage, Tirana, Albanie, est responsable des données personnelles traitées sur ce site.",
+          "Pour toute question sur vos données, écrivez à info@glob3x.com ou appelez le +355 69 700 3218."
+        ]
+      },
+      {
+        "title": "Ce que nous recevons quand vous nous contactez",
+        "body": [
+          "Lorsque vous envoyez un formulaire de contact, nous recevons votre nom, votre adresse e-mail, votre numéro de téléphone et votre pays, le sujet choisi et votre message, ainsi que, sur les pages Reeds Towers, votre fourchette de budget et l'appartement éventuellement sélectionné.",
+          "Nous enregistrons aussi la langue de la page, la page d'où le formulaire a été envoyé, l'heure et le type de navigateur, afin de vous répondre dans la bonne langue et de bloquer le spam.",
+          "Si vous remplissez l'un de nos formulaires dans Facebook ou Instagram, Meta nous transmet les informations que vous y saisissez et nous les utilisons de la même manière."
+        ]
+      },
+      {
+        "title": "Pourquoi nous les utilisons",
+        "body": [
+          "Nous utilisons vos données uniquement pour répondre à votre demande et vous envoyer les informations demandées sur nos projets. La base juridique est votre consentement, donné avec la case du formulaire, et les mesures que vous nous demandez de prendre avant un éventuel achat.",
+          "Nous ne vendons pas vos données et ne les transmettons pas à d'autres entreprises pour leur propre marketing."
+        ]
+      },
+      {
+        "title": "Qui les reçoit",
+        "body": [
+          "Votre demande est enregistrée sur notre serveur web et transmise à la messagerie de l'entreprise et à notre système de gestion des clients, où notre équipe commerciale la traite.",
+          "Les sociétés qui hébergent le site et notre messagerie traitent les données pour notre compte et uniquement selon nos instructions.",
+          "Si vous nous écrivez sur WhatsApp ou remplissez l'un de nos formulaires sur Facebook ou Instagram, la politique de confidentialité de Meta s'applique aussi à cette conversation ou à ce formulaire."
+        ]
+      },
+      {
+        "title": "Cookies et mesure",
+        "body": [
+          "Toujours actifs : un cookie nommé « lang » qui mémorise votre langue pendant un an, et votre choix concernant les cookies, enregistré dans votre navigateur.",
+          "Uniquement avec votre accord : des cookies Google Ads et Google Analytics et le pixel Meta (Facebook, Instagram). Ils nous indiquent quelles annonces et pages mènent à des demandes et nous permettent de montrer nos annonces sur Facebook et Instagram aux personnes qui ont visité ce site. Ils ne sont déposés qu'après avoir choisi « Accepter » et expirent au plus tard après 13 mois.",
+          "Pour le pixel Meta, Meta Platforms Ireland Ltd. et Glob3x Group sont responsables conjoints de la collecte des données sur ce site et de leur transmission à Meta ; le traitement ultérieur par Meta est décrit dans la politique de confidentialité de Meta.",
+          "Si vous choisissez « Refuser », aucun cookie publicitaire ou analytique n'est déposé et le pixel Meta n'est pas chargé. Google peut toutefois recevoir des signaux sans cookies ni identifiants, par exemple qu'une page a été vue ou qu'un formulaire a été envoyé, qu'il utilise uniquement pour des mesures agrégées.",
+          "Vous pouvez modifier ou retirer votre choix à tout moment via « Paramètres des cookies » en bas de chaque page."
+        ]
+      },
+      {
+        "title": "Transferts hors d'Albanie",
+        "body": [
+          "Google et Meta peuvent traiter les données de mesure aux États-Unis et dans d'autres pays. Pour ces transferts, ils s'appuient sur les clauses contractuelles types de la Commission européenne et sur le cadre de protection des données UE–États-Unis."
+        ]
+      },
+      {
+        "title": "Durée de conservation",
+        "body": [
+          "Nous conservons les demandes jusqu'à 24 mois après notre dernier contact avec vous. Si vous devenez client, les durées de conservation de votre contrat et de la loi s'appliquent."
+        ]
+      },
+      {
+        "title": "Vos droits",
+        "body": [
+          "Vous pouvez à tout moment nous demander d'accéder à vos données, de les rectifier ou de les supprimer, d'en limiter l'utilisation ou de vous y opposer, ou de les recevoir dans un format portable. Vous pouvez retirer votre consentement à tout moment, sans effet sur ce qui a été fait auparavant.",
+          "Écrivez à info@glob3x.com. Vous pouvez aussi déposer une réclamation auprès du Commissaire albanais au droit à l'information et à la protection des données (idp.al) ou, si vous vivez dans l'Union européenne, auprès de l'autorité de protection des données de votre pays."
+        ]
+      },
+      {
+        "title": "Modifications",
+        "body": [
+          "Nous mettons cette page à jour lorsque nos pratiques changent. La date en haut indique la version la plus récente."
+        ]
+      }
+    ]
   }
 }

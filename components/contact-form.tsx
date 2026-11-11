@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { track } from "@/lib/analytics";
 import type { LeadErrors } from "@/lib/lead";
+import { href } from "@/lib/routes";
 
 export type ContactDict = {
   name: string;
@@ -12,6 +14,7 @@ export type ContactDict = {
   interestOptions: string[];
   message: string;
   consent: string;
+  privacy: string;
   submit: string;
   sending: string;
   whatsapp: string;
@@ -45,15 +48,17 @@ export function ContactForm({
     const form = e.currentTarget;
     setStatus({ kind: "sending" });
     setErrors({});
+    const data = new FormData(form);
     try {
-      const res = await fetch("/api/lead", { method: "POST", body: new FormData(form) });
+      const res = await fetch("/api/lead", { method: "POST", body: data });
       if (res.status === 422) {
-        const data = (await res.json()) as { errors: LeadErrors };
-        setErrors(data.errors);
+        const body = (await res.json()) as { errors: LeadErrors };
+        setErrors(body.errors);
         setStatus({ kind: "error", invalid: true });
         return;
       }
       if (!res.ok) throw new Error(String(res.status));
+      track("lead", { form: "group", interest: String(data.get("interest") ?? "") });
       form.reset();
       setStatus({ kind: "success" });
     } catch {
@@ -125,7 +130,12 @@ export function ContactForm({
 
       <label className={`flex items-start gap-3 text-sm text-paper/70 ${errors.consent ? "text-red-300" : ""}`}>
         <input type="checkbox" name="consent" required className="mt-1 h-4 w-4 shrink-0 accent-gold" />
-        <span>{dict.consent}</span>
+        <span>
+          {dict.consent}{" "}
+          <a href={href(locale, "privacy")} target="_blank" className="underline underline-offset-4 hover:text-paper">
+            {dict.privacy}
+          </a>
+        </span>
       </label>
 
       {status.kind === "error" ? (

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
+import Script from "next/script";
+import { ConsentBanner } from "@/components/consent-banner";
 import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TAG_ID, trackingBootstrap, trackingEnabled } from "@/lib/analytics";
 import { isCoreLocale, isLocale, isRtl, locales, ogLocale } from "@/lib/i18n";
+import { href } from "@/lib/routes";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { getDictionary } from "./dictionaries";
@@ -46,7 +50,10 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
     verification: {
       ...(process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : {}),
-      ...(process.env.BING_SITE_VERIFICATION ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } } : {}),
+      other: {
+        ...(process.env.BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION } : {}),
+        ...(process.env.FACEBOOK_DOMAIN_VERIFICATION ? { "facebook-domain-verification": process.env.FACEBOOK_DOMAIN_VERIFICATION } : {}),
+      },
     },
     openGraph: {
       type: "website",
@@ -67,6 +74,12 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   return (
     <html lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"} data-scroll-behavior="smooth" className={`${display.variable} ${sans.variable} h-full`}>
       <body className="flex min-h-full flex-col">
+        {trackingEnabled ? (
+          <Script id="tracking-consent" strategy="beforeInteractive">
+            {trackingBootstrap()}
+          </Script>
+        ) : null}
+        {TAG_ID ? <Script src={`https://www.googletagmanager.com/gtag/js?id=${TAG_ID}`} strategy="afterInteractive" /> : null}
         <JsonLd data={[organizationJsonLd(locale, [...dict.site.keywords]), websiteJsonLd(locale, dict.site.name, dict.site.description)]} />
         <SiteHeader nav={dict.nav} locale={locale} />
         <main className="flex-1">{children}</main>
@@ -75,7 +88,8 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
             {dict.nav.machineTranslated}
           </p>
         ) : null}
-        <SiteFooter dict={dict.footer} nav={dict.nav} names={dict.projects.items} locale={locale} />
+        <SiteFooter dict={dict.footer} cookies={dict.cookies} nav={dict.nav} names={dict.projects.items} locale={locale} />
+        {trackingEnabled ? <ConsentBanner dict={dict.cookies} privacyHref={href(locale, "privacy")} /> : null}
       </body>
     </html>
   );

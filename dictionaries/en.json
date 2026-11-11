@@ -631,6 +631,7 @@
     "interestOptions": ["Buying an apartment", "Commercial space", "Reeds Towers", "Towers and investment", "Villas and hospitality", "Construction services", "Other"],
     "message": "Message (optional)",
     "consent": "I agree that Glob3x Group contacts me about my request. My data will not be shared with third parties.",
+    "privacy": "Privacy policy",
     "submit": "Send request",
     "sending": "Sending…",
     "whatsapp": "Write on WhatsApp",
@@ -647,6 +648,92 @@
     "language": "Language",
     "legal": "Legal",
     "disclaimer": "Renderings are artist impressions. Areas, floor counts and specifications may change during design development and permitting. Nothing on this website constitutes a contractual offer.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy"
+  },
+  "cookies": {
+    "label": "Cookie consent",
+    "text": "With your consent we use cookies from Google and Meta (Facebook, Instagram) to see which of our advertisements and pages lead to enquiries and to show our advertisements to people who visited this website. Your language setting is always kept.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "privacy": "Privacy policy",
+    "settings": "Cookie settings"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy and cookie policy",
+      "description": "How Glob3x Group handles the personal data you send through glob3x.com and which cookies the website uses."
+    },
+    "eyebrow": "Privacy",
+    "title": "Privacy and cookie policy",
+    "intro": "This page explains what personal data we receive through glob3x.com, including the Reeds Towers pages at glob3x.com/reeds, what we do with it and how you can control it.",
+    "updated": "Last updated: 10 November 2026",
+    "sections": [
+      {
+        "title": "Who is responsible",
+        "body": [
+          "Glob3x Group sh.p.k., Rruga Abdyl Frashëri, EGT Tower, 5th floor, Tirana, Albania, is responsible for the personal data processed on this website.",
+          "For any question about your data, write to info@glob3x.com or call +355 69 700 3218."
+        ]
+      },
+      {
+        "title": "What we receive when you contact us",
+        "body": [
+          "When you send a contact form we receive your name, e-mail address, phone number and country, the topic you choose and your message, and, on the Reeds Towers pages, your budget range and any apartment you selected.",
+          "We also record the language of the page, the page the form was sent from, the time and your browser type. We use these to answer you in the right language and to keep spam out.",
+          "If you fill in one of our forms inside Facebook or Instagram, Meta sends us the details you entered in it, and we use them in the same way."
+        ]
+      },
+      {
+        "title": "Why we use it",
+        "body": [
+          "We use your data only to answer your request and to send you the information you asked for about our projects. The legal basis is your consent, given with the checkbox on the form, and the steps you ask us to take before a possible purchase.",
+          "We do not sell your data and we do not pass it to other companies for their own marketing."
+        ]
+      },
+      {
+        "title": "Who receives it",
+        "body": [
+          "Your request is stored on our web server and delivered to our company inbox and our customer management system, where our sales team handles it.",
+          "The companies that host the website and our e-mail process the data on our behalf and only on our instructions.",
+          "If you write to us on WhatsApp or fill in one of our forms on Facebook or Instagram, Meta's privacy policy also applies to that conversation or form."
+        ]
+      },
+      {
+        "title": "Cookies and measurement",
+        "body": [
+          "Always on: a cookie named \"lang\" that remembers your language for one year, and your cookie choice, which is stored in your browser.",
+          "Only with your consent: Google Ads and Google Analytics cookies and the Meta Pixel (Facebook, Instagram). They tell us which advertisements and pages lead to enquiries and let us show our advertisements on Facebook and Instagram to people who visited this website. They are set only after you choose \"Accept\" and expire after at most 13 months.",
+          "For the Meta Pixel, Meta Platforms Ireland Ltd. and Glob3x Group are jointly responsible for collecting the data on this website and sending it to Meta; what Meta does with it afterwards is described in Meta's privacy policy.",
+          "If you choose \"Reject\", no advertising or analytics cookies are set and the Meta Pixel is not loaded. Google may still receive signals without cookies or identifiers, for example that a page was viewed or a form was sent, which it uses only for aggregated measurement.",
+          "You can change or withdraw your choice at any time with \"Cookie settings\" at the bottom of every page."
+        ]
+      },
+      {
+        "title": "Transfers outside Albania",
+        "body": [
+          "Google and Meta may process measurement data in the United States and other countries. For these transfers they rely on the European Commission's standard contractual clauses and the EU–US Data Privacy Framework."
+        ]
+      },
+      {
+        "title": "How long we keep it",
+        "body": [
+          "We keep enquiries for up to 24 months after our last contact with you. If you become a client, the retention periods of your contract and of the law apply instead."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "body": [
+          "You can ask us at any time to see, correct or delete your data, to restrict or object to its use, or to receive it in a portable format. You can withdraw your consent at any time; this does not affect what was done before.",
+          "Write to info@glob3x.com. You can also lodge a complaint with the Information and Data Protection Commissioner of Albania (idp.al) or, if you live in the European Union, with the data protection authority of your country."
+        ]
+      },
+      {
+        "title": "Changes",
+        "body": [
+          "We update this page when our practices change. The date at the top shows the latest version."
+        ]
+      }
+    ]
   }
 }

@@ -9,8 +9,7 @@ export const site = {
   /** Sales line (Instagram bio). E.164 without "+", used for the WhatsApp deep link. */
   whatsapp: "355697003218",
   phoneDisplay: "+355 69 700 3218",
-  /** Office line published on the current website. */
-  officePhone: "+355 69 700 3214",
+  officePhone: "+355 69 700 3218",
   address: {
     sq: "Rruga Abdyl Frashëri, EGT Tower, kati 5, Tiranë",
     en: "Rruga Abdyl Frashëri, EGT Tower, 5th floor, Tirana, Albania",
