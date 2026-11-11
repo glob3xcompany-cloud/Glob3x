@@ -20,6 +20,9 @@
   --text-display-md: clamp(1.75rem, 3vw, 2.75rem);
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* From here up the margin beside the page content is wide enough to hold the floating plans button. */
+  --breakpoint-3xl: 118rem;
 }
 
 html {
@@ -96,8 +99,8 @@ body {
   animation: kenburns 7s var(--ease-out-expo) both;
 }
 
-/* Where the floating plans button lies along the bottom edge (below xl), the footer ends above it so its last links stay reachable. */
-@media (width < 80rem) {
+/* Where the floating plans button lies along the bottom edge (below 3xl), the footer ends above it so its last links stay reachable. */
+@media (width < 118rem) {
   body:has([data-plans-dock]) > footer {
     padding-bottom: 5.5rem;
   }

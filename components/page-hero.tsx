@@ -23,8 +23,8 @@ export function PageHero({
         <Image src={asset(image)} alt={alt} fill priority sizes="100vw" className={`object-cover ${position}`} />
       </div>
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgb(14_15_18/0.9)_0%,rgb(14_15_18/0.35)_50%,rgb(14_15_18/0.4)_100%)]" />
-      {/* Below xl the floating plans button lies along the bottom edge, so the content keeps clear of it. */}
-      <div className="container-x relative pb-28 pt-40 xl:pb-20">
+      {/* Below 3xl the floating plans button lies along the bottom edge, so the content keeps clear of it. */}
+      <div className="container-x relative pb-28 pt-40 3xl:pb-20">
         <p className="eyebrow animate-rise text-gold">{eyebrow}</p>
         <h1 className="font-display animate-rise mt-5 max-w-4xl text-display-xl leading-[0.98] font-light tracking-[-0.01em] text-balance [animation-delay:120ms]">
           {title}
