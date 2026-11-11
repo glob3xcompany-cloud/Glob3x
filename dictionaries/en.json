@@ -16,7 +16,9 @@
     "cta": "Book a call",
     "menu": "Menu",
     "close": "Close",
-    "discover": "Discover"
+    "discover": "Discover",
+    "plans": "Explore floor plans",
+    "plansHint": "Prices and instalments for every unit"
   },
   "home": {
     "hero": {

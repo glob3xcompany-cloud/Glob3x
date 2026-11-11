@@ -5,13 +5,19 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/lib/i18n";
 import { NAV, href } from "@/lib/routes";
+import { PlansDock } from "./plans-cta";
 
 type NavDict = Record<(typeof NAV)[number]["key"], string> & {
   home: string;
   cta: string;
   menu: string;
   close: string;
+  plans: string;
+  plansHint: string;
 };
+
+/** Pages where the floating plans button would only get in the way: the plans themselves and the enquiry form. */
+const NO_DOCK = ["units", "contact"];
 
 export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
   const pathname = usePathname();
@@ -37,89 +43,96 @@ export function SiteHeader({ nav, locale }: { nav: NavDict; locale: Locale }) {
   const otherPath = pathname.replace(/^\/(en|sq)(?=\/|$)/, `/${other}`);
   const solid = scrolled || open;
   const isActive = (slug: string) => pathname === href(locale, slug);
+  // Lands on the selector itself, past the page banner.
+  const plansHref = `${href(locale, "units")}#selector`;
+  const dock = !open && !NO_DOCK.some(isActive);
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,box-shadow] duration-500 ${
-        solid
-          ? "bg-paper/90 text-ink shadow-[0_1px_0_0_var(--color-line)] backdrop-blur-md"
-          : "bg-transparent text-paper"
-      }`}
-    >
-      <div className="container-x flex h-16 items-center justify-between md:h-20">
-        <Link href={href(locale)} className="font-display text-xl tracking-[0.18em] uppercase md:text-2xl">
-          Reeds Towers
-        </Link>
-
-        <nav className="hidden items-center gap-7 text-[0.8125rem] font-medium tracking-[0.08em] lg:flex">
-          {NAV.map((item) => (
-            <Link
-              key={item.slug}
-              href={href(locale, item.slug)}
-              aria-current={isActive(item.slug) ? "page" : undefined}
-              className={`border-b pb-0.5 transition-[opacity,border-color] hover:opacity-100 ${
-                isActive(item.slug) ? "border-gold opacity-100" : "border-transparent opacity-75"
-              }`}
-            >
-              {nav[item.key]}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden items-center gap-6 lg:flex">
-          <Link href={otherPath} hrefLang={other} className="text-[0.75rem] font-semibold tracking-[0.2em] uppercase opacity-80 hover:opacity-100">
-            {other}
-          </Link>
-          <Link
-            href={href(locale, "contact")}
-            className="rounded-full bg-gold px-5 py-2.5 text-[0.75rem] font-semibold tracking-[0.16em] text-ink uppercase transition-colors hover:bg-gold-2"
-          >
-            {nav.cta}
-          </Link>
-        </div>
-
-        <button
-          type="button"
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-10 items-center gap-3 text-[0.75rem] font-semibold tracking-[0.2em] uppercase lg:hidden"
-        >
-          {open ? nav.close : nav.menu}
-          <span className="relative block h-3 w-6">
-            <span className={`absolute left-0 top-0 h-px w-6 bg-current transition-transform duration-300 ${open ? "translate-y-[5.5px] rotate-45" : ""}`} />
-            <span className={`absolute bottom-0 left-0 h-px w-6 bg-current transition-transform duration-300 ${open ? "-translate-y-[5.5px] -rotate-45" : ""}`} />
-          </span>
-        </button>
-      </div>
-
-      <div
-        id="mobile-menu"
-        className={`lg:hidden ${open ? "block" : "hidden"} h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-paper text-ink`}
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,box-shadow] duration-500 ${
+          solid
+            ? "bg-paper/90 text-ink shadow-[0_1px_0_0_var(--color-line)] backdrop-blur-md"
+            : "bg-transparent text-paper"
+        }`}
       >
-        <nav className="container-x flex flex-col py-6" onClick={() => setOpen(false)}>
-          <Link href={href(locale)} className="font-display border-b border-line py-5 text-3xl">
-            {nav.home}
+        <div className="container-x flex h-16 items-center justify-between md:h-20">
+          <Link href={href(locale)} className="font-display text-xl tracking-[0.18em] uppercase md:text-2xl">
+            Reeds Towers
           </Link>
-          {NAV.map((item) => (
+
+          <nav className="hidden items-center gap-7 text-[0.8125rem] font-medium tracking-[0.08em] lg:flex">
+            {NAV.map((item) => (
+              <Link
+                key={item.slug}
+                href={href(locale, item.slug)}
+                aria-current={isActive(item.slug) ? "page" : undefined}
+                className={`border-b pb-0.5 transition-[opacity,border-color] hover:opacity-100 ${
+                  isActive(item.slug) ? "border-gold opacity-100" : "border-transparent opacity-75"
+                }`}
+              >
+                {nav[item.key]}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="hidden items-center gap-6 lg:flex">
+            <Link href={otherPath} hrefLang={other} className="text-[0.75rem] font-semibold tracking-[0.2em] uppercase opacity-80 hover:opacity-100">
+              {other}
+            </Link>
             <Link
-              key={item.slug}
-              href={href(locale, item.slug)}
-              className={`font-display border-b border-line py-5 text-3xl ${isActive(item.slug) ? "text-gold" : ""}`}
+              href={href(locale, "contact")}
+              className="rounded-full bg-gold px-5 py-2.5 text-[0.75rem] font-semibold tracking-[0.16em] text-ink uppercase transition-colors hover:bg-gold-2"
             >
-              {nav[item.key]}
-            </Link>
-          ))}
-          <div className="mt-8 flex items-center justify-between">
-            <Link href={otherPath} hrefLang={other} className="text-[0.75rem] font-semibold tracking-[0.2em] uppercase">
-              {other === "en" ? "English" : "Shqip"}
-            </Link>
-            <Link href={href(locale, "contact")} className="rounded-full bg-gold px-5 py-3 text-[0.75rem] font-semibold tracking-[0.16em] uppercase">
               {nav.cta}
             </Link>
           </div>
-        </nav>
-      </div>
-    </header>
+
+          <button
+            type="button"
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-10 items-center gap-3 text-[0.75rem] font-semibold tracking-[0.2em] uppercase lg:hidden"
+          >
+            {open ? nav.close : nav.menu}
+            <span className="relative block h-3 w-6">
+              <span className={`absolute left-0 top-0 h-px w-6 bg-current transition-transform duration-300 ${open ? "translate-y-[5.5px] rotate-45" : ""}`} />
+              <span className={`absolute bottom-0 left-0 h-px w-6 bg-current transition-transform duration-300 ${open ? "-translate-y-[5.5px] -rotate-45" : ""}`} />
+            </span>
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          className={`lg:hidden ${open ? "block" : "hidden"} h-[calc(100dvh-4rem)] overflow-y-auto border-t border-line bg-paper text-ink`}
+        >
+          <nav className="container-x flex flex-col py-6" onClick={() => setOpen(false)}>
+            <Link href={href(locale)} className="font-display border-b border-line py-5 text-3xl">
+              {nav.home}
+            </Link>
+            {NAV.map((item) => (
+              <Link
+                key={item.slug}
+                href={href(locale, item.slug)}
+                className={`font-display border-b border-line py-5 text-3xl ${isActive(item.slug) ? "text-gold" : ""}`}
+              >
+                {nav[item.key]}
+              </Link>
+            ))}
+            <div className="mt-8 flex items-center justify-between">
+              <Link href={otherPath} hrefLang={other} className="text-[0.75rem] font-semibold tracking-[0.2em] uppercase">
+                {other === "en" ? "English" : "Shqip"}
+              </Link>
+              <Link href={href(locale, "contact")} className="rounded-full bg-gold px-5 py-3 text-[0.75rem] font-semibold tracking-[0.16em] uppercase">
+                {nav.cta}
+              </Link>
+            </div>
+          </nav>
+        </div>
+      </header>
+      {/* A sibling of the header, not a child: the header's backdrop filter would otherwise become its containing block. */}
+      {dock ? <PlansDock href={plansHref} label={nav.plans} hint={nav.plansHint} /> : null}
+    </>
   );
 }

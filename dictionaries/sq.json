@@ -16,7 +16,9 @@
     "cta": "Rezervo një takim",
     "menu": "Menu",
     "close": "Mbyll",
-    "discover": "Zbulo"
+    "discover": "Zbulo",
+    "plans": "Zbulo planimetritë",
+    "plansHint": "Çmimet dhe këstet për çdo njësi"
   },
   "home": {
     "hero": {
