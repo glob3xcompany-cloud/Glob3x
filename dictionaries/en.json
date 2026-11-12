@@ -264,6 +264,18 @@
     "plate": "Floor plate",
     "onFloor": "units on this floor",
     "prompt": "Select a unit on the plan or in the list.",
+    "steps": ["Choose a tower", "Choose a floor", "Tap a unit on the plan"],
+    "planHint": "Tap any unit on the plan to see it on its own, with its price and payment plan.",
+    "selected": {
+      "plan": "Unit plan",
+      "where": "Position on the floor",
+      "back": "Back to the floor",
+      "prev": "Previous unit",
+      "next": "Next unit",
+      "enlarge": "Enlarge",
+      "close": "Close",
+      "view": "View unit"
+    },
     "table": { "nr": "No.", "type": "Typology", "area": "Area", "price": "Price" },
     "detail": {
       "code": "Unit",

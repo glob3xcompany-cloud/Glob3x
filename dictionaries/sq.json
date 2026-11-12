@@ -264,6 +264,18 @@
     "plate": "Sipërfaqja e katit",
     "onFloor": "njësi në këtë kat",
     "prompt": "Zgjidhni një njësi në planimetri ose në listë.",
+    "steps": ["Zgjidhni kullën", "Zgjidhni katin", "Prekni një njësi në planimetri"],
+    "planHint": "Prekni cilëndo njësi në planimetri për ta parë veçmas, me çmimin dhe planin e pagesës.",
+    "selected": {
+      "plan": "Planimetria e njësisë",
+      "where": "Vendndodhja në kat",
+      "back": "Kthehu te kati",
+      "prev": "Njësia e mëparshme",
+      "next": "Njësia tjetër",
+      "enlarge": "Zmadho",
+      "close": "Mbyll",
+      "view": "Shiko njësinë"
+    },
     "table": { "nr": "Nr.", "type": "Tipologjia", "area": "Sipërfaqja", "price": "Çmimi" },
     "detail": {
       "code": "Njësia",

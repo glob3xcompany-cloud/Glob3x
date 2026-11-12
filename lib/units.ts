@@ -4,9 +4,22 @@ import { PAYMENT, PRICE_BANDS } from "./towers";
 /**
  * Residential units per floor, extracted from the residential plan sheets of the construction design.
  * `x`/`y` are the unit label positions in percent of the plan image; `n` numbers units clockwise.
- * Regenerate with C:\Glob3x-work\extract_units.py.
+ * `outline` is the unit's footprint in percent points of the plan image, `box` its bounds (x0, y0, x1, y1),
+ * and `plan` a crop of the unit alone (`pw` × `ph` pixels, transparent outside the footprint).
+ * Regenerate with C:\Glob3x-work\extract_units.py, segment_units.py --write and render_unit_plans.py.
  */
-export type PlanUnit = { type: string; area: number; x: number; y: number; n: number };
+export type PlanUnit = {
+  type: string;
+  area: number;
+  x: number;
+  y: number;
+  n: number;
+  outline?: [number, number][];
+  box?: [number, number, number, number];
+  plan?: string;
+  pw?: number;
+  ph?: number;
+};
 export type PlanGroup = {
   tower: "A" | "B";
   sheet: number;
