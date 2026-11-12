@@ -193,7 +193,7 @@ export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabe
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
         {/* Floor picker: each bar is drawn to the width of its floor plate */}
-        <div className="min-w-0 lg:col-span-2">
+        <div className="min-w-0 lg:sticky lg:top-24 lg:col-span-2 lg:self-start">
           <p className="eyebrow text-muted">{labels.chooseFloor}</p>
           <div className="mt-4 flex gap-1 overflow-x-auto pb-2 lg:hidden">
             {[...floors].reverse().map(({ floor: f }) => (
@@ -210,7 +210,7 @@ export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabe
               </button>
             ))}
           </div>
-          <div className="mt-4 hidden lg:sticky lg:top-24 lg:grid lg:gap-[3px]">
+          <div className="mt-4 hidden lg:grid lg:max-h-[calc(100vh-9rem)] lg:gap-[3px] lg:overflow-y-auto lg:py-1">
             {floors.map(({ floor: f, group: g }) => {
               const active = f === floor;
               return (
@@ -235,16 +235,6 @@ export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabe
               );
             })}
           </div>
-          <ul className="mt-6 grid gap-2 text-[0.6875rem] text-muted">
-            {(["low", "mid", "request"] as const).map((b) =>
-              tower === "B" && b === "request" ? null : (
-                <li key={b} className="flex items-center gap-2">
-                  <span className={`h-2 w-4 ${BAND_BAR[b]}`} aria-hidden="true" />
-                  {labels.legend[b]}
-                </li>
-              ),
-            )}
-          </ul>
         </div>
 
         {/* Plan */}
@@ -258,15 +248,25 @@ export function UnitSelector({ labels, contactHref }: { labels: UnitSelectorLabe
             </p>
           </div>
           <p
-            className={`mt-4 flex items-center gap-2.5 text-sm transition-colors ${unit ? "text-muted" : "text-ink"}`}
+            className={`mt-4 flex items-start gap-2.5 text-sm transition-colors ${unit ? "text-muted" : "text-ink"}`}
             aria-hidden={unit ? "true" : undefined}
           >
-            <span className="relative flex h-2.5 w-2.5 shrink-0" aria-hidden="true">
+            <span className="relative mt-[5px] flex h-2.5 w-2.5 shrink-0" aria-hidden="true">
               {!unit && <span className="absolute inset-0 animate-ping rounded-full bg-gold" />}
               <span className="relative h-2.5 w-2.5 rounded-full bg-gold" />
             </span>
             {labels.planHint}
           </p>
+          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-[0.75rem] text-muted">
+            {(["low", "mid", "request"] as const).map((b) =>
+              tower === "B" && b === "request" ? null : (
+                <li key={b} className={`flex items-center gap-2 ${band(floor) === b ? "font-medium text-ink" : ""}`}>
+                  <span className={`h-2 w-4 shrink-0 ${BAND_BAR[b]}`} aria-hidden="true" />
+                  {labels.legend[b]}
+                </li>
+              ),
+            )}
+          </ul>
           <div className="relative mt-4 bg-white" style={{ aspectRatio: `${group.w} / ${group.h}` }}>
             <Image
               key={group.image}
